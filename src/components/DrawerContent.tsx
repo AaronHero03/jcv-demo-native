@@ -6,10 +6,12 @@ import {
 	DrawerItemList,
 	type DrawerContentComponentProps,
 } from "@react-navigation/drawer";
+import { useAppState } from "../context/AppStateContext";
 import { colors } from "../theme/colors";
 
 // Contenido del drawer: encabezado de marca + opciones + cerrar sesión.
 export default function DrawerContent(props: DrawerContentComponentProps) {
+	const { logout } = useAppState();
 	return (
 		<DrawerContentScrollView
 			{...props}
@@ -24,11 +26,12 @@ export default function DrawerContent(props: DrawerContentComponentProps) {
 			<DrawerItemList {...props} />
 			<DrawerItem
 				label="🚪  Cerrar sesión"
-				onPress={() =>
+				onPress={() => {
+					logout();
 					props.navigation
 						.getParent()
-						?.dispatch(StackActions.replace("Welcome"))
-				}
+						?.dispatch(StackActions.replace("Welcome"));
+				}}
 			/>
 		</DrawerContentScrollView>
 	);
