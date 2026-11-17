@@ -11,7 +11,12 @@ import { colors } from "../theme/colors";
 
 // Contenido del drawer: encabezado de marca + opciones + cerrar sesión.
 export default function DrawerContent(props: DrawerContentComponentProps) {
-	const { logout } = useAppState();
+	const { userMode, userEmail, isTecVerified, logout } = useAppState();
+	const subtitle =
+		userMode === "user" && userEmail
+			? `${userEmail}${isTecVerified ? " · 🎓" : ""}`
+			: "Modo invitado";
+
 	return (
 		<DrawerContentScrollView
 			{...props}
@@ -21,7 +26,10 @@ export default function DrawerContent(props: DrawerContentComponentProps) {
 				<View style={styles.logo}>
 					<Text style={styles.logoText}>JCV</Text>
 				</View>
-				<Text style={styles.brand}>Jalisco Cómo Vamos</Text>
+				<View style={styles.brandCol}>
+					<Text style={styles.brand}>Jalisco Cómo Vamos</Text>
+					<Text style={styles.sub}>{subtitle}</Text>
+				</View>
 			</View>
 			<DrawerItemList {...props} />
 			<DrawerItem
@@ -56,5 +64,7 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.yellow,
 	},
 	logoText: { color: colors.navy, fontWeight: "800" },
+	brandCol: { flex: 1 },
 	brand: { color: colors.white, fontSize: 16, fontWeight: "700" },
+	sub: { color: "rgba(255,255,255,0.75)", fontSize: 12, marginTop: 2 },
 });
