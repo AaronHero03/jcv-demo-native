@@ -406,27 +406,6 @@ export const surveys: Survey[] = [
     estimatedMinutes: 9,
     questions: bienestarQuestions,
   },
-  {
-    id: 'movilidad-amg-2026',
-    title: 'Percepción de Movilidad y Tiempo Libre',
-    description: 'Evalúa el uso de transporte público y disponibilidad de tiempo libre en tu municipio.',
-    period: 'Ago 2026',
-    estimatedMinutes: 2,
-    questions: [
-      {
-        id: 'm1',
-        type: 'single',
-        prompt: '¿Qué medio de transporte utilizas con mayor frecuencia?',
-        options: ['Transporte público (camión / tren)', 'Automóvil particular', 'Bicicleta o caminar', 'Plataforma / taxi'],
-      },
-      {
-        id: 'm2',
-        type: 'single',
-        prompt: '¿Qué tan satisfecha(o) estás con el uso del tiempo libre que tienes?',
-        options: ['1. Nada satisfecha(o)', '2. Poco satisfecha(o)', '3. Neutral', '4. Algo satisfecha(o)', '5. Muy satisfecha(o)'],
-      },
-    ],
-  },
 ];
 
 export function getSurveyById(id?: string): Survey {
