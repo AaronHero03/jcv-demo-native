@@ -42,7 +42,7 @@ export default function ProfileScreen() {
       <View style={styles.links}>
         <NavRow
           emoji="⭐"
-          label={`Favoritos (${favoriteIds.length})`}
+          label="Mis favoritos"
           tint={theme.color}
           onPress={() => navigation.push('favoritos', { tab: 'perfil' })}
         />
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
     alignItems: 'center',
     gap: 4,
   },

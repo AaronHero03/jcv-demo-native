@@ -11,11 +11,15 @@ export default function Hero({
 	ink: string;
 }) {
 	return (
-		<View style={[styles.hero, { backgroundColor: color, shadowColor: color }]}>
-			<View style={styles.emojiBox}>
-				<Text style={styles.emoji}>{page.emoji}</Text>
+		<View style={[styles.hero, { backgroundColor: color }]}>
+			<View style={styles.titleRow}>
+				<View style={styles.emojiBox}>
+					<Text style={styles.emoji}>{page.emoji}</Text>
+				</View>
+				<Text style={[styles.title, { color: ink }]} numberOfLines={2}>
+					{page.title}
+				</Text>
 			</View>
-			<Text style={[styles.title, { color: ink }]}>{page.title}</Text>
 			<Text style={[styles.text, { color: ink }]}>{page.text}</Text>
 		</View>
 	);
@@ -23,23 +27,22 @@ export default function Hero({
 
 const styles = StyleSheet.create({
 	hero: {
-		padding: 22,
-		borderRadius: 24,
-		marginBottom: 8,
-		shadowOpacity: 0.35,
-		shadowRadius: 14,
-		shadowOffset: { width: 0, height: 8 },
-		elevation: 6,
+		paddingVertical: 18,
+		paddingHorizontal: 18,
+		borderRadius: 20,
+		gap: 10,
+		marginBottom: 4,
 	},
+	titleRow: { flexDirection: "row", alignItems: "center", gap: 12 },
 	emojiBox: {
-		width: 54,
-		height: 54,
-		borderRadius: 16,
+		width: 40,
+		height: 40,
+		borderRadius: 12,
 		alignItems: "center",
 		justifyContent: "center",
 		backgroundColor: "rgba(255,255,255,0.85)",
 	},
-	emoji: { fontSize: 28 },
-	title: { fontSize: 28, fontWeight: "800", marginTop: 12 },
-	text: { fontSize: 15, marginTop: 4, opacity: 0.9 },
+	emoji: { fontSize: 20 },
+	title: { flex: 1, fontSize: 22, fontWeight: "800" },
+	text: { fontSize: 14, lineHeight: 20, opacity: 0.9 },
 });

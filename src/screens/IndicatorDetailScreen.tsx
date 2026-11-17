@@ -33,7 +33,7 @@ export default function IndicatorDetailScreen() {
             {indicator.unit}
           </Text>
           <Text style={[styles.kpiSub, { color: theme.ink }]}>
-            Promedio {indicator.average} / 5 · N = {indicator.sampleSize}
+            Promedio {indicator.average} / 5
           </Text>
         </View>
       </View>
@@ -47,9 +47,9 @@ export default function IndicatorDetailScreen() {
         <Text style={styles.cardTitle}>Distribución de respuestas ({indicator.period})</Text>
         <BarChart
           items={indicator.series.map((s) => ({
-            label: `${s.code}. ${s.label}`,
+            label: s.label,
             value: s.pct,
-            valueLabel: `${s.pct}% (${s.count})`,
+            valueLabel: `${s.pct}%`,
           }))}
           primaryColor={theme.color === colors.yellow ? colors.navy : theme.color}
         />
@@ -83,7 +83,7 @@ export default function IndicatorDetailScreen() {
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: colors.background },
   content: { padding: 16, gap: 12, paddingBottom: 32 },
-  headerCard: { padding: 20, borderRadius: 22, gap: 10 },
+  headerCard: { padding: 18, borderRadius: 20, gap: 8 },
   headerTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   category: { fontSize: 12, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 1 },
   favButton: {
@@ -93,19 +93,19 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.88)',
   },
   favText: { fontSize: 12, fontWeight: '800', color: colors.navy },
-  title: { fontSize: 24, fontWeight: '800' },
+  title: { fontSize: 22, fontWeight: '800' },
   kpiRow: { flexDirection: 'row', alignItems: 'baseline', gap: 10 },
-  kpiValue: { fontSize: 32, fontWeight: '800' },
+  kpiValue: { fontSize: 30, fontWeight: '800' },
   kpiSub: { fontSize: 13, fontWeight: '600', opacity: 0.9 },
   card: {
     padding: 16,
-    borderRadius: 18,
+    borderRadius: 16,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
     gap: 10,
   },
-  cardTitle: { fontSize: 15, fontWeight: '800', color: colors.navy },
+  cardTitle: { fontSize: 13, fontWeight: '800', color: colors.muted, textTransform: 'uppercase', letterSpacing: 0.6 },
   questionText: { fontSize: 14, color: colors.navy, lineHeight: 20 },
   metaText: { fontSize: 13, color: colors.muted },
   actions: { gap: 10 },

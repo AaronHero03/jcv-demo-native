@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
   },
   chipText: { fontSize: 13, fontWeight: '700', color: colors.navy },
   noteBox: {
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
     gap: 8,
   },
   muniHeader: { flexDirection: 'row', alignItems: 'center', gap: 8 },
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   muniName: { flex: 1, fontSize: 15, fontWeight: '800', color: colors.navy },
   badge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10 },
   badgeText: { fontSize: 13, fontWeight: '800' },
-  track: { height: 8, borderRadius: 6, backgroundColor: '#E8ECEF', overflow: 'hidden' },
+  track: { height: 8, borderRadius: 6, backgroundColor: colors.track, overflow: 'hidden' },
   bar: { height: '100%', borderRadius: 6 },
   muniMeta: { fontSize: 12, color: colors.muted },
 });

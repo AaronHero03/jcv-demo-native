@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
     gap: 6,
   },
   meta: { fontSize: 12, fontWeight: '700', color: colors.muted },
