@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
   },
   chipText: { fontSize: 13, fontWeight: '700', color: colors.navy },
   card: {
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     backgroundColor: colors.white,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
     gap: 10,
   },
   cardTitle: { fontSize: 16, fontWeight: '800', color: colors.navy },
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     backgroundColor: colors.background,
     borderWidth: 1,
-    borderColor: '#E1E5E8',
+    borderColor: colors.border,
   },
   muniText: { fontSize: 12, fontWeight: '700', color: colors.navy },
   summaryRow: {

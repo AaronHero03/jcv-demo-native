@@ -21,7 +21,7 @@ export default function TabNavigator() {
           component={stackFor[t.id]}
           options={{
             title: t.label,
-            tabBarActiveBackgroundColor: `${tabTheme[t.id].color}33`,
+            tabBarActiveBackgroundColor: `${tabTheme[t.id].color}1A`,
             tabBarIcon: ({ focused }) => <Text style={{ fontSize: 20, opacity: focused ? 1 : 0.45 }}>{t.emoji}</Text>,
           }}
         />

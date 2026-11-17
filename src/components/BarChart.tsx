@@ -70,6 +70,6 @@ const styles = StyleSheet.create({
   labelRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 },
   label: { flex: 1, fontSize: 13, fontWeight: '600', color: colors.navy },
   valueText: { fontSize: 13, fontWeight: '700', color: colors.muted },
-  track: { height: 10, borderRadius: 6, backgroundColor: '#E8ECEF', overflow: 'hidden' },
+  track: { height: 10, borderRadius: 6, backgroundColor: colors.track, overflow: 'hidden' },
   bar: { height: '100%', borderRadius: 6 },
 });

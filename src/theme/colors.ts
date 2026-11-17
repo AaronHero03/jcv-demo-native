@@ -10,6 +10,8 @@ export const colors = {
   background: '#F7F8F6',
   muted: '#667287',
   white: '#FFFFFF',
+  border: '#E6E9EC',
+  track: '#EDF0F2',
 };
 
 export type TabId = 'inicio' | 'explorar' | 'participar' | 'comunidad' | 'perfil';
