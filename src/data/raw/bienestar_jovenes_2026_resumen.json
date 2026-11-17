@@ -1,0 +1,844 @@
+{
+  "dataset": "Bienestar de Jóvenes Jul-Ago 2026",
+  "totalRespondents": 1207,
+  "municipalities": [
+    "El Salto",
+    "Guadalajara",
+    "San Pedro Tlaquepaque",
+    "Tlajomulco de Zúñiga",
+    "Tonalá",
+    "Zapopan"
+  ],
+  "indicators": [
+    {
+      "id": "Q_6",
+      "title": "Satisfacción con la vida",
+      "category": "Bienestar",
+      "summary": "Porcentaje de jóvenes algo o muy satisfechos (4–5) con su vida en general.",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con tu vida?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1205,
+      "average": 4.46,
+      "positivePct": 91.4,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 8,
+          "pct": 0.7
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 8,
+          "pct": 0.7
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 88,
+          "pct": 7.3
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 419,
+          "pct": 34.8
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 682,
+          "pct": 56.6
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.39,
+          "positivePct": 95.7
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 413,
+          "average": 4.49,
+          "positivePct": 91.0
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 155,
+          "average": 4.34,
+          "positivePct": 90.3
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.55,
+          "positivePct": 92.3
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.38,
+          "positivePct": 92.7
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 440,
+          "average": 4.48,
+          "positivePct": 91.4
+        }
+      ]
+    },
+    {
+      "id": "Q_7",
+      "title": "Calidad de vida",
+      "category": "Bienestar",
+      "summary": "Percepción de calidad de vida como algo alta o muy alta (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"muy baja\" y 5 significa \"muy alta\", ¿cómo calificarías tu calidad de vida?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1206,
+      "average": 3.99,
+      "positivePct": 70.8,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Muy baja",
+          "count": 8,
+          "pct": 0.7
+        },
+        {
+          "code": 2,
+          "label": "Algo baja",
+          "count": 26,
+          "pct": 2.2
+        },
+        {
+          "code": 3,
+          "label": "Ni alta, ni baja",
+          "count": 318,
+          "pct": 26.4
+        },
+        {
+          "code": 4,
+          "label": "Algo alta",
+          "count": 472,
+          "pct": 39.1
+        },
+        {
+          "code": 5,
+          "label": "Muy alta",
+          "count": 382,
+          "pct": 31.7
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.04,
+          "positivePct": 82.6
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 413,
+          "average": 3.92,
+          "positivePct": 68.0
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 3.99,
+          "positivePct": 72.4
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 3.83,
+          "positivePct": 62.8
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.03,
+          "positivePct": 75.0
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 440,
+          "average": 4.07,
+          "positivePct": 72.7
+        }
+      ]
+    },
+    {
+      "id": "Q_8",
+      "title": "Felicidad general",
+      "category": "Bienestar",
+      "summary": "Jóvenes que se sienten algo felices o muy felices (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada feliz\" y 5 significa \"muy feliz\", en general, ¿qué tan feliz eres?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1205,
+      "average": 4.4,
+      "positivePct": 88.9,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada feliz",
+          "count": 6,
+          "pct": 0.5
+        },
+        {
+          "code": 2,
+          "label": "Poco feliz",
+          "count": 24,
+          "pct": 2.0
+        },
+        {
+          "code": 3,
+          "label": "Ni feliz, ni infeliz",
+          "count": 104,
+          "pct": 8.6
+        },
+        {
+          "code": 4,
+          "label": "Algo feliz",
+          "count": 415,
+          "pct": 34.4
+        },
+        {
+          "code": 5,
+          "label": "Muy feliz",
+          "count": 656,
+          "pct": 54.4
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.3,
+          "positivePct": 91.3
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 412,
+          "average": 4.43,
+          "positivePct": 88.6
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 4.32,
+          "positivePct": 91.0
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.46,
+          "positivePct": 89.7
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 95,
+          "average": 4.28,
+          "positivePct": 83.2
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 441,
+          "average": 4.43,
+          "positivePct": 89.3
+        }
+      ]
+    },
+    {
+      "id": "Q_9",
+      "title": "Satisfacción consigo mismo",
+      "category": "Bienestar",
+      "summary": "Nivel de satisfacción personal (4–5) entre jóvenes del AMG.",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) te encuentras contigo misma(o)?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1206,
+      "average": 4.3,
+      "positivePct": 86.0,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 11,
+          "pct": 0.9
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 34,
+          "pct": 2.8
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 124,
+          "pct": 10.3
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 456,
+          "pct": 37.8
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 581,
+          "pct": 48.2
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.13,
+          "positivePct": 82.6
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 412,
+          "average": 4.3,
+          "positivePct": 86.4
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 4.17,
+          "positivePct": 84.0
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.26,
+          "positivePct": 82.1
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.24,
+          "positivePct": 87.5
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 441,
+          "average": 4.36,
+          "positivePct": 86.8
+        }
+      ]
+    },
+    {
+      "id": "Q_10",
+      "title": "Vida afectiva y emocional",
+      "category": "Bienestar",
+      "summary": "Satisfacción con la vida afectiva o emocional (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con tu vida afectiva o emocional?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1207,
+      "average": 4.18,
+      "positivePct": 79.8,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 12,
+          "pct": 1.0
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 62,
+          "pct": 5.1
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 170,
+          "pct": 14.1
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 414,
+          "pct": 34.3
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 549,
+          "pct": 45.5
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.0,
+          "positivePct": 73.9
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 413,
+          "average": 4.17,
+          "positivePct": 80.1
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 4.04,
+          "positivePct": 73.7
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.17,
+          "positivePct": 82.1
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.06,
+          "positivePct": 78.1
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 441,
+          "average": 4.27,
+          "positivePct": 81.9
+        }
+      ]
+    },
+    {
+      "id": "Q_14",
+      "title": "Actividades diarias",
+      "category": "Tiempo y Rutina",
+      "summary": "Satisfacción actual con las actividades diarias (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás actualmente con tus actividades diarias?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1206,
+      "average": 4.3,
+      "positivePct": 85.6,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 5,
+          "pct": 0.4
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 45,
+          "pct": 3.7
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 124,
+          "pct": 10.3
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 447,
+          "pct": 37.1
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 585,
+          "pct": 48.5
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.13,
+          "positivePct": 82.6
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 413,
+          "average": 4.33,
+          "positivePct": 87.2
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 4.15,
+          "positivePct": 82.7
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.36,
+          "positivePct": 85.9
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.14,
+          "positivePct": 82.3
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 440,
+          "average": 4.35,
+          "positivePct": 85.9
+        }
+      ]
+    },
+    {
+      "id": "Q_15",
+      "title": "Aprendizaje escolar",
+      "category": "Educación",
+      "summary": "Satisfacción con lo aprendido en la escuela (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con lo que has aprendido en la escuela?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1190,
+      "average": 4.17,
+      "positivePct": 79.7,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 20,
+          "pct": 1.7
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 69,
+          "pct": 5.8
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 153,
+          "pct": 12.9
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 399,
+          "pct": 33.5
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 549,
+          "pct": 46.1
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.22,
+          "positivePct": 78.3
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 407,
+          "average": 4.2,
+          "positivePct": 81.6
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 154,
+          "average": 4.18,
+          "positivePct": 79.9
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 76,
+          "average": 4.11,
+          "positivePct": 72.4
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 94,
+          "average": 4.14,
+          "positivePct": 81.9
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 436,
+          "average": 4.14,
+          "positivePct": 78.7
+        }
+      ]
+    },
+    {
+      "id": "Q_16",
+      "title": "Seguridad en la escuela",
+      "category": "Educación",
+      "summary": "Estudiantes que se sienten muy o totalmente seguros en su escuela (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada segura(o)\" y 5 significa \"muy segura(o)\", ¿qué tan segura(o) te sientes en la escuela?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 549,
+      "average": 4.05,
+      "positivePct": 73.0,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada segura(o)",
+          "count": 3,
+          "pct": 0.5
+        },
+        {
+          "code": 2,
+          "label": "Poco segura(o)",
+          "count": 22,
+          "pct": 4.0
+        },
+        {
+          "code": 3,
+          "label": "Algo segura(o)",
+          "count": 123,
+          "pct": 22.4
+        },
+        {
+          "code": 4,
+          "label": "Muy segura(o)",
+          "count": 196,
+          "pct": 35.7
+        },
+        {
+          "code": 5,
+          "label": "Totalmente segura(o)",
+          "count": 205,
+          "pct": 37.3
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 12,
+          "average": 4.0,
+          "positivePct": 75.0
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 174,
+          "average": 4.09,
+          "positivePct": 76.4
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 72,
+          "average": 3.71,
+          "positivePct": 56.9
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 35,
+          "average": 3.77,
+          "positivePct": 65.7
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 41,
+          "average": 4.07,
+          "positivePct": 73.2
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 215,
+          "average": 4.19,
+          "positivePct": 76.7
+        }
+      ]
+    },
+    {
+      "id": "Q_17",
+      "title": "Importancia de educación superior",
+      "category": "Educación",
+      "summary": "Jóvenes que consideran de mucha o total importancia la educación superior (4–5).",
+      "question": "Para ti, ¿qué importancia tiene hoy la educación superior?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1203,
+      "average": 4.17,
+      "positivePct": 81.9,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Ninguna importancia",
+          "count": 13,
+          "pct": 1.1
+        },
+        {
+          "code": 2,
+          "label": "Poca importancia",
+          "count": 40,
+          "pct": 3.3
+        },
+        {
+          "code": 3,
+          "label": "Algo de importancia",
+          "count": 165,
+          "pct": 13.7
+        },
+        {
+          "code": 4,
+          "label": "Mucha importancia",
+          "count": 498,
+          "pct": 41.4
+        },
+        {
+          "code": 5,
+          "label": "Total importancia",
+          "count": 487,
+          "pct": 40.5
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 4.13,
+          "positivePct": 78.3
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 411,
+          "average": 4.18,
+          "positivePct": 81.8
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 155,
+          "average": 4.1,
+          "positivePct": 78.1
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.06,
+          "positivePct": 80.8
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 4.2,
+          "positivePct": 84.4
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 440,
+          "average": 4.2,
+          "positivePct": 83.2
+        }
+      ]
+    },
+    {
+      "id": "Q_20",
+      "title": "Uso del tiempo libre",
+      "category": "Tiempo y Rutina",
+      "summary": "Satisfacción con el uso del tiempo libre disponible (4–5).",
+      "question": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con el uso del tiempo libre que tienes?",
+      "source": "Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos",
+      "period": "Jul–Ago 2026",
+      "sampleSize": 1206,
+      "average": 4.08,
+      "positivePct": 79.2,
+      "unit": "%",
+      "series": [
+        {
+          "code": 1,
+          "label": "Nada satisfecha(o)",
+          "count": 34,
+          "pct": 2.8
+        },
+        {
+          "code": 2,
+          "label": "Poco satisfecha(o)",
+          "count": 104,
+          "pct": 8.6
+        },
+        {
+          "code": 3,
+          "label": "Ni satisfecha(o), ni insatisfecha(o)",
+          "count": 113,
+          "pct": 9.4
+        },
+        {
+          "code": 4,
+          "label": "Algo satisfecha(o)",
+          "count": 431,
+          "pct": 35.7
+        },
+        {
+          "code": 5,
+          "label": "Muy satisfecha(o)",
+          "count": 524,
+          "pct": 43.4
+        }
+      ],
+      "byMunicipality": [
+        {
+          "municipality": "El Salto",
+          "n": 23,
+          "average": 3.87,
+          "positivePct": 69.6
+        },
+        {
+          "municipality": "Guadalajara",
+          "n": 412,
+          "average": 4.13,
+          "positivePct": 79.9
+        },
+        {
+          "municipality": "San Pedro Tlaquepaque",
+          "n": 156,
+          "average": 3.91,
+          "positivePct": 73.7
+        },
+        {
+          "municipality": "Tlajomulco de Zúñiga",
+          "n": 78,
+          "average": 4.09,
+          "positivePct": 78.2
+        },
+        {
+          "municipality": "Tonalá",
+          "n": 96,
+          "average": 3.95,
+          "positivePct": 76.0
+        },
+        {
+          "municipality": "Zapopan",
+          "n": 441,
+          "average": 4.14,
+          "positivePct": 81.9
+        }
+      ]
+    }
+  ]
+}
