@@ -1,0 +1,1953 @@
+{
+  "SbjNum": {
+    "etiqueta": "Número de cuestionario",
+    "valores": null
+  },
+  "Date": {
+    "etiqueta": "Fecha",
+    "valores": null
+  },
+  "Duration": {
+    "etiqueta": "Duración de la encuesta",
+    "valores": null
+  },
+  "Q_2": {
+    "etiqueta": "Municipio",
+    "valores": {
+      "1": "El Salto",
+      "2": "Guadalajara",
+      "3": "San Pedro Tlaquepaque",
+      "4": "Tlajomulco de Zúñiga",
+      "5": "Tonalá",
+      "6": "Zapopan"
+    }
+  },
+  "Q_3": {
+    "etiqueta": "Colonia",
+    "valores": {
+      "1": "ALCALDE BARRANQUITAS",
+      "2": "ARCOS DE ZAPOPAN",
+      "3": "JARDINES DE SAN IGNACIO",
+      "4": "ARENALES TAPATIOS",
+      "5": "BALCONES DE LA CANTERA",
+      "6": "BALCONES DE OBLATOS",
+      "7": "BALCONES DEL CUATRO",
+      "8": "BEATRIZ HERNANDEZ",
+      "9": "BOSQUES DE LA VICTORIA",
+      "10": "CAMINO REAL",
+      "11": "CHAPALITA",
+      "12": "CHAPULTEPEC COUNTRY",
+      "13": "CHULAVISTA E10",
+      "14": "CIRCUNVALACION VALLARTA",
+      "15": "CIUDAD DEL SOL",
+      "16": "CIUDAD GRANJA",
+      "17": "HACIENDA DEL TEPEYAC",
+      "18": "COLINAS DE LA NORMAL",
+      "19": "CONSTITUCION",
+      "20": "ECHEVERRIA",
+      "21": "EL CAMPANARIO",
+      "22": "EL COLLI URBANO",
+      "23": "EL VERGEL",
+      "24": "BALCONES DE SANTA MARIA",
+      "25": "LOMA DORADA DELEGACION A",
+      "26": "SANTA ANITA",
+      "27": "HACIENDA SANTA FE",
+      "28": "HACIENDAS LA CANDELARIA",
+      "29": "INDEPENDENCIA",
+      "30": "INFONAVIT LA SOLEDAD",
+      "31": "INSURGENTES",
+      "32": "ITALIA PROVIDENCIA",
+      "33": "JALISCO IV SECC",
+      "34": "LA CALMA",
+      "35": "JARDINES ALCALDE",
+      "36": "JARDINES DE GUADALUPE",
+      "37": "JARDINES DE LA CRUZ",
+      "38": "JARDINES DE LA PAZ",
+      "39": "JARDINES DE LA PAZ",
+      "40": "JARDINES DE NUEVO MEXICO",
+      "41": "JARDINES DE SANTA ISABEL",
+      "42": "JARDINES DEL AUDITORIO",
+      "43": "JARDINES DEL BOSQUE",
+      "44": "JARDINES DEL COUNTRY",
+      "45": "JARDINES DEL SUR",
+      "46": "JARDINES DEL VALLE",
+      "47": "JARDINES VALLARTA",
+      "48": "JUAN MANUEL",
+      "49": "LA AZUCENA",
+      "50": "LA ESPERANZA (LA FEDERACHA)",
+      "51": "LA ESTANCIA",
+      "52": "LA MESA COLORADA PONIENTE",
+      "53": "LA PROVIDENCIA",
+      "54": "LADRON DE GUEVARA",
+      "55": "LAS AGUILAS",
+      "56": "LAS HUERTAS",
+      "57": "LAS JUNTAS",
+      "58": "LAS ARBOLEDAS",
+      "59": "LAZARO CARDENAS",
+      "60": "LOMAS DE LA VICTORIA",
+      "61": "LOMAS DE INDEPENDENCIA",
+      "62": "LOMAS DE LA PRIMAVERA",
+      "63": "LOMAS DE SAN AGUSTIN",
+      "64": "LOMAS DEL CAMICHIN",
+      "65": "LOMAS DEL SUR",
+      "66": "LOS ARRAYANES",
+      "67": "LOS MOLINOS",
+      "68": "LOS PUESTOS",
+      "69": "MEZQUITAN COUNTRY",
+      "70": "MIRADOR DEL TESORO",
+      "71": "MISION DEL BOSQUE",
+      "72": "MODERNA",
+      "73": "PARQUE REAL",
+      "74": "PARQUES DE SANTA MARIA",
+      "75": "PARQUES DE STA CRUZ DEL VALLE",
+      "76": "PARQUES DE TESISTAN",
+      "77": "PRADOS PROVIDENCIA",
+      "78": "PARQUES DEL PALMAR",
+      "79": "PASEO DE LOS AGAVES",
+      "80": "PASEOS DEL SOL",
+      "81": "PASEOS DEL VALLE",
+      "82": "PINAR DE LA CALMA",
+      "83": "PLAZA GUADALUPE",
+      "84": "PRADOS VALLARTA",
+      "85": "PROVIDENCIA 4a SECCION",
+      "86": "REAL VALLARTA",
+      "87": "REVOLUCION",
+      "88": "SAN JOSE DEL QUINCE",
+      "89": "SAN JUAN DE OCOTAN",
+      "90": "SANTA CECILIA",
+      "91": "SEATTLE",
+      "92": "TABACHINES",
+      "93": "TEPEYAC",
+      "94": "TETLAN",
+      "95": "TONALA CENTRO",
+      "96": "URBIVILLA DEL RIO",
+      "97": "VALLARTA PONIENTE",
+      "98": "VILLA FONTANA",
+      "99": "VILLASEÑOR (SANTA TERESITA)"
+    }
+  },
+  "Q_6": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con tu vida?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_7": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"muy baja\" y 5 significa \"muy alta\", ¿cómo calificarías tu calidad de vida?",
+    "valores": {
+      "1": "Muy baja",
+      "2": "Algo baja",
+      "3": "Ni alta, ni baja",
+      "4": "Algo alta",
+      "5": "Muy alta",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_8": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada feliz\" y 5 significa \"muy feliz\", en general, ¿qué tan feliz eres?",
+    "valores": {
+      "1": "Nada feliz",
+      "2": "Poco feliz",
+      "3": "Ni feliz, ni infeliz",
+      "4": "Algo feliz",
+      "5": "Muy feliz",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_9": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) te encuentras contigo misma(o)?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_10": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con tu vida afectiva o emocional?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_11_1": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes contenta(o)",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_11_2": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes tranquila(o)",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_11_3": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes angustiada(o)/asustada(o)",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_11_4": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes triste",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_11_5": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes enojada(o)",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_11_6": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Enfrentas problemas para dormir",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_12_1": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Están juntos en algún momento del día (para desayunar, comer, cenar, conversar o ver televisión)",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_12_2": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Felicitan a quien hace bien las cosas",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_12_3": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Discuten, gritan o insultan",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_12_4": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Han llegado a los golpes",
+    "valores": {
+      "1": "Nunca",
+      "2": "Pocas veces",
+      "3": "Algunas veces",
+      "4": "Muchas veces",
+      "5": "Siempre"
+    }
+  },
+  "T_Q_13_1": {
+    "etiqueta": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Estudias (dentro del sistema escolar)",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "T_Q_13_2": {
+    "etiqueta": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de tiempo completo",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "T_Q_13_3": {
+    "etiqueta": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de medio tiempo o jornada parcial",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "T_Q_13_4": {
+    "etiqueta": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas en tu hogar (sin remuneración económica)",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "T_Q_13_5": {
+    "etiqueta": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Cuidas en tu hogar niñas, niños, personas adultas mayores o personas con enfermedad o discapacidad (sin remuneración económica)",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_14": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás actualmente con tus actividades diarias?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_15": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con lo que has aprendido en la escuela?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_16": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada segura(o)\" y 5 significa \"muy segura(o)\", ¿qué tan segura(o) te sientes en la escuela?",
+    "valores": {
+      "1": "Nada segura(o)",
+      "2": "Poco segura(o)",
+      "3": "Algo segura(o)",
+      "4": "Muy segura(o)",
+      "5": "Totalmente segura(o)",
+      "6": "No aplica (No es estudiante)",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_17": {
+    "etiqueta": "Para ti, ¿qué importancia tiene hoy la educación superior?",
+    "valores": {
+      "1": "Ninguna importancia",
+      "2": "Poca importancia",
+      "3": "Algo de importancia",
+      "4": "Mucha importancia",
+      "5": "Total importancia",
+      "6": "No sabría opinar [NO LEER]"
+    }
+  },
+  "T_Q_18_1": {
+    "etiqueta": "¿Qué tan importante crees que son las universidades para ...? El desarrollo individual o personal",
+    "valores": {
+      "1": "Nada importante",
+      "2": "Poco importante",
+      "3": "Algo importante",
+      "4": "Muy importante",
+      "5": "Totalmente importante",
+      "6": "No sabría opinar [NO LEER]"
+    }
+  },
+  "T_Q_18_2": {
+    "etiqueta": "¿Qué tan importante crees que son las universidades para ...? Para conseguir empleo",
+    "valores": {
+      "1": "Nada importante",
+      "2": "Poco importante",
+      "3": "Algo importante",
+      "4": "Muy importante",
+      "5": "Totalmente importante",
+      "6": "No sabría opinar [NO LEER]"
+    }
+  },
+  "T_Q_19_1": {
+    "etiqueta": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: En la actualidad, obtener una licenciatura es un gran logro",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_19_2": {
+    "etiqueta": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: La sociedad valora demasiado la educación universitaria en la actualidad",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_19_3": {
+    "etiqueta": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Las universidades no preparan a los estudiantes para el “mundo real”",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_19_4": {
+    "etiqueta": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Estudiar temas que no conducen claramente a una profesión es una pérdida de tiempo",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_20": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con el uso del tiempo libre que tienes?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_21": {
+    "etiqueta": "En general, ¿cómo te sientes acerca de tu tiempo? ¿Dirías que nunca, casi nunca, a veces, con cierta frecuencia o con mucha frecuencia te sientes apresurado incluso para hacer las cosas que tienes que hacer?",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "Q_22": {
+    "etiqueta": "¿Con qué frecuencia dirías que tienes tiempo libre y no sabes qué hacer con él?",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_1": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Ir al cine",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_2": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Leer libros o revistas",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_3": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Practicar una actividad física o deporte",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_4": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Practicar una actividad artística",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_5": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Reunirte con amigos o familiares",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_6": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Jugar videojuegos",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_23_7": {
+    "etiqueta": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Ver plataformas de streaming, como Netflix, Amazon Prime, Disney+, etc",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_24_1": {
+    "etiqueta": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? mensajería instantánea como WhatsApp, Messenger, Telegram, etc.",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_24_2": {
+    "etiqueta": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a contenidos de audio y video como YouTube, Spotify, Deezer, etc.",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_24_3": {
+    "etiqueta": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? adquirir bienes o servicios como Mercado Libre, Amazon, Rappi, Uber, etc.",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "T_Q_24_4": {
+    "etiqueta": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a banca móvil como Banorte, BBVA, Santander, NU, etc.",
+    "valores": {
+      "1": "Nunca",
+      "2": "Casi nunca",
+      "3": "A veces",
+      "4": "Con cierta frecuencia",
+      "5": "Con mucha frecuencia"
+    }
+  },
+  "Q_25": {
+    "etiqueta": "¿Con qué frecuencia utilizas un chatbot de inteligencia artificial (IA) como ChatGPT, Copilot, Gemini, etc?",
+    "valores": {
+      "1": "Nunca",
+      "2": "Una vez por semana o con menos frecuencia",
+      "3": "Varias veces por semana",
+      "4": "Aproximadamente una vez al día",
+      "5": "Varias veces al día",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_26": {
+    "etiqueta": "¿Alguna vez has asistido a algún evento, feria, exposición, congreso o concierto en las instalaciones de Expo Guadalajara?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó"
+    }
+  },
+  "Q_27": {
+    "etiqueta": "De los eventos a los que has asistido en Expo Guadalajara, ¿cuál es el que te ha dejado una mayor huella o impacto positivo, ya sea por diversión, aprendizaje o desarrollo profesional?",
+    "valores": null
+  },
+  "Q_28": {
+    "etiqueta": "¿Eres aficionado al futbol soccer?",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_1": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al estadio",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_2": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest del Centro de Guadalajara",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_3": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest (public viewing) del Centro de Zapopan",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_4": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a un restaurante para ver un partido",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_5": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Te reuniste con la familia o amigos para ver un partido",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_6": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a la Minerva",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_7": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Viste o escuchaste los partidos en televisión o radio (en tu casa)",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_29_8": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Otra respuesta",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "S_Q_29_8": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿en cuáles de las siguientes actividades participaste? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_29_9": {
+    "etiqueta": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Ninguna, no asististe ni seguiste el Mundial",
+    "valores": {
+      "1": "Sí",
+      "2": "No"
+    }
+  },
+  "Q_30": {
+    "etiqueta": "En tu opinión, actualmente, ¿cuál consideras que es el problema más importante en tu familia?",
+    "valores": {
+      "1": "Los ingresos familiares son insuficientes para cubrir los ga",
+      "2": "Desempleo de algún miembro de la familia",
+      "3": "Falta de comunicación o dificultades para convivir",
+      "4": "Enfermedades o adicciones de miembros del hogar",
+      "5": "Inestabilidad emocional de algún miembro de la familia",
+      "6": "Violencia familiar",
+      "7": "Otra respuesta, ¿cuál?",
+      "8": "No hay ningún problema, todo está bien"
+    }
+  },
+  "Q_30_S": {
+    "etiqueta": "En tu opinión, actualmente, ¿cuál consideras que es el problema más importante en tu familia? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_31": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cómo te sientes con tu vida familiar?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_32": {
+    "etiqueta": "Con el total del ingreso familiar, dirías que en tu hogar...",
+    "valores": {
+      "1": "Les alcanza bien y pueden ahorrar",
+      "2": "Les alcanza justo, sin grandes dificultades",
+      "3": "No les alcanza y tienen dificultades",
+      "4": "No les alcanza y tienen grandes dificultades",
+      "5": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_33": {
+    "etiqueta": "Ahora te voy a preguntar sobre tu vivienda. En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con la casa en la que vives?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_34": {
+    "etiqueta": "¿Con quién vives?",
+    "valores": {
+      "1": "Sola(o)",
+      "2": "Familiares",
+      "3": "Pareja",
+      "4": "Amigos o conocidos",
+      "5": "Otra persona, ¿quién?",
+      "6": "No contestó [NO LEER]"
+    }
+  },
+  "Q_34_S": {
+    "etiqueta": "¿Con quién vives? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_35": {
+    "etiqueta": "En el futuro, ¿te ves adquiriendo una vivienda propia?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó"
+    }
+  },
+  "Q_36": {
+    "etiqueta": "Ahora te voy a preguntar sobre tu salud. Por favor dime, en una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) te sientes con tu salud?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_37": {
+    "etiqueta": "¿Qué tan fácil crees que es conseguir drogas en la ciudad? (Como marihuana, cocaína, inhalables)",
+    "valores": {
+      "1": "Nada fácil",
+      "2": "Poco fácil",
+      "3": "Ni fácil, ni difícil",
+      "4": "Algo fácil",
+      "5": "Muy fácil",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_38": {
+    "etiqueta": "En caso de que tomes bebidas alcohólicas, ¿cuántos días a la semana, en promedio las consumes?",
+    "valores": {
+      "1": "1 día a la semana",
+      "2": "2 días a la semana",
+      "3": "3 días a la semana",
+      "4": "4 días a la semana",
+      "5": "5 días a la semana",
+      "6": "6 días a la semana",
+      "7": "7 días a la semana (toda la semana)",
+      "8": "Con menos frecuencia",
+      "9": "No consumo bebidas alcohólicas",
+      "10": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_39": {
+    "etiqueta": "¿Cuántos días a la semana haces ejercicio o practicas un deporte?",
+    "valores": {
+      "1": "1 día a la semana",
+      "2": "2 días a la semana",
+      "3": "3 días a la semana",
+      "4": "4 días a la semana",
+      "5": "5 días a la semana",
+      "6": "6 días a la semana",
+      "7": "7 días a la semana (toda la semana)",
+      "8": "Con menos frecuencia",
+      "9": "No hago ejercicio",
+      "10": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_40": {
+    "etiqueta": "¿Cuántos días a la semana comes sanamente (frutas y verduras) o de forma sana y balanceada?",
+    "valores": {
+      "1": "1 día a la semana",
+      "2": "2 días a la semana",
+      "3": "3 días a la semana",
+      "4": "4 días a la semana",
+      "5": "5 días a la semana",
+      "6": "6 días a la semana",
+      "7": "7 días a la semana (toda la semana)",
+      "8": "Con menos frecuencia",
+      "9": "No acostumbro comer sanamente",
+      "10": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_41": {
+    "etiqueta": "La salud mental se refiere a tu bienestar emocional. Por ejemplo, incluye tu estado de ánimo en el día a día, si te sientes tranquila(o) y contenta(o), o si por el contrario experimentas constantemente ansiedad, tristeza, angustia, estrés.  Considerando es",
+    "valores": {
+      "1": "Muy mala",
+      "2": "Mala",
+      "3": "Ni buena, ni mala",
+      "4": "Buena",
+      "5": "Muy buena",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_42": {
+    "etiqueta": "¿Qué tan de acuerdo estás en que las cosas que haces en tu vida valen la pena?",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_43_1": {
+    "etiqueta": "¿Consideras que vivir en esta ... es ...? Ciudad",
+    "valores": {
+      "1": "Nada seguro",
+      "2": "Poco seguro",
+      "3": "Ni seguro, ni inseguro",
+      "4": "Algo seguro",
+      "5": "Muy seguro",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_43_2": {
+    "etiqueta": "¿Consideras que vivir en esta ... es ...? Colonia",
+    "valores": {
+      "1": "Nada seguro",
+      "2": "Poco seguro",
+      "3": "Ni seguro, ni inseguro",
+      "4": "Algo seguro",
+      "5": "Muy seguro",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_44_1": {
+    "etiqueta": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los asaltos en la calle y robo (de coches, autopartes, casas)",
+    "valores": {
+      "1": "Nada grave",
+      "2": "Poco grave",
+      "3": "Ni poco grave, ni algo grave",
+      "4": "Algo grave",
+      "5": "Muy grave",
+      "6": "No hay en mi colonia",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_44_2": {
+    "etiqueta": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? El consumo/venta de drogas",
+    "valores": {
+      "1": "Nada grave",
+      "2": "Poco grave",
+      "3": "Ni poco grave, ni algo grave",
+      "4": "Algo grave",
+      "5": "Muy grave",
+      "6": "No hay en mi colonia",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_44_3": {
+    "etiqueta": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los pleitos y violencia callejera",
+    "valores": {
+      "1": "Nada grave",
+      "2": "Poco grave",
+      "3": "Ni poco grave, ni algo grave",
+      "4": "Algo grave",
+      "5": "Muy grave",
+      "6": "No hay en mi colonia",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_44_4": {
+    "etiqueta": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Las detenciones arbitrarias por autoridades",
+    "valores": {
+      "1": "Nada grave",
+      "2": "Poco grave",
+      "3": "Ni poco grave, ni algo grave",
+      "4": "Algo grave",
+      "5": "Muy grave",
+      "6": "No hay en mi colonia",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_45": {
+    "etiqueta": "¿Tú y tu familia se sienten amenazados por los problemas de criminalidad y violencia en tu colonia?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "Q_46": {
+    "etiqueta": "¿Fuiste víctima de algún delito en los últimos doce meses?",
+    "valores": {
+      "1": "Sí, de un delito",
+      "2": "Sí, de más de un delito",
+      "3": "No",
+      "4": "No contestó [NO LEER]"
+    }
+  },
+  "Q_47": {
+    "etiqueta": "¿De qué tipo de delito fuiste víctima?",
+    "valores": {
+      "1": "Robo",
+      "2": "Lesiones",
+      "3": "Secuestro",
+      "4": "Intento de homicidio",
+      "5": "Delito sexual",
+      "6": "Fraude",
+      "7": "Extorsión telefónica",
+      "8": "Otro delito, ¿cuál?",
+      "9": "No contestó [NO LEER]"
+    }
+  },
+  "Q_47_S": {
+    "etiqueta": "¿De qué tipo de delito fuiste víctima? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_48": {
+    "etiqueta": "¿Lo denunciaste a las autoridades?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "Q_49": {
+    "etiqueta": "Considerando la situación de seguridad en tu entorno, ¿has notado la existencia o el control territorial de grupos del crimen organizado (por ejemplo, la presencia de \"jefes de plaza\" o autoridades ilegítimas) en la colonia donde vives?",
+    "valores": {
+      "1": "Sí, es muy evidente que estos grupos tienen el control total",
+      "2": "Sí, he notado su presencia o actividades (como venta de drog",
+      "3": "Sí, sé que hay presencia, pero no sé cuánto control tienen s",
+      "4": "No, no he notado la presencia ni el control de estos grupos",
+      "5": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_50": {
+    "etiqueta": "En caso de ser víctima de algún delito, ¿harías justicia por tu propia mano?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_51_1": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verbalmente en la calle",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "T_Q_51_2": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verbalmente por tu pareja",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "T_Q_51_3": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Ha sido agredida(o) física o verbalmente en tu trabajo o escuela",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "T_Q_51_4": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en la calle",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "T_Q_51_5": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en tu escuela o trabajo",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "T_Q_51_6": {
+    "etiqueta": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o)/agredida(o) en redes sociales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]",
+      "4": "No aplica (por ejemplo no tiene pareja, no estudia ni trabaj"
+    }
+  },
+  "Q_52": {
+    "etiqueta": "En los últimos cinco años, ¿ha desaparecido algún integrante de tu hogar?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_53_1": {
+    "etiqueta": "¿Tienes algún ... que se encuentre desaparecido? familiar",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_53_2": {
+    "etiqueta": "¿Tienes algún ... que se encuentre desaparecido? amigo/vecino",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "Q_54": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cuál es tu nivel de satisfacción con la igualdad (en general) que existe en la ciudad?",
+    "valores": {
+      "1": "Nada satisfecha(o)",
+      "2": "Poco satisfecha(o)",
+      "3": "Ni satisfecha(o), ni insatisfecha(o)",
+      "4": "Algo satisfecha(o)",
+      "5": "Muy satisfecha(o)",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_55_1": {
+    "etiqueta": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: Las personas son pobres porque no trabajan lo suficiente",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_55_2": {
+    "etiqueta": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las personas con discapacidad tienen los mismos derechos que los demás",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_55_3": {
+    "etiqueta": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las mujeres tienen una situación de desventaja respecto de los hombres",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_55_4": {
+    "etiqueta": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad los grupos indígenas están en desventaja con respecto a los demás",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_56": {
+    "etiqueta": "De las siguientes opciones, ¿cuál consideras que es la peor injusticia en nuestra sociedad?",
+    "valores": {
+      "1": "La discriminación",
+      "2": "La delincuencia e inseguridad",
+      "3": "La impunidad, la ineficiencia de las autoridades y la violac",
+      "4": "La falta de oportunidades (laborales, educativas, de desarro",
+      "5": "La corrupción",
+      "6": "La violencia (de género, infantil)",
+      "7": "La falta de valores, empatía y justicia general",
+      "8": "El abuso de poder de las autoridades",
+      "9": "La pobreza",
+      "10": "La falta de apoyo a grupos vulnerables",
+      "11": "Las desapariciones forzadas",
+      "12": "Feminicidios"
+    }
+  },
+  "T_Q_57_1": {
+    "etiqueta": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Parques",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_57_2": {
+    "etiqueta": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Unidades deportivas",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_57_3": {
+    "etiqueta": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Ciclovías",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_57_4": {
+    "etiqueta": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Centros culturales o artísticos",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_57_5": {
+    "etiqueta": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Vía recreactiva",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_58_1": {
+    "etiqueta": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Me encuentro satisfecha(o) con el barrio en el que vivo",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_58_2": {
+    "etiqueta": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si tengo un problema hay personas en el área donde vivo que me ayudarán",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_58_3": {
+    "etiqueta": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si quiero puedo influir en la vida del barrio",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_58_4": {
+    "etiqueta": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Conozco y trato bastante a mis vecinos",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_58_5": {
+    "etiqueta": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Ayudo a mis vecinos cuando lo necesitan",
+    "valores": {
+      "1": "Muy en desacuerdo",
+      "2": "En desacuerdo",
+      "3": "Ni de acuerdo, ni en desacuerdo",
+      "4": "De acuerdo",
+      "5": "Muy de acuerdo",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_1": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Votar",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_2": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Firmar peticiones",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_3": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Protestar o manifestarse",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_4": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Compartir información en redes sociales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_5": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar con un partido político/organización política",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_6": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en actividades de colectivos ciudadanos en favor de la comunidad",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_59_7": {
+    "etiqueta": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en acciones sobre causas globales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_1": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Votar",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_2": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Firmar peticiones",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_3": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Protestar o manifestarse",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_4": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Compartir información en redes sociales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_5": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar con un partido político/ organización política",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_6": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en actividades de colectivos ciudadanos en favor de la comunidad",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_60_7": {
+    "etiqueta": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en acciones sobre causas globales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "Q_61": {
+    "etiqueta": "¿Te identificas con alguna comunidad, fandom, subcultura o identidad juvenil, en internet o fuera de internet?",
+    "valores": {
+      "1": "Sí, con una, ¿cuál?",
+      "2": "Sí, con varias, ¿cuáles?",
+      "3": "No",
+      "4": "No estoy segura(o) [NO LEER]",
+      "5": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_61_S": {
+    "etiqueta": "¿Te identificas con alguna comunidad, fandom, subcultura o identidad juvenil, en internet o fuera de internet? [Otra respuesta]",
+    "valores": null
+  },
+  "T_Q_62_1": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes deportivos o de aficionados (barras, etc.)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_2": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Organización educativa como asociación de alumnos",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_3": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Partido político/Organización política",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_4": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Iglesia, parroquia o grupo religioso",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_5": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Asociación de asistencia social u organismos no gubernamentales",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_6": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes de entretenimiento (videojuegos, películas, libros, etc.)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_62_7": {
+    "etiqueta": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos espirituales (terapias alternativas, esoterismo, rituales prehispánicos, etc.)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_1": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu apariencia física",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_2": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu género",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_3": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu nivel económico o social",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_4": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus creencias y valores",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_5": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus posiciones políticas",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_6": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu orientación sexual",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_7": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu estado civil",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_8": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu edad",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_9": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por alguna discapacidad",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_10": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu origen étnico",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_11": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu color de piel",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "T_Q_63_12": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por otra razón, ¿cuál?",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No contestó [NO LEER]"
+    }
+  },
+  "TS_Q_63_12": {
+    "etiqueta": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? (Por otra razón, ¿cuál?) [Otra respuesta]",
+    "valores": null
+  },
+  "T_Q_64_1": {
+    "etiqueta": "¿Podrías decirme cuánta confianza tienes en ...? Tus vecinos",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_64_2": {
+    "etiqueta": "¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que trabajas y/o estudias",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_64_3": {
+    "etiqueta": "¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que te encuentras en la calle",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_64_4": {
+    "etiqueta": "¿Podrías decirme cuánta confianza tienes en ...? Tus familiares",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_1": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Las iglesias",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_2": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Congreso local (Diputados de Jalisco)",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_3": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Electoral y de Participación Ciudadana del Estado de Jalisco",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_4": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Nacional Electoral (INE)",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_5": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los partidos políticos",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_6": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno municipal",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_7": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno estatal",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_8": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno federal",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_9": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los medios de comunicación",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_10": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El ejército",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_11": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los ministerios públicos",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_12": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La policía",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_13": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La marina",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_14": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Poder Judicial (Jueces)",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_65_15": {
+    "etiqueta": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los empresarios",
+    "valores": {
+      "1": "Nada",
+      "2": "Poca",
+      "3": "Ni algo, ni poca",
+      "4": "Algo",
+      "5": "Mucha",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_66": {
+    "etiqueta": "En una escala del 1 al 5, donde 1 significa \"Nada\" y 5 significa \"Mucho\", por favor dime, ¿cuánto te interesan los asuntos públicos y la política?",
+    "valores": {
+      "1": "Nada",
+      "2": "Poco\t",
+      "3": "Ni algo, ni poco",
+      "4": "Algo",
+      "5": "Mucho",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_67": {
+    "etiqueta": "¿Con cuál de las siguientes frases te sientes más de acuerdo?",
+    "valores": {
+      "1": "La democracia es preferible a cualquier otra forma de gobier",
+      "2": "En algunas circunstancias, un gobierno autoritario es prefer",
+      "3": "A la gente como uno, nos da lo mismo un régimen democrático",
+      "4": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_68": {
+    "etiqueta": "¿Cuál de las siguientes redes sociales utilizas con mayor frecuencia para informarte de política y asuntos públicos?",
+    "valores": {
+      "1": "Facebook",
+      "2": "X",
+      "3": "Youtube",
+      "4": "Instagram",
+      "5": "TikTok",
+      "6": "Otra que utilices y no haya mencionado, ¿cuál?",
+      "7": "No utilizo las redes sociales para informarme de política y"
+    }
+  },
+  "Q_68_S": {
+    "etiqueta": "¿Cuál de las siguientes redes sociales utilizas con mayor frecuencia para informarte de política y asuntos públicos? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_69": {
+    "etiqueta": "¿Qué medio de transporte usas principalmente para desplazarte a tu trabajo, oficina, escuela o actividades diarias?",
+    "valores": {
+      "1": "Camión/Macrobús",
+      "2": "Taxi/Uber",
+      "3": "Vehículo particular",
+      "4": "Motocicleta",
+      "5": "Bicicleta",
+      "6": "Tren ligero",
+      "7": "Caminando",
+      "8": "Mototaxi",
+      "9": "Patín o Scooter",
+      "10": "Otro medio, ¿cuál?",
+      "11": "No me desplazo",
+      "12": "No contestó [NO LEER]"
+    }
+  },
+  "Q_69_S": {
+    "etiqueta": "¿Qué medio de transporte usas principalmente para desplazarte a tu trabajo, oficina, escuela o actividades diarias? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_70": {
+    "etiqueta": "En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos)",
+    "valores": {
+      "998": "No válido",
+      "999": "No contestó"
+    }
+  },
+  "Q_70recode": {
+    "etiqueta": "En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos)",
+    "valores": {
+      "1": "Hasta 30 minutos",
+      "2": "De 31 a 60 minutos",
+      "3": "De 61 a 90 minutos",
+      "4": "De 91 a 120 minutos",
+      "5": "De 121 a 180 minutos",
+      "6": "Más de 180 minutos",
+      "998": "No válido",
+      "999": "No contestó"
+    }
+  },
+  "Q_71": {
+    "etiqueta": "¿Cómo describes tu identidad de género?",
+    "valores": {
+      "1": "Hombre",
+      "2": "Mujer",
+      "3": "Otra, ¿cuál?",
+      "4": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_71_S": {
+    "etiqueta": "¿Cómo describes tu identidad de género? [Otra respuesta]",
+    "valores": null
+  },
+  "Q_72": {
+    "etiqueta": "¿Cuántos años cumplidos tienes?",
+    "valores": null
+  },
+  "Q_72recode": {
+    "etiqueta": "Grupos de edad",
+    "valores": {
+      "1": "15 a 19 años",
+      "2": "20 a 24 años",
+      "3": "25 a 29 años"
+    }
+  },
+  "Q_74": {
+    "etiqueta": "¿Cuál es tu nivel de escolaridad?",
+    "valores": {
+      "1": "Primaria incompleta",
+      "2": "Primaria completa",
+      "3": "Secundaria incompleta",
+      "4": "Secundaria completa",
+      "5": "Carrera comercial incompleta",
+      "6": "Carrera comercial completa",
+      "7": "Carrera técnica incompleta",
+      "8": "Carrera técnica completa",
+      "9": "Preparatoria incompleta",
+      "10": "Preparatoria completa",
+      "11": "Licenciatura incompleta",
+      "12": "Licenciatura completa",
+      "13": "Maestría incompleta",
+      "14": "Maestría completa",
+      "15": "Doctorado incompleto",
+      "16": "Doctorado completo",
+      "17": "Sin estudios",
+      "18": "No contestó [NO LEER]"
+    }
+  },
+  "Q_74recode": {
+    "etiqueta": "¿Cuál es tu nivel de escolaridad?",
+    "valores": {
+      "1": "Primaria",
+      "2": "Secundaria",
+      "3": "Carrera comercial",
+      "4": "Carrera técnica",
+      "5": "Preparatoria",
+      "6": "Licenciatura",
+      "7": "Maestría",
+      "8": "Doctorado",
+      "9": "Sin estudios",
+      "10": "No contestó"
+    }
+  },
+  "Q_75": {
+    "etiqueta": "Para ti en lo personal, ¿cuál sería idealmente el nivel de escolaridad máximo terminado al que te gustaría llegar?",
+    "valores": {
+      "1": "Primaria",
+      "2": "Secundaria",
+      "3": "Carrera comercial",
+      "4": "Carrera técnica",
+      "5": "Preparatoria",
+      "6": "Licenciatura",
+      "7": "Maestría",
+      "8": "Doctorado",
+      "10": "No sabe/No contestó [NO LEER]",
+      "11": "No me interesa"
+    }
+  },
+  "Q_76": {
+    "etiqueta": "¿Cuál es tu estado civil o situación conyugal actual?",
+    "valores": {
+      "1": "Vive con su pareja en unión libre",
+      "2": "Separada(o)",
+      "3": "Divorciada(o)",
+      "4": "Casada(o)",
+      "5": "Soltera(o)",
+      "6": "Viuda(o)",
+      "7": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_77": {
+    "etiqueta": "Pensando en el jefe o jefa del hogar (es decir la persona que aporta el mayor ingreso dentro del hogar), ¿cuál fue el último año de estudios que aprobaste en la escuela?",
+    "valores": {
+      "1": "Sin estudios",
+      "2": "Primaria incompleta",
+      "3": "Primaria completa",
+      "4": "Secundaria incompleta",
+      "5": "Secundaria completa",
+      "6": "Carrera comercial incompleta",
+      "7": "Carrera comercial completa",
+      "8": "Carrera técnica incompleta",
+      "9": "Carrera técnica completa",
+      "10": "Preparatoria incompleta",
+      "11": "Preparatoria completa",
+      "12": "Licenciatura incompleta",
+      "13": "Licenciatura completa",
+      "14": "Maestría incompleta",
+      "15": "Maestría completa",
+      "16": "Doctorado incompleto",
+      "17": "Doctorado completo",
+      "18": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_78_1": {
+    "etiqueta": "Con respecto a tu vivienda, ¿me podrías indicar cuántos ... hay? Automóviles propios, excluyendo taxis",
+    "valores": null
+  },
+  "T_Q_78_2": {
+    "etiqueta": "Con respecto a tu vivienda, ¿me podrías indicar cuántos ... hay? Cuartos, piezas o habitaciones (no incluyas baños, medios baños, pasillos, patios)",
+    "valores": null
+  },
+  "T_Q_78_3": {
+    "etiqueta": "Con respecto a tu vivienda, ¿me podrías indicar cuántos ... hay? Cuartos que se utilizan para dormir",
+    "valores": null
+  },
+  "T_Q_78_4": {
+    "etiqueta": "Con respecto a tu vivienda, ¿me podrías indicar cuántos ... hay? Baños completos con regadera y W.C. (excusado) hay para uso exclusivo de los integrantes de su hogar",
+    "valores": null
+  },
+  "Q_79": {
+    "etiqueta": "¿Cuántos focos hay en tu vivienda? (Incluyendo los de techo, paredes y lámparas de buró o piso)",
+    "valores": {
+      "1": "De 0 a 5 focos",
+      "2": "De 6 a 10 focos",
+      "3": "De 11 a 15 focos",
+      "4": "De 16 a 20 focos",
+      "5": "21 o más focos",
+      "6": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_80_1": {
+    "etiqueta": "En tu vivienda, ¿cuentan con ...? Internet (excluyendo conexión móvil)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_80_3": {
+    "etiqueta": "En tu vivienda, ¿cuentan con ...? Estufa (eléctrica o de gas)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "T_Q_80_4": {
+    "etiqueta": "En tu vivienda, ¿cuentan con ...? Piso con recubrimiento (que no sea de tierra o cemento)",
+    "valores": {
+      "1": "Sí",
+      "2": "No",
+      "3": "No sabe/No contestó [NO LEER]"
+    }
+  },
+  "Q_81": {
+    "etiqueta": "De todas las personas de 14 años o más que viven en tu hogar, ¿cuántas trabajaron en el último mes?",
+    "valores": null
+  },
+  "Estrato": {
+    "etiqueta": "Estrato socioeconómico",
+    "valores": {
+      "1": "Alto",
+      "2": "Medio",
+      "3": "Bajo"
+    }
+  },
+  "FACTOR": {
+    "etiqueta": "Factor de expansión",
+    "valores": null
+  }
+}
