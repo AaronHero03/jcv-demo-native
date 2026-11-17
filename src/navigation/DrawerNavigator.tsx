@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import DrawerContent from '../components/DrawerContent';
 import AboutScreen from '../screens/AboutScreen';
 import AdminScreen from '../screens/AdminScreen';
+import DonationsScreen from '../screens/DonationsScreen';
 import HelpScreen from '../screens/HelpScreen';
 import MethodologyScreen from '../screens/MethodologyScreen';
 import PageScreen from '../screens/PageScreen';
@@ -14,6 +15,7 @@ import { colors } from '../theme/colors';
 const Drawer = createDrawerNavigator();
 
 const drawerScreenById: Partial<Record<PageId, ComponentType>> = {
+  donativos: DonationsScreen,
   acerca: AboutScreen,
   metodologia: MethodologyScreen,
   privacidad: PrivacyScreen,
@@ -29,14 +31,30 @@ export default function DrawerNavigator() {
       screenOptions={{ headerStyle: { backgroundColor: colors.navy }, headerTintColor: colors.white, drawerActiveTintColor: colors.navy, drawerActiveBackgroundColor: '#FFF4D6' }}
     >
       <Drawer.Screen name="Principal" component={TabNavigator} options={{ headerShown: false, drawerLabel: '🏠  Principal' }} />
-      {drawerPages.map((id) => (
-        <Drawer.Screen
-          key={id}
-          name={id}
-          component={drawerScreenById[id] ?? PageScreen}
-          options={{ title: pages[id].title, drawerLabel: `${pages[id].emoji}  ${pages[id].title}` }}
-        />
-      ))}
+      {drawerPages.map((id) => {
+        const isDonations = id === 'donativos';
+        return (
+          <Drawer.Screen
+            key={id}
+            name={id}
+            component={drawerScreenById[id] ?? PageScreen}
+            options={{
+              title: pages[id].title,
+              drawerLabel: `${pages[id].emoji}  ${pages[id].title}`,
+              drawerItemStyle: isDonations
+                ? {
+                    backgroundColor: '#FFF9E6',
+                    borderWidth: 1,
+                    borderColor: '#FFE08A',
+                    borderRadius: 12,
+                    marginVertical: 4,
+                  }
+                : undefined,
+              drawerLabelStyle: isDonations ? { fontWeight: '800', color: colors.navy } : undefined,
+            }}
+          />
+        );
+      })}
     </Drawer.Navigator>
   );
 }
