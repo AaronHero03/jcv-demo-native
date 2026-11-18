@@ -6,7 +6,7 @@ export type PageId =
   | 'participar' | 'encuesta' | 'enviada'
   | 'comunidad' | 'noticias' | 'foro' | 'tema'
   | 'perfil' | 'favoritos' | 'verificacion'
-  | 'acerca' | 'metodologia' | 'privacidad' | 'ayuda' | 'admin';
+  | 'acerca' | 'metodologia' | 'privacidad' | 'ayuda' | 'admin' | 'donativos';
 
 export type Page = { emoji: string; title: string; text: string; links?: [label: string, to: PageId][] };
 
@@ -32,6 +32,7 @@ export const pages: Record<PageId, Page> = {
   privacidad: { emoji: '🔒', title: 'Privacidad', text: 'Aviso de privacidad.' },
   ayuda: { emoji: '❓', title: 'Ayuda', text: 'Preguntas frecuentes.' },
   admin: { emoji: '🛠️', title: 'Administración', text: 'Solo personal autorizado.' },
+  donativos: { emoji: '💛', title: 'Donativos', text: 'Apoya el observatorio ciudadano.' },
 };
 
 // BOTTOM TABS: los 5 destinos principales del spec (§5).
@@ -53,4 +54,4 @@ export const tabStacks: Record<TabId, PageId[]> = {
 };
 
 // DRAWER: páginas secundarias (spec §5 «Información» y «Administración»).
-export const drawerPages: PageId[] = ['acerca', 'metodologia', 'privacidad', 'ayuda', 'admin'];
+export const drawerPages: PageId[] = ['donativos', 'acerca', 'metodologia', 'privacidad', 'ayuda', 'admin'];
