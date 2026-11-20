@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useNavigation, type ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import DataStatusBanner from '../components/DataStatusBanner';
+import FilterBar from '../components/FilterBar';
 import Hero from '../components/Hero';
 import IndicatorCard from '../components/IndicatorCard';
 import NavRow from '../components/NavRow';
 import { useAppState } from '../context/AppStateContext';
+import { DEFAULT_FILTER, type IndicatorFilter } from '../data/filters';
 import { datasetMeta, indicators } from '../data/indicators';
+import { toCardMetric } from '../data/indicatorSummaries';
+import { summarizeOrigin, useIndicatorsStats } from '../hooks/useIndicatorStats';
 import { colors, tabTheme } from '../theme/colors';
 
 export default function HomeScreen() {
@@ -13,6 +19,11 @@ export default function HomeScreen() {
   const { userMode, userEmail, isFavorite, toggleFavorite } = useAppState();
   const theme = tabTheme.inicio;
   const featured = indicators.slice(0, 3);
+  const [filter, setFilter] = useState<IndicatorFilter>(DEFAULT_FILTER);
+  const { results, loading } = useIndicatorsStats(
+    featured.map((i) => i.id),
+    filter
+  );
 
   const greeting =
     userMode === 'user' && userEmail
@@ -32,14 +43,17 @@ export default function HomeScreen() {
       />
 
       <Text style={styles.sectionTitle}>Indicadores destacados</Text>
+      <FilterBar value={filter} onChange={setFilter} accentColor={theme.color} accentInk={theme.ink} />
+      <DataStatusBanner result={summarizeOrigin(Object.values(results))} loading={loading} />
       {featured.map((item) => (
         <IndicatorCard
           key={item.id}
           indicator={item}
+          metric={results[item.id] ? toCardMetric(results[item.id]) : undefined}
           accentColor={theme.color}
           isFavorite={isFavorite(item.id)}
           onToggleFavorite={() => toggleFavorite(item.id)}
-          onPress={() => navigation.push('indicador', { tab: 'inicio', indicatorId: item.id })}
+          onPress={() => navigation.push('indicador', { tab: 'inicio', indicatorId: item.id, filter })}
         />
       ))}
 
@@ -50,6 +64,12 @@ export default function HomeScreen() {
           label="Explorar todos los indicadores"
           tint={colors.orange}
           onPress={() => navigation.navigate('explorarTab')}
+        />
+        <NavRow
+          emoji="⚖️"
+          label="Comparar AMG 2026 vs. Encuesta Tec"
+          tint={colors.navy}
+          onPress={() => navigation.push('comparar', { tab: 'inicio' })}
         />
         <NavRow
           emoji="📝"

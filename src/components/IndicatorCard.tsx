@@ -2,8 +2,17 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { Indicator } from '../data/indicators';
 import { colors } from '../theme/colors';
 
+/** Métrica a mostrar cuando hay un filtro activo (si no se pasa, se usa el total AMG). */
+export interface IndicatorCardMetric {
+  positivePct: number | null;
+  average: number | null;
+  n: number;
+  note?: string;
+}
+
 interface IndicatorCardProps {
   indicator: Indicator;
+  metric?: IndicatorCardMetric | null;
   accentColor?: string;
   isFavorite?: boolean;
   onToggleFavorite?: () => void;
@@ -15,11 +24,17 @@ interface IndicatorCardProps {
  */
 export default function IndicatorCard({
   indicator,
+  metric,
   accentColor = colors.navy,
   isFavorite = false,
   onToggleFavorite,
   onPress,
 }: IndicatorCardProps) {
+  const positivePct = metric === undefined ? indicator.positivePct : (metric?.positivePct ?? null);
+  const average = metric === undefined ? indicator.average : (metric?.average ?? null);
+  const n = metric === undefined ? indicator.sampleSize : (metric?.n ?? 0);
+  const footnote = metric?.note ?? `${indicator.period} · n=${n}`;
+
   return (
     <Pressable
       onPress={onPress}
@@ -52,12 +67,13 @@ export default function IndicatorCard({
       <View style={styles.footer}>
         <View style={styles.metricGroup}>
           <Text style={styles.metricValue}>
-            {indicator.positivePct}
-            {indicator.unit}
+            {positivePct !== null ? `${positivePct}${indicator.unit}` : 'Sin dato'}
           </Text>
-          <Text style={styles.metricSub}>Prom. {indicator.average}/5</Text>
+          {average !== null && <Text style={styles.metricSub}>Prom. {average}/5</Text>}
         </View>
-        <Text style={styles.period}>{indicator.period}</Text>
+        <Text style={styles.period} numberOfLines={1}>
+          {footnote}
+        </Text>
       </View>
     </Pressable>
   );
@@ -90,5 +106,5 @@ const styles = StyleSheet.create({
   metricGroup: { flexDirection: 'row', alignItems: 'baseline', gap: 8 },
   metricValue: { fontSize: 22, fontWeight: '800', color: colors.navy },
   metricSub: { fontSize: 12, color: colors.muted, fontWeight: '600' },
-  period: { fontSize: 12, color: colors.muted, fontWeight: '600' },
+  period: { flexShrink: 1, fontSize: 12, color: colors.muted, fontWeight: '600', textAlign: 'right' },
 });
