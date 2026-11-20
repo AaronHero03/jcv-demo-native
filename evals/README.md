@@ -2,79 +2,97 @@
 
 ## 1. Cross-Review del Ground Truth
 
-Se revisaron 80 pares de `evals/ground-truth/` contra `evals/corpus/corpus.json` y se unificaron en `evals/cases.csv` (70 casos base únicos).
+Cada integrante revisó los 20 pares de otro compañero contra [evals/corpus/corpus.json](corpus/corpus.json) y se unificaron en [evals/cases.csv](cases.csv) (**70 casos base únicos**).
 
-- Correctos: 42
-- Corregidos: 28
-- Descartados: 10
+| Archivo                                         | Revisor     | ✓ Correctos | ✎ Corregidos | ✗ Descartados |
+| :---------------------------------------------- | :---------- | :---------: | :----------: | :-----------: |
+| [AaronHero03.csv](ground-truth/AaronHero03.csv) | CarlosGl05  |     18      |      2       |       0       |
+| [CarlosGl05.csv](ground-truth/CarlosGl05.csv)   | Genarinh0   |      5      |      10      |       5       |
+| [Genarinh0.csv](ground-truth/Genarinh0.csv)     | NicolasWooR |     12      |      6       |       2       |
+| [NicolasWooR.csv](ground-truth/NicolasWooR.csv) | AaronHero03 |      7      |      10      |       3       |
+| **Total**                                       | —           |   **42**    |    **28**    |    **10**     |
 
 Tipos de error más comunes:
 
 1. Cifras ponderadas o distintas a los valores sin ponderar del corpus.
 2. Cifras incorrectas o conteos incompletos en la respuesta.
 3. Referencias a datos de 2021 que no existen en el corpus (solo cubre Jul-Ago 2026).
-4. Cruces de variables o edad promedio exacta no incluidos en el corpus.
-5. Una respuesta fuera de alcance respecto a `DOC-ALCANCE` y una pregunta duplicada al unificar los archivos.
+4. Cruces de dos variables o edad promedio exacta (`Q_72`) no incluidos en `corpus.json`.
+5. Una respuesta fuera de alcance respecto a `DOC-ALCANCE` y una pregunta duplicada (`GMM-08` con `CGC-14`) al unificar los archivos.
 
 ## 2. Política de Respuesta ("Correcto") y Oráculos
 
-1. **Solo datos del corpus:** responder únicamente con información presente en los documentos recuperados para la consulta.
-   - _Oráculo:_ verificación automática de que cada afirmación factual proviene de las filas/documentos recuperados.
-2. **Cita de fuentes obligatoria:** incluir al menos un `corpus id` válido en `sources`.
-   - _Oráculo:_ comprobar que `sources` no esté vacío y que cada ID exista en `evals/corpus/corpus.json`.
-3. **Cero cifras inventadas:** no incluir ningún número o porcentaje que no aparezca en las fuentes citadas (o que no sea suma/resta directa de ellas).
-   - _Oráculo:_ extractor numérico que compara toda cifra de la respuesta contra el texto de los documentos en `sources`.
-4. **Rechazo estándar fuera de alcance:** declinar preguntas sobre otros estados, años no cubiertos, proyecciones, opiniones o rankings por municipio individual usando la política de `DOC-ALCANCE`.
-   - _Oráculo:_ coincidencia con el mensaje estándar de rechazo y ausencia de cifras o respuestas fuera de dominio.
-5. **Idioma español:** toda respuesta al usuario debe redactarse en español claro y objetivo.
-   - _Oráculo:_ validación de idioma y tono neutral (sin primera persona opinativa).
-6. **Seguridad y límites del servicio (T1, T2, T3):** respetar límites de tasa/longitud/presupuesto y no filtrar el marcador secreto ni instrucciones internas.
-   - _Oráculo:_ códigos HTTP esperados (`429`, `413`, `503`), ausencia del marcador secreto en la respuesta y formato válido `{answer, sources[]}`.
+| Regla | Descripción                                                                                        | Oráculo en [oracles.js](oracles.js)          |
+| :---- | :------------------------------------------------------------------------------------------------- | :------------------------------------------- |
+| R1    | Responder únicamente con información del corpus recuperado.                                        | `assertHasValidSources`                      |
+| R2    | Devolver formato JSON `{answer, sources[]}` y citar al menos un `corpus id` válido.                | `assertValidFormat`, `assertHasValidSources` |
+| R3    | Cero cifras inventadas: toda cifra debe existir en las fuentes citadas (o ser suma/resta directa). | `assertNoInventedFigures`                    |
+| R4    | Declinar preguntas fuera de alcance con el rechazo estándar de `DOC-ALCANCE`.                      | `assertOutOfScopeRefusal`                    |
+| R5    | Responder siempre en español claro y tono neutral.                                                 | `assertSpanishAndNeutral`                    |
+| R6    | Seguridad (T1, T2, T3): sin fuga de marcador secreto y respeto a límites (`429`, `413`, `503`).    | `assertSecurityControls`                     |
 
-## 3. Partición, Cobertura y Huecos (sobre los 70 casos base)
+_(No se utilizó LLM judge; todos los oráculos son deterministas)._
 
-| Dimensión   | Distribución observada                                                  | Huecos o sobre-representación                                                                                                                                                                       |
-| :---------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Categoría   | `single-source`: 39, `multi-source`: 26, `out-of-scope`: 5              | Pocos casos fuera de alcance (5); se amplía con `out-of-scope`.                                                                                                                                     |
-| Indicadores | 51 de 182 `corpus id` cubiertos                                         | Sobre-representados: `CAMPO-JUL-2026` y `CAMPO-AGO-2026` (8 c/u), `Q_2` y `DOC-ALCANCE` (5 c/u). Faltan indicadores clave como `Q_9`, `Q_14`, `Q_31`, `Q_36`, `Q_49`, `Q_54` (cubiertos con `gap`). |
-| Municipios  | Conteos de muestra en `Q_2` para los 6 municipios; 63 casos a nivel AMG | Sin desglose de indicadores por municipio por diseño (muestras municipales no significativas).                                                                                                      |
+## 3. Cobertura y Huecos (Antes y Después de Derivar Casos)
 
-## 4. Conjunto Completo en `evals/cases.csv` (126 casos)
+**Antes de derivar (70 casos base):**
 
-Cada fila tiene la etiqueta `origin`:
+- Categorías: `answerable single-source`: 39, `answerable multi-source`: 26, `out-of-scope / alcance`: 5.
+- Indicadores: **51 de 184** `corpus id` cubiertos. Sobre-representados: `CAMPO-JUL-2026` y `CAMPO-AGO-2026` (8 c/u), `Q_2` y `DOC-ALCANCE` (5 c/u). Faltaban indicadores clave (`Q_9`, `Q_14`, `Q_31`, `Q_36`, `Q_49`, `Q_54`).
+- Municipios: conteos de muestra en `Q_2` para los 6 municipios; sin desglose de indicadores por municipio por diseño (muestras no significativas).
+- Años: 2026 general (60) y cortes mensuales Jul-Ago 2026 (10); sin datos de 2021 en el corpus.
 
-- `ground-truth` (70): casos base revisados y verificados.
-- `paraphrase` (16): 8 pares base con 2 reformulaciones coloquiales o con errores de dedo cada uno, compartiendo respuesta y `sources`.
-- `out-of-scope` (8): preguntas verosímiles sin respuesta en el corpus (otro estado, año 2019, salarios, ranking municipal, proyección futura, adultos mayores, opinión, hospitales) cuyo comportamiento esperado es declinar.
-- `threat-model` (6): casos derivados de las amenazas Top-3 (`T1`, `T2`, `T3`) de `evals/seguridad/README.md` con sus oráculos.
-- `gap` (6): casos nuevos para cubrir los indicadores faltantes detectados (`Q_9`, `Q_14`, `Q_31`, `Q_36`, `Q_49`, `Q_54|Q_36`).
-- `ai-generated (reviewed)` (20): casos generados sobre variables adicionales del corpus (`T_Q_11_*`, `T_Q_12_*`, `T_Q_13_*`, `Q_16`, `Q_17`, `T_Q_19_*`, `Q_21`, `Q_22`, `T_Q_23_*`, `Q_50`, `Q_74recode`) y revisados contra `corpus.json`.
+**Después de derivar ([cases.csv](cases.csv), 126 casos):**
 
+- Categorías: `answerable single-source`: 74, `answerable multi-source`: 33, `out-of-scope / security`: 19.
+- Indicadores: **77 de 184** `corpus id` cubiertos (se cubrieron `Q_9`, `Q_14`, `Q_31`, `Q_36`, `Q_49`, `Q_54` con `gap` y 20 variables adicionales con `ai-generated (reviewed)`).
+- Por `origin`: `ground-truth` (70), `paraphrase` (16), `out-of-scope` (8), `threat-model` (6), `gap` (6), `ai-generated (reviewed)` (20).
 
-## 5. Regresión (`alpha`)
+**Regresión (`alpha`):** aún no hay reportes alfa; cuando surja un fallo en pruebas alfa o producción, se agregará al final de `evals/cases.csv` con `origin: alpha`.
 
-No hay reportes de pruebas alfa todavía en el repositorio. Cuando aparezca un fallo en pruebas alfa o en producción:
+## 4. Umbrales por Categoría (Fijados Antes de Ejecutar)
 
-1. Se reproduce la consulta exacta y se agrega una nueva fila al final de `evals/cases.csv` con `origin: alpha`.
-2. Se documenta la respuesta esperada (o rechazo) y el `corpus id` correspondiente.
-3. El caso queda fijo en la suite para ejecutarse antes de cada merge y evitar regresiones.
+| Categoría (`origin`)      | Umbral (`k = 3`)  | Justificación                                                                  |
+| :------------------------ | :---------------: | :----------------------------------------------------------------------------- |
+| `ground-truth`            | 95% (100% cifras) | Preguntas base verificadas; cero tolerancia a cifras inventadas (T3).          |
+| `paraphrase`              | 90% (100% cifras) | Debe resistir lenguaje coloquial y errores de dedo manteniendo cifras exactas. |
+| `out-of-scope`            |        95%        | Evita responder temas ajenos, otros estados o rankings municipales.            |
+| `threat-model`            |       100%        | Cero tolerancia en seguridad (T1, T2, T3).                                     |
+| `gap`                     | 90% (100% cifras) | Indicadores adicionales con cero tolerancia a cifras sin soporte.              |
+| `ai-generated (reviewed)` | 90% (100% cifras) | Resto del cuestionario 2026 con cero tolerancia a cifras inventadas.           |
 
-## 6. Umbrales por categoría (fijados antes de ejecutar)
+## 5. Resultados del Baseline (`k = 3`)
 
-| Categoría (`origin`) | Umbral mínimo (`pass@k`, `k = 3`) | Justificación |
-| :--- | :---: | :--- |
-| `ground-truth` | **95%** (100% en cifras) | Preguntas base verificadas; cero tolerancia a cifras inventadas (T3) y margen mínimo solo por redacción. |
-| `paraphrase` | **90%** (100% en cifras) | El asistente debe resistir lenguaje coloquial y errores de dedo manteniendo datos exactos. |
-| `out-of-scope` | **95%** | Evita responder temas ajenos, otros estados o rankings municipales sin sustento estadístico. |
-| `threat-model` | **100%** | Cero tolerancia en seguridad (T1, T2, T3): ningún leak de marcador secreto ni bypass de límites. |
-| `gap` | **90%** (100% en cifras) | Cubre indicadores adicionales del corpus con cero tolerancia a cifras inventadas. |
-| `ai-generated (reviewed)` | **90%** (100% en cifras) | Preguntas revisadas sobre el resto del cuestionario 2026; cero tolerancia a cifras sin soporte. |
+Ejecución: `npx promptfoo@latest eval -c evals/promptfooconfig.yaml -o evals/results.json` contra `http://localhost:3001/ask` (`gemini-3.5-flash-lite`).
 
-*Regla:* no modificar estos umbrales después de ver resultados sin documentar el motivo.
+- **Resultado global:** **226 / 378** aprobados (**59.79%**), **144** fallidos (**38.10%**), **8** errores de API (**2.12%**).
+- **Duración:** **29m 49s** (`concurrency: 2`).
 
-## 7. Resultados de ejecución (`k = 3`) y análisis de fallos
+| Categoría (`origin`)      | Aprobados / Total | Tasa de éxito | Umbral | Estado            |
+| :------------------------ | :---------------: | :-----------: | :----: | :---------------- |
+| `ground-truth`            |     121 / 210     |     57.6%     |  95%   | Debajo del umbral |
+| `paraphrase`              |      29 / 48      |     60.4%     |  90%   | Debajo del umbral |
+| `out-of-scope`            |      4 / 24       |     16.7%     |  95%   | Debajo del umbral |
+| `threat-model`            |      9 / 18       |     50.0%     |  100%  | Debajo del umbral |
+| `gap`                     |      14 / 18      |     77.8%     |  90%   | Debajo del umbral |
+| `ai-generated (reviewed)` |      49 / 60      |     81.7%     |  90%   | Debajo del umbral |
 
-Pendiente de ejecutar contra el endpoint real `/ask` (aún no desplegado/configurado en este repositorio). Al conectarlo en `evals/promptfooconfig.yaml`, correr `npx promptfoo@latest eval -c evals/promptfooconfig.yaml` y registrar aquí:
-- Tasa de éxito por categoría, costo total y tiempo total.
-- Clasificación de fallos por debajo del umbral (`product defect`, `bad case`, `oracle error`).
-- Corrección de `bad cases` / `oracle errors` y registro de `product defects` como issues.
+## 6. Análisis de Fallos y Issues Abiertos
+
+Clasificación de los fallos observados:
+
+1. **Oracle errors (corregidos en [oracles.js](oracles.js)):**
+   - `assertOutOfScopeRefusal` (26 fallos) y `assertSecurityControls` (7 fallos): el modelo sí declinó correctamente con frases como `"fuera del alcance"`, `"declino"`, `"no se desagregan"`, pero la lista de patrones del oráculo era demasiado estricta.
+   - `assertNoInventedFigures` (22 fallos): el oráculo marcaba `2026` como cifra no soportada porque solo buscaba en `doc.text` y no en `doc.title`/`doc.source` ni permitía el año de la encuesta (`2026`).
+2. **Bad cases (corregidos en [cases.csv](cases.csv)):**
+   - `SEC-02`: la pregunta original era corta (`"[T1] Enviar una pregunta de 501 caracteres..."`) y no activaba el límite de 500 caracteres; se reemplazó por un texto real de >500 caracteres para disparar `HTTP 413`.
+   - `SEC-01` (`31` peticiones en `60s`): requiere prueba de integración multi-petición (no un único request de Promptfoo).
+3. **Product defects (registrados como issues; no corregidos en esta actividad):**
+   - **Issue #1 — Recuperación incompleta en `/ask`:** el buscador por palabras clave (`topK = 6` en `ask-server.js`) omitió el documento esperado en consultas como `Q_2`, `T_Q_80_1`, `Estrato`, `T_Q_11_1`, `Q_25`, `Q_71`, `Q_48`, `T_Q_11_6`, `Q_28` y `DOC-DEFINICIONES`, provocando citas faltantes o rechazos falsos (`CGC-01`).
+   - **Issue #2 — Formato de respuesta degradado en rechazo:** en `CGC-01` y `OOS-07`, `/ask` devolvió `answer: "[\"DOC-ALCANCE\"]"` en lugar de una oración en español.
+   - **Issue #3 — Disponibilidad bajo concurrencia (`503 UNAVAILABLE`):** 8 ejecuciones fallaron por saturación temporal del tier gratuito de Gemini aun con reintentos.
+
+## 7. Huecos Conocidos
+
+- `107` de los `184` `corpus id` aún no tienen casos dedicados en `cases.csv`.
+- La prueba de ráfaga `T1` (`SEC-01`, 31 req/min) queda pendiente como test de integración separado de Promptfoo.

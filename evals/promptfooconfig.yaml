@@ -2,8 +2,7 @@ description: "JCV Youth Wellbeing 2026 Assistant — Deterministic Eval Suite"
 
 evaluateOptions:
   repeat: 3
-  maxConcurrency: 1
-  delayMs: 2100
+  maxConcurrency: 2
 
 prompts:
   - "{{question}}"

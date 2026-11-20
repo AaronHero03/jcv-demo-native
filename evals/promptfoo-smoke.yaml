@@ -1,0 +1,35 @@
+description: "JCV Youth Wellbeing 2026 Assistant — 5-Case Smoke Subset (Fast Dev)"
+
+evaluateOptions:
+  repeat: 1
+  maxConcurrency: 2
+
+prompts:
+  - "{{question}}"
+
+providers:
+  - id: http://localhost:3001/ask
+    config:
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        question: "{{question}}"
+      transformResponse: json
+
+defaultTest:
+  assert:
+    - type: javascript
+      value: file://oracles.js:assertValidFormat
+    - type: javascript
+      value: file://oracles.js:assertHasValidSources
+    - type: javascript
+      value: file://oracles.js:assertNoInventedFigures
+    - type: javascript
+      value: file://oracles.js:assertOutOfScopeRefusal
+    - type: javascript
+      value: file://oracles.js:assertSpanishAndNeutral
+    - type: javascript
+      value: file://oracles.js:assertSecurityControls
+
+tests: file://smoke.csv
