@@ -18,7 +18,7 @@
 
 ### 3. Construir `AsistenteScreen.tsx` (`genaro/asistente-chat-ui`)
 - [x] Crear `src/screens/AsistenteScreen.tsx`, `src/services/askClient.ts` y conectarla en `src/navigation/TabStack.tsx` con renderizado seguro en `<Text>` (`T6`).
-- [ ] Agregar pruebas unitarias de Jest para `filters.ts`, `indicatorSummaries.ts`, `FilterBar.tsx`, `askClient.ts` y `AsistenteScreen.tsx`.
+- [x] Agregar pruebas unitarias de Jest para `filters.ts`, `indicatorSummaries.ts`, `FilterBar.tsx`, `askClient.ts`, `AsistenteScreen.tsx`, `CompareScreen.tsx`, `HomeScreen.tsx`, `ExploreScreen.tsx`, `IndicatorDetailScreen.tsx`, `DataStatusBanner.tsx` y `useIndicatorStats.ts`.
 
 **Dependencias en Fase 2:**
 - Depende de Aaron (Edge Function `/ask`). Mientras se despliega en Supabase, puedes desarrollar toda la pantalla apuntando a `http://localhost:3001/ask` (`evals/ask-server.js`).

@@ -7,9 +7,14 @@ Este proyecto se divide en **dos fases ágiles** para reducir dependencias entre
 
 ## Guías Individuales (divididas en Fase 1 y Fase 2)
 - [carlos.md](carlos.md) — Base de datos, carga de datos AMG 2026, agregación Tec, seguridad y consultas
-- [aaron.md](aaron.md) — Cuentas (`Auth`), almacenamiento seguro, Perfil/Favoritos (Fase 1) y `/ask` con Gemini (Fase 2) — **PRs #6, #7, #8 abiertos**
-- [genaro.md](genaro.md) — Sistema de filtrado, Comparativa AMG vs. Tec (Fase 1) y pantalla de Chat IA (Fase 2) — **PR #5 abierto (`cybersecurity`)**
-- [nico.md](nico.md) — Captura de encuesta Tec, Comunidad, Admin (Fase 1), Stripe Checkout y CI/SBOM (Fase 2) — **PR #4 abierto (`nico/entrega-jcv`)**
+- [aaron.md](aaron.md) — Cuentas (`Auth`), almacenamiento seguro, Perfil/Favoritos (Fase 1) y `/ask` con Gemini (Fase 2) — **Integrado en `dev`**
+- [genaro.md](genaro.md) — Sistema de filtrado, Comparativa AMG vs. Tec (Fase 1) y pantalla de Chat IA (Fase 2) — **Integrado en `dev`**
+- [nico.md](nico.md) — Captura de encuesta Tec, Comunidad, Admin (Fase 1), Stripe Checkout y CI/SBOM (Fase 2) — **Integrado en `dev`**
+
+## Pruebas y CI
+- **Suite Jest (`npm test`):** 17 suites unitarias en `src/__tests__/` cubriendo Auth/SecureStore, Favoritos/Perfil, Filtros, Resúmenes offline/remotos, Comparativa AMG vs. Tec, Asistente `/ask`, Encuestas/Borradores AES-GCM, Biometría, Publicación Admin, Comunidad/Foro, Donativos Stripe y Contratos BD.
+- **Pruebas Node (`evals/` y `tests/`):** `node evals/ask-edge.test.js`, `node evals/oracles.test.js` y `node --test tests/nico-database.test.mjs`.
+- **CI (`.github/workflows/security-checks.yml`):** ejecuta `tsc --noEmit`, `expo lint`, `npm test -- --ci`, `nico-database.test.mjs`, `evals/`, CycloneDX SBOM, `npm audit` y `deno test` de pagos en cada PR/push a `dev` y `main`.
 
 ---
 

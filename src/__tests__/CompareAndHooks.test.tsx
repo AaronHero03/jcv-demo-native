@@ -39,7 +39,7 @@ describe('DataStatusBanner', () => {
         sampleSize={12}
       />
     );
-    expect(screen.getByText('Datos en vivo desde la base de datos.')).toBeTruthy();
+    expect(screen.queryByText('Datos en vivo desde la base de datos.')).toBeNull();
     expect(screen.getByText(/Muestra pequeña \(n=12\)/)).toBeTruthy();
 
     await render(
