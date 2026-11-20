@@ -28,6 +28,7 @@ const baseState: AppState.AppStateContextValue = {
   userMode: 'guest',
   userId: null,
   userEmail: null,
+  userFirstName: null,
   userRole: 'user',
   isAdmin: false,
   isTecVerified: false,
@@ -115,6 +116,20 @@ describe('HomeScreen, ExploreScreen, IndicatorDetailScreen', () => {
     await waitFor(() => {
       expect(screen.getByText(indicators[0].title)).toBeTruthy();
     });
+  });
+
+  it('shows only userFirstName without email or last name on HomeScreen when signed in', async () => {
+    jest.spyOn(AppState, 'useAppState').mockReturnValue({
+      ...baseState,
+      userMode: 'user',
+      userId: 'u1',
+      userEmail: 'sofia.perez@tec.mx',
+      userFirstName: 'Sofía',
+    });
+
+    await render(<HomeScreen />);
+    expect(screen.getByText('Hola, Sofía')).toBeTruthy();
+    expect(screen.queryByText(/sofia\.perez/i)).toBeNull();
   });
 
   it('filters indicators in ExploreScreen by search text', async () => {

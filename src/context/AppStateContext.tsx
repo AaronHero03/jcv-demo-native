@@ -14,11 +14,18 @@ export interface AuthResult {
   error?: string;
 }
 
+export interface SignUpDetails {
+  firstName?: string;
+  lastName?: string;
+  phone?: string;
+}
+
 export interface AppStateContextValue {
   // Sesión (Supabase Auth con respaldo de modo invitado)
   userMode: 'guest' | 'user';
   userId: string | null;
   userEmail: string | null;
+  userFirstName: string | null;
   userRole: UserRole;
   isAdmin: boolean;
   isTecVerified: boolean;
@@ -26,7 +33,7 @@ export interface AppStateContextValue {
   loginAsGuest: () => void;
   loginAsUser: (email?: string) => void;
   signInWithPassword: (email: string, password: string) => Promise<AuthResult>;
-  signUpWithPassword: (email: string, password: string) => Promise<AuthResult>;
+  signUpWithPassword: (email: string, password: string, details?: SignUpDetails) => Promise<AuthResult>;
   verifyTecEmail: (email: string) => boolean;
   logout: () => void;
 
@@ -54,6 +61,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [userMode, setUserMode] = useState<'guest' | 'user'>('guest');
   const [userId, setUserId] = useState<string | null>(null);
   const [userEmail, setUserEmail] = useState<string | null>(null);
+  const [userFirstName, setUserFirstName] = useState<string | null>(null);
   const [userRole, setUserRole] = useState<UserRole>('user');
   const [isTecVerified, setIsTecVerified] = useState(false);
   const [authLoading, setAuthLoading] = useState(isSupabaseConfigured);
@@ -62,22 +70,27 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [surveyAnswers, setSurveyAnswers] = useState<Record<string, Record<string, string>>>({});
   const [forumRepliesByTopic, setForumRepliesByTopic] = useState<Record<string, ForumReply[]>>({});
 
-  const loadUserRemoteData = async (uid: string, email: string | null) => {
+  const loadUserRemoteData = async (uid: string, email: string | null, fallbackFirstName?: string | null) => {
     if (!supabase) return;
 
     const { data: profile } = await supabase
       .from('profiles')
-      .select('role, is_tec_verified')
+      .select('role, is_tec_verified, first_name')
       .eq('id', uid)
       .maybeSingle();
 
     if (profile) {
       setUserRole((profile.role as UserRole) ?? 'user');
       setIsTecVerified(Boolean(profile.is_tec_verified));
-    } else if (email) {
-      const isTec = email.toLowerCase().endsWith('@tec.mx');
-      setUserRole(isTec ? 'tec_verified' : 'user');
-      setIsTecVerified(isTec);
+      const profileName = typeof profile.first_name === 'string' ? profile.first_name.trim() : '';
+      setUserFirstName(profileName || fallbackFirstName?.trim() || null);
+    } else {
+      if (email) {
+        const isTec = email.toLowerCase().endsWith('@tec.mx');
+        setUserRole(isTec ? 'tec_verified' : 'user');
+        setIsTecVerified(isTec);
+      }
+      setUserFirstName(fallbackFirstName?.trim() || null);
     }
 
     const { data: favs } = await supabase
@@ -101,10 +114,13 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       if (!mounted) return;
       const session = data.session;
       if (session?.user) {
+        const metaName = typeof session.user.user_metadata?.first_name === 'string'
+          ? session.user.user_metadata.first_name
+          : null;
         setUserMode('user');
         setUserId(session.user.id);
         setUserEmail(session.user.email ?? null);
-        loadUserRemoteData(session.user.id, session.user.email ?? null);
+        loadUserRemoteData(session.user.id, session.user.email ?? null, metaName);
       }
       setAuthLoading(false);
     });
@@ -112,14 +128,18 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     const { data: subscription } = supabase.auth.onAuthStateChange((_event, session) => {
       if (!mounted) return;
       if (session?.user) {
+        const metaName = typeof session.user.user_metadata?.first_name === 'string'
+          ? session.user.user_metadata.first_name
+          : null;
         setUserMode('user');
         setUserId(session.user.id);
         setUserEmail(session.user.email ?? null);
-        loadUserRemoteData(session.user.id, session.user.email ?? null);
+        loadUserRemoteData(session.user.id, session.user.email ?? null, metaName);
       } else {
         setUserMode('guest');
         setUserId(null);
         setUserEmail(null);
+        setUserFirstName(null);
         setUserRole('user');
         setIsTecVerified(false);
         setFavoriteIds([]);
@@ -136,6 +156,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     setUserMode('guest');
     setUserId(null);
     setUserEmail(null);
+    setUserFirstName(null);
     setUserRole('user');
     setIsTecVerified(false);
   };
@@ -161,35 +182,74 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     if (error || !data.user) {
       return { ok: false, error: error?.message ?? 'No se pudo iniciar sesión.' };
     }
+    const metaName = typeof data.user.user_metadata?.first_name === 'string'
+      ? data.user.user_metadata.first_name
+      : null;
     setUserMode('user');
     setUserId(data.user.id);
     setUserEmail(data.user.email ?? cleanEmail);
-    await loadUserRemoteData(data.user.id, data.user.email ?? cleanEmail);
+    await loadUserRemoteData(data.user.id, data.user.email ?? cleanEmail, metaName);
     return { ok: true };
   };
 
-  const signUpWithPassword = async (email: string, password: string): Promise<AuthResult> => {
+  const signUpWithPassword = async (
+    email: string,
+    password: string,
+    details?: SignUpDetails
+  ): Promise<AuthResult> => {
     const cleanEmail = email.trim().toLowerCase();
+    const cleanFirstName = details?.firstName?.trim().replace(/[\u0000-\u001F\u007F]/g, '') ?? '';
+    const cleanLastName = details?.lastName?.trim().replace(/[\u0000-\u001F\u007F]/g, '') ?? '';
+    const cleanPhone = details?.phone?.replace(/[\s()-]/g, '').trim() ?? '';
+
+    if (details) {
+      if (!cleanFirstName || cleanFirstName.length > 80) {
+        return { ok: false, error: 'Ingresa tu(s) nombre(s).' };
+      }
+      if (!cleanLastName || cleanLastName.length > 80) {
+        return { ok: false, error: 'Ingresa tus apellidos.' };
+      }
+      if (!/^\+?\d{7,15}$/.test(cleanPhone)) {
+        return { ok: false, error: 'Ingresa un teléfono válido (7 a 15 dígitos).' };
+      }
+    }
     if (!cleanEmail || password.length < 6) {
       return { ok: false, error: 'Usa un correo válido y contraseña de al menos 6 caracteres.' };
     }
     if (!supabase) {
+      if (cleanFirstName) setUserFirstName(cleanFirstName);
       loginAsUser(cleanEmail);
       return { ok: true };
     }
     const { data, error } = await supabase.auth.signUp({
       email: cleanEmail,
       password,
+      options: {
+        data: {
+          first_name: cleanFirstName || undefined,
+          last_name: cleanLastName || undefined,
+          phone: cleanPhone || undefined,
+        },
+      },
     });
     if (error) {
       return { ok: false, error: error.message };
     }
+    if (cleanFirstName) {
+      setUserFirstName(cleanFirstName);
+    }
     if (data.user) {
       const isTec = cleanEmail.endsWith('@tec.mx');
-      if (isTec) {
+      const profileUpdate: Record<string, string | boolean> = {};
+      if (cleanFirstName) profileUpdate.first_name = cleanFirstName;
+      if (cleanLastName) profileUpdate.last_name = cleanLastName;
+      if (cleanPhone) profileUpdate.phone = cleanPhone;
+      if (isTec) profileUpdate.is_tec_verified = true;
+
+      if (Object.keys(profileUpdate).length > 0) {
         await supabase
           .from('profiles')
-          .update({ is_tec_verified: true })
+          .update(profileUpdate)
           .eq('id', data.user.id);
       }
     }
@@ -222,6 +282,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     setUserMode('guest');
     setUserId(null);
     setUserEmail(null);
+    setUserFirstName(null);
     setUserRole('user');
     setIsTecVerified(false);
     setFavoriteIds([]);
@@ -293,6 +354,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
         userMode,
         userId,
         userEmail,
+        userFirstName,
         userRole,
         isAdmin: userRole === 'admin',
         isTecVerified,

@@ -29,6 +29,7 @@ const baseState: AppState.AppStateContextValue = {
   userMode: 'user',
   userId: null,
   userEmail: '',
+  userFirstName: null,
   userRole: 'user',
   isAdmin: false,
   isTecVerified: false,

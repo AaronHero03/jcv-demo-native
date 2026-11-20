@@ -33,6 +33,7 @@ const baseState: AppState.AppStateContextValue = {
   userMode: 'user',
   userId: 'user-1',
   userEmail: 'ana@tec.mx',
+  userFirstName: 'Ana',
   userRole: 'tec_verified',
   isAdmin: false,
   isTecVerified: true,

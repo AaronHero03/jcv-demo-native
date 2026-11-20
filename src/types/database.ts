@@ -6,6 +6,9 @@ export type FilterType = 'general' | 'gender' | 'age_group' | 'estrato';
 export interface ProfileRow {
   id: string;
   email: string;
+  first_name?: string | null;
+  last_name?: string | null;
+  phone?: string | null;
   role: UserRole;
   is_tec_verified: boolean;
   created_at: string;

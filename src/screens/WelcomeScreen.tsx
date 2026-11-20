@@ -15,6 +15,9 @@ export default function WelcomeScreen() {
 
   const [showAuthForm, setShowAuthForm] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -39,7 +42,7 @@ export default function WelcomeScreen() {
     setSubmitting(true);
     setErrorMsg(null);
     const res = isRegister
-      ? await signUpWithPassword(email, password)
+      ? await signUpWithPassword(email, password, { firstName, lastName, phone })
       : await signInWithPassword(email, password);
     setSubmitting(false);
 
@@ -62,6 +65,37 @@ export default function WelcomeScreen() {
 
       {showAuthForm ? (
         <View style={styles.form}>
+          {isRegister && (
+            <>
+              <TextInput
+                value={firstName}
+                onChangeText={setFirstName}
+                placeholder="Nombres"
+                placeholderTextColor="rgba(255,255,255,0.55)"
+                autoCapitalize="words"
+                maxLength={80}
+                style={styles.input}
+              />
+              <TextInput
+                value={lastName}
+                onChangeText={setLastName}
+                placeholder="Apellidos"
+                placeholderTextColor="rgba(255,255,255,0.55)"
+                autoCapitalize="words"
+                maxLength={80}
+                style={styles.input}
+              />
+              <TextInput
+                value={phone}
+                onChangeText={setPhone}
+                placeholder="Teléfono (10 dígitos)"
+                placeholderTextColor="rgba(255,255,255,0.55)"
+                keyboardType="phone-pad"
+                maxLength={16}
+                style={styles.input}
+              />
+            </>
+          )}
           <TextInput
             value={email}
             onChangeText={setEmail}

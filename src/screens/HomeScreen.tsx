@@ -16,7 +16,7 @@ import { colors, tabTheme } from '../theme/colors';
 
 export default function HomeScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
-  const { userMode, userEmail, isFavorite, toggleFavorite } = useAppState();
+  const { userMode, userFirstName, isFavorite, toggleFavorite } = useAppState();
   const theme = tabTheme.inicio;
   const featured = indicators.slice(0, 3);
   const [filter, setFilter] = useState<IndicatorFilter>(DEFAULT_FILTER);
@@ -25,10 +25,13 @@ export default function HomeScreen() {
     filter
   );
 
+  const firstName = userFirstName?.trim();
   const greeting =
-    userMode === 'user' && userEmail
-      ? `Hola, ${userEmail.split('@')[0]}`
-      : 'Bienvenido, Explorador';
+    userMode === 'user' && firstName
+      ? `Hola, ${firstName}`
+      : userMode === 'user'
+        ? 'Hola, Explorador'
+        : 'Bienvenido, Explorador';
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
