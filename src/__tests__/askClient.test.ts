@@ -3,10 +3,10 @@ import { AskError, askAssistant, MAX_QUESTION_LENGTH, parseAskResponse } from '.
 import { isAllowedUrl } from '../services/supabaseRest';
 
 describe('askClient & supabaseRest security', () => {
-  const origFetch = global.fetch;
+  const origFetch = globalThis.fetch;
 
   afterEach(() => {
-    global.fetch = origFetch;
+    globalThis.fetch = origFetch;
     jest.restoreAllMocks();
   });
 
@@ -36,7 +36,7 @@ describe('askClient & supabaseRest security', () => {
       [429, 'rate_limited'],
       [503, 'unavailable'],
     ] as const) {
-      global.fetch = jest.fn(async () => ({
+      globalThis.fetch = jest.fn(async () => ({
         ok: false,
         status,
       })) as unknown as typeof fetch;
@@ -44,7 +44,7 @@ describe('askClient & supabaseRest security', () => {
       await expect(askAssistant('¿Qué tan felices son?')).rejects.toMatchObject({ code, status });
     }
 
-    global.fetch = jest.fn(async () => ({
+    globalThis.fetch = jest.fn(async () => ({
       ok: true,
       status: 200,
       json: async () => ({ answer: 'El 88.9% es feliz.', sources: ['Q_8'] }),

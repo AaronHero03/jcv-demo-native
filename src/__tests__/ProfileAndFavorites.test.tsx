@@ -7,8 +7,16 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 
 const mockPush = jest.fn();
 
+jest.mock('@react-native-async-storage/async-storage', () =>
+  require('@react-native-async-storage/async-storage/jest/async-storage-mock')
+);
+
 jest.mock('@react-navigation/native', () => ({
   useNavigation: () => ({ push: mockPush }),
+  useFocusEffect: (cb: () => void) => {
+    const ReactLocal = require('react');
+    ReactLocal.useEffect(() => cb(), [cb]);
+  },
 }));
 
 jest.mock('../lib/supabase', () => ({

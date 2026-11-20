@@ -10,6 +10,7 @@ import PageScreen from '../screens/PageScreen';
 import PrivacyScreen from '../screens/PrivacyScreen';
 import TabNavigator from './TabNavigator';
 import { drawerPages, pages, type PageId } from '../data/pages';
+import { useAppState } from '../context/AppStateContext';
 import { colors } from '../theme/colors';
 
 const Drawer = createDrawerNavigator();
@@ -25,13 +26,14 @@ const drawerScreenById: Partial<Record<PageId, ComponentType>> = {
 
 // NIVEL 2 · DRAWER: envuelve a los tabs y agrega páginas secundarias que no caben en la barra inferior.
 export default function DrawerNavigator() {
+  const { isAdmin } = useAppState();
   return (
     <Drawer.Navigator
       drawerContent={(props) => <DrawerContent {...props} />}
       screenOptions={{ headerStyle: { backgroundColor: colors.navy }, headerTintColor: colors.white, drawerActiveTintColor: colors.navy, drawerActiveBackgroundColor: '#FFF4D6' }}
     >
       <Drawer.Screen name="Principal" component={TabNavigator} options={{ headerShown: false, drawerLabel: '🏠  Principal' }} />
-      {drawerPages.map((id) => {
+      {drawerPages.filter(id => id !== 'admin' || isAdmin).map((id) => {
         const isDonations = id === 'donativos';
         return (
           <Drawer.Screen

@@ -1,11 +1,11 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View, type ScrollViewInstance } from 'react-native';
 import { useNavigation, useRoute, type ParamListBase, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useAppState } from '../context/AppStateContext';
 import {
   answerKeys,
-  getSurveyById,
+  type Survey,
   isQuestionAnswered,
   isQuestionVisible,
   type GridQuestion,
@@ -15,6 +15,12 @@ import {
   type SurveyQuestion,
 } from '../data/surveys';
 import { colors, tabTheme } from '../theme/colors';
+
+import LoadNotice from '../components/LoadNotice';
+import { useFocusedData } from '../hooks/useFocusedData';
+import { loadSurveys, sendSurvey } from '../lib/surveyCatalog';
+import { supabase, messageOf } from '../lib/supabase';
+import { clearDraft, draftKey, readDraft, saveDraft } from '../lib/surveyDraft';
 
 const theme = tabTheme.participar;
 
@@ -37,33 +43,97 @@ function groupBySection(questions: SurveyQuestion[]): Section[] {
 
 export default function SurveyScreen() {
   const route = useRoute<RouteProp<ParamListBase>>();
-  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const params = route.params as { surveyId?: string } | undefined;
-  const survey = getSurveyById(params?.surveyId);
-  const { submitSurvey } = useAppState();
+  const { userId, isTecVerified, userMode, userEmail, completedSurveyIds } = useAppState();
+  const catalog = useFocusedData(loadSurveys);
+  if (!catalog.data) return <LoadNotice error={catalog.error} retry={catalog.refresh} />;
+  const survey = catalog.data.find(item => item.id === params?.surveyId);
+  if (!survey?.questions.length) return <LoadNotice text="Esta encuesta no está disponible." />;
+  if (completedSurveyIds.includes(survey.id)) return <LoadNotice text="Ya respondiste esta encuesta." />;
+  if (userMode !== 'user' || (supabase && (!userId || !isTecVerified))) {
+    return <LoadNotice text="Para responder, inicia sesión con tu cuenta Tec verificada." />;
+  }
+  const scope = draftKey(userId || 'demo-' + (userEmail || 'local'), survey.id);
+  return <SurveyForm key={scope} survey={survey} storageKey={scope} />;
+}
 
+function SurveyForm({ survey, storageKey }: { survey: Survey; storageKey: string }) {
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
+  const { submitSurvey } = useAppState();
   const sections = useMemo(() => groupBySection(survey.questions), [survey]);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<SurveyAnswers>({});
   const [showMissing, setShowMissing] = useState(false);
   const scrollRef = useRef<ScrollViewInstance>(null);
 
+  const [ready, setReady] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
+  const [accepted, setAccepted] = useState(false);
+  const [draftError, setDraftError] = useState('');
+  const [recovery, setRecovery] = useState(false);
+  const [error, setError] = useState('');
+  const [sending, setSending] = useState(false);
+  const locked = useRef(false);
+  const latest = useRef({ step: 0, answers: {} as SurveyAnswers });
+  const count = sections.length;
+  useEffect(() => {
+    let active = true;
+    readDraft(storageKey).then(value => {
+      if (!active) return;
+      if (value) {
+        const restored = Math.max(0, Math.min(value.step, count - 1));
+        latest.current = { step: restored, answers: value.answers };
+        setStep(restored); setAnswers(value.answers);
+      }
+      setReady(true);
+    }).catch(() => { if (active) setRecovery(true); });
+    return () => { active = false; };
+  }, [storageKey, count, loadAttempt]);
+
+  const save = (nextStep: number, nextAnswers: SurveyAnswers) => {
+    latest.current = { step: nextStep, answers: nextAnswers };
+    saveDraft(storageKey, latest.current).then(() => setDraftError(''))
+      .catch(() => setDraftError('El dispositivo no pudo guardar el borrador. Mantén abierta la encuesta.'));
+  };
+  const finish = async (finalAnswers: SurveyAnswers) => {
+    await clearDraft(storageKey);
+    navigation.replace('enviada', { tab: 'participar' });
+    submitSurvey(survey.id, finalAnswers);
+  };
+  if (accepted) return <LoadNotice error="La encuesta se recibió. Falta eliminar el borrador de este dispositivo."
+    retry={() => { void finish(latest.current.answers).catch(() => setAccepted(true)); }} />;
+  if (recovery) return <View style={styles.content}>
+    <LoadNotice error={draftError || 'No se pudo abrir el borrador guardado.'} retry={() => {
+      setRecovery(false); setLoadAttempt(attempt => attempt + 1);
+    }} />
+    <Pressable accessibilityRole="button" onPress={async () => {
+      try { await clearDraft(storageKey); setRecovery(false); setReady(true); setDraftError(''); }
+      catch { setDraftError('El dispositivo no permitió eliminar el borrador. Reintenta cuando haya espacio disponible.'); }
+    }}><Text style={styles.btnSecondaryText}>Descartar borrador y comenzar de nuevo</Text></Pressable>
+  </View>;
+  if (!ready) return <LoadNotice text="Abriendo el cuestionario…" />;
   const section = sections[step];
   const visibleQuestions = section.questions.filter((q) => isQuestionVisible(q, answers));
   const isLast = step === sections.length - 1;
   const hasSteps = sections.length > 1;
 
   const updateAnswers = (patch: SurveyAnswers) => {
-    setAnswers((prev) => ({ ...prev, ...patch }));
+    if (locked.current) return;
+    const next = { ...latest.current.answers, ...patch };
+    setAnswers(next); save(latest.current.step, next);
   };
 
   const goTo = (next: number) => {
+    if (locked.current) return;
+    save(next, latest.current.answers);
     setStep(next);
     setShowMissing(false);
     scrollRef.current?.scrollTo({ y: 0, animated: false });
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
+    if (locked.current) return;
+    setError('');
     if (visibleQuestions.some((q) => !isQuestionAnswered(q, answers))) {
       setShowMissing(true);
       return;
@@ -73,12 +143,20 @@ export default function SurveyScreen() {
       return;
     }
     // Solo se envían las respuestas de preguntas visibles (descarta condicionales que quedaron ocultas).
+    const invalid = sections.findIndex(item => item.questions.some(q => isQuestionVisible(q, answers) && !isQuestionAnswered(q, answers)));
+    if (invalid >= 0) { goTo(invalid); setShowMissing(true); return; }
     const finalAnswers: SurveyAnswers = {};
     survey.questions
       .filter((q) => isQuestionVisible(q, answers))
       .forEach((q) => answerKeys(q).forEach((key) => (finalAnswers[key] = answers[key])));
-    submitSurvey(survey.id, finalAnswers);
-    navigation.replace('enviada', { tab: 'participar' });
+    locked.current = true;
+    setSending(true);
+    try {
+      if (supabase) await sendSurvey(survey.id, finalAnswers);
+      // Responder de nuevo después de una pérdida de red también reconoce el envío previo.
+      try { await finish(finalAnswers); }
+      catch { setAccepted(true); }
+    } catch (e) { setError(messageOf(e)); locked.current = false; setSending(false); }
   };
 
   return (
@@ -115,6 +193,8 @@ export default function SurveyScreen() {
       </ScrollView>
 
       <View style={styles.footer}>
+        {draftError ? <Text style={styles.errorText}>{draftError}</Text> : null}
+        {error ? <Text accessibilityLiveRegion="polite" style={styles.errorText}>{error}</Text> : null}
         {showMissing && <Text style={styles.errorText}>Responde las preguntas marcadas para continuar.</Text>}
         <View style={styles.footerRow}>
           {step > 0 && (
@@ -122,8 +202,8 @@ export default function SurveyScreen() {
               <Text style={styles.btnSecondaryText}>Anterior</Text>
             </Pressable>
           )}
-          <Pressable onPress={handleNext} style={[styles.btn, styles.btnPrimary]} accessibilityRole="button">
-            <Text style={styles.btnPrimaryText}>{isLast ? 'Enviar respuestas' : 'Siguiente'}</Text>
+          <Pressable disabled={sending} onPress={handleNext} style={[styles.btn, styles.btnPrimary]} accessibilityRole="button">
+            <Text style={styles.btnPrimaryText}>{sending ? 'Enviando…' : isLast ? 'Enviar respuestas' : 'Siguiente'}</Text>
           </Pressable>
         </View>
       </View>
@@ -147,7 +227,8 @@ function SingleInput({ q, answers, onChange }: InputProps<SingleQuestion>) {
               onPress={() => onChange({ [q.id]: opt })}
               style={[styles.chip, selected && styles.chipSelected]}
               accessibilityRole="radio"
-              accessibilityState={{ selected }}
+              aria-checked={selected}
+              accessibilityState={{ checked: selected }}
             >
               <Text style={[styles.chipText, selected && styles.chipTextSelected]}>{opt}</Text>
             </Pressable>
@@ -167,7 +248,8 @@ function SingleInput({ q, answers, onChange }: InputProps<SingleQuestion>) {
             onPress={() => onChange({ [q.id]: opt })}
             style={[styles.option, selected && styles.optionSelected]}
             accessibilityRole="radio"
-            accessibilityState={{ selected }}
+            aria-checked={selected}
+            accessibilityState={{ checked: selected }}
           >
             <View style={[styles.radio, selected && styles.radioSelected]}>
               {selected && <View style={styles.radioDot} />}
@@ -196,6 +278,7 @@ function MultiInput({ q, answers, onChange }: InputProps<MultiQuestion>) {
       onPress={onPress}
       style={[styles.option, checked && styles.optionSelected]}
       accessibilityRole="checkbox"
+      aria-checked={checked}
       accessibilityState={{ checked }}
     >
       <View style={[styles.checkbox, checked && styles.checkboxChecked]}>
@@ -238,7 +321,8 @@ function GridInput({ q, answers, onChange }: InputProps<GridQuestion>) {
                     style={[styles.scaleBtn, selected && styles.scaleBtnSelected]}
                     accessibilityRole="radio"
                     accessibilityLabel={`${item.label}: ${label}`}
-                    accessibilityState={{ selected }}
+                    aria-checked={selected}
+                    accessibilityState={{ checked: selected }}
                   >
                     <Text style={[styles.scaleText, selected && styles.scaleTextSelected]}>{idx + 1}</Text>
                   </Pressable>

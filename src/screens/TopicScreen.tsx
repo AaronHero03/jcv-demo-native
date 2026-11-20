@@ -1,32 +1,50 @@
-import { useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useRoute, type ParamListBase, type RouteProp } from '@react-navigation/native';
 import { useAppState } from '../context/AppStateContext';
-import { getTopicById } from '../data/community';
+import { displayDate, loadThread, postReply } from '../lib/community';
+import { useFocusedData } from '../hooks/useFocusedData';
+import { supabase, messageOf } from '../lib/supabase';
+import LoadNotice from '../components/LoadNotice';
 import { colors, tabTheme } from '../theme/colors';
 
 export default function TopicScreen() {
   const route = useRoute<RouteProp<ParamListBase>>();
   const params = route.params as { topicId?: string } | undefined;
-  const topic = getTopicById(params?.topicId);
+  const topicId = params?.topicId || '';
+  const thread = useFocusedData(useCallback(() => loadThread(topicId), [topicId]));
+  const [error, setError] = useState('');
+  const [busy, setBusy] = useState(false);
+  const posting = useRef(false);
   const { userMode, userEmail, forumRepliesByTopic, addForumReply } = useAppState();
   const [draft, setDraft] = useState('');
   const theme = tabTheme.comunidad;
 
-  const allReplies = [...topic.initialReplies, ...(forumRepliesByTopic[topic.id] ?? [])];
+  if (thread.data === undefined) return <LoadNotice error={thread.error} retry={thread.refresh} />;
+  if (!thread.data) return <LoadNotice text="Este tema ya no está publicado." />;
+  const { topic, replies } = thread.data;
+  const allReplies = supabase ? replies : [...replies, ...(forumRepliesByTopic[topic.id] || [])];
 
-  const handleSend = () => {
-    if (!draft.trim()) return;
-    const author = userMode === 'user' && userEmail ? userEmail.split('@')[0] : 'Invitado';
-    addForumReply(topic.id, author, draft);
-    setDraft('');
+  const handleSend = async () => {
+    if (posting.current || userMode !== 'user' || !draft.trim()) return;
+    posting.current = true; setBusy(true); setError('');
+    try {
+      if (supabase) await postReply(topic.id, draft);
+      else {
+        const author = userEmail ? userEmail.split('@')[0] : 'Participante';
+        addForumReply(topic.id, author, draft);
+      }
+      setDraft('');
+      thread.refresh();
+    } catch (e) { setError(messageOf(e)); }
+    finally { posting.current = false; setBusy(false); }
   };
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <View style={styles.postCard}>
         <Text style={styles.meta}>
-          {topic.author} · {topic.createdAt}
+          {topic.author} · {displayDate(topic.createdAt)}
         </Text>
         <Text style={styles.title}>{topic.title}</Text>
         <Text style={styles.body}>{topic.body}</Text>
@@ -37,14 +55,16 @@ export default function TopicScreen() {
         <View key={reply.id} style={styles.replyCard}>
           <View style={styles.replyHeader}>
             <Text style={styles.replyAuthor}>{reply.author}</Text>
-            <Text style={styles.replyTime}>{reply.createdAt}</Text>
+            <Text style={styles.replyTime}>{displayDate(reply.createdAt)}</Text>
           </View>
           <Text style={styles.replyText}>{reply.text}</Text>
         </View>
       ))}
 
-      <View style={styles.composer}>
+      <Pressable accessibilityRole="button" onPress={thread.refresh}><Text style={styles.meta}>Actualizar respuestas</Text></Pressable>
+      {userMode === 'user' ? <View style={styles.composer}>
         <TextInput
+          maxLength={2000}
           value={draft}
           onChangeText={setDraft}
           placeholder="Escribe una respuesta para la comunidad..."
@@ -52,10 +72,11 @@ export default function TopicScreen() {
           style={styles.input}
           multiline
         />
-        <Pressable onPress={handleSend} style={[styles.sendBtn, { backgroundColor: theme.color }]}>
-          <Text style={[styles.sendText, { color: theme.ink }]}>Publicar</Text>
+        <Pressable disabled={busy || !draft.trim()} onPress={handleSend} style={[styles.sendBtn, { backgroundColor: theme.color }]}>
+          <Text style={[styles.sendText, { color: theme.ink }]}>{busy ? 'Publicando…' : 'Publicar'}</Text>
         </Pressable>
-      </View>
+        {error ? <Text accessibilityLiveRegion="polite">{error}</Text> : null}
+      </View> : <Text style={styles.meta}>Inicia sesión para responder.</Text>}
     </ScrollView>
   );
 }

@@ -19,6 +19,7 @@ jest.mock('../services/askClient', () => {
 });
 
 describe('FilterBar & AsistenteScreen', () => {
+  jest.setTimeout(15000);
   beforeEach(() => {
     jest.clearAllMocks();
   });

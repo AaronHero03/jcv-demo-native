@@ -125,7 +125,7 @@ describe('CompareScreen', () => {
       },
       tec: {
         stats: makeStats({
-          filter: { ...DEFAULT_FILTER, source: 'tec' },
+          filter: { ...DEFAULT_FILTER, source: 'tec_2026' },
           n: 120,
           series: [{ code: 1, label: 'Satisfecho', count: 108, pct: 90.0, isPositive: true }],
         }),
@@ -134,7 +134,7 @@ describe('CompareScreen', () => {
     });
     jest.spyOn(indicatorSummaries, 'fetchIndicatorStats').mockResolvedValue({
       stats: makeStats({
-        filter: { source: 'amg', filterType: 'sexo', filterValue: 'Mujer' },
+        filter: { source: 'amg_2026', filterType: 'gender', filterValue: 'Mujer' },
         n: 1200,
         series: [{ code: 1, label: 'Satisfecho', count: 1080, pct: 90, isPositive: true }],
       }),

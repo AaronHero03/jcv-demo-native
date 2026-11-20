@@ -3,7 +3,9 @@ import { useNavigation, type ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import Hero from '../components/Hero';
 import { useAppState } from '../context/AppStateContext';
-import { surveys } from '../data/surveys';
+import { loadSurveys } from '../lib/surveyCatalog';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { colors, tabTheme } from '../theme/colors';
 
 export default function ParticipateScreen() {
@@ -11,8 +13,11 @@ export default function ParticipateScreen() {
   const { completedSurveyIds } = useAppState();
   const theme = tabTheme.participar;
 
+  const catalog = useFocusedData(loadSurveys);
+  if (!catalog.data) return <LoadNotice error={catalog.error} retry={catalog.refresh} />;
+  const surveys = catalog.data;
   const available = surveys.filter((s) => !completedSurveyIds.includes(s.id));
-  const completed = surveys.filter((s) => completedSurveyIds.includes(s.id));
+  const completed = completedSurveyIds.map(id => surveys.find(s => s.id === id) ?? { id, title: id, period: 'Encuesta cerrada' });
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
@@ -29,7 +34,7 @@ export default function ParticipateScreen() {
       <Text style={styles.sectionTitle}>Encuestas disponibles ({available.length})</Text>
       {available.length === 0 ? (
         <View style={styles.emptyCard}>
-          <Text style={styles.emptyText}>¡Has respondido todas las encuestas disponibles por ahora!</Text>
+          <Text style={styles.emptyText}>No hay encuestas pendientes en este momento.</Text>
         </View>
       ) : (
         available.map((s) => (
@@ -40,7 +45,7 @@ export default function ParticipateScreen() {
           >
             <View style={styles.cardTop}>
               <Text style={styles.period}>{s.period}</Text>
-              <Text style={styles.duration}>~{s.estimatedMinutes} min · {s.questions.length} preguntas</Text>
+              <Text style={styles.duration}>{s.estimatedMinutes > 0 ? '~' + s.estimatedMinutes + ' min · ' : ''}{s.questions.length} preguntas</Text>
             </View>
             <Text style={styles.title}>{s.title}</Text>
             <Text style={styles.desc}>{s.description}</Text>
@@ -53,7 +58,7 @@ export default function ParticipateScreen() {
 
       <Text style={styles.sectionTitle}>Completadas ({completed.length})</Text>
       {completed.length === 0 ? (
-        <Text style={styles.mutedText}>Aún no has completado encuestas en esta sesión.</Text>
+        <Text style={styles.mutedText}>Aún no has completado encuestas.</Text>
       ) : (
         completed.map((s) => (
           <View key={s.id} style={[styles.card, styles.completedCard]}>

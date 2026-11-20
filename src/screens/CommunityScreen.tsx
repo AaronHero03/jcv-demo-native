@@ -3,13 +3,20 @@ import { useNavigation, type ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import Hero from '../components/Hero';
 import NavRow from '../components/NavRow';
-import { forumTopics, newsItems } from '../data/community';
+import { loadNews, loadTopics } from '../lib/community';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { colors, tabTheme } from '../theme/colors';
 
 export default function CommunityScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const theme = tabTheme.comunidad;
 
+  const news = useFocusedData(loadNews);
+  const topics = useFocusedData(loadTopics);
+  if (!news.data || !topics.data) return <LoadNotice error={news.error || topics.error} retry={() => { news.refresh(); topics.refresh(); }} />;
+  const newsItems = news.data;
+  const forumTopics = topics.data;
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Hero
@@ -38,6 +45,7 @@ export default function CommunityScreen() {
         />
       </View>
 
+      {newsItems.length > 0 && <>
       <Text style={styles.sectionTitle}>Última noticia</Text>
       <View style={styles.previewCard}>
         <Text style={styles.meta}>
@@ -46,6 +54,7 @@ export default function CommunityScreen() {
         <Text style={styles.previewTitle}>{newsItems[0].title}</Text>
         <Text style={styles.previewBody}>{newsItems[0].summary}</Text>
       </View>
+      </>}
     </ScrollView>
   );
 }

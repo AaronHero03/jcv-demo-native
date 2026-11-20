@@ -1,0 +1,8 @@
+project_id = "jcv-demo-native"
+
+# La función verifica el JWT con Supabase Auth. El regreso del navegador es público.
+[functions.create-checkout-session]
+verify_jwt = false
+# Stripe autentica este endpoint con la firma del cuerpo original.
+[functions.stripe-webhook]
+verify_jwt = false
