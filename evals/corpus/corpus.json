@@ -1,0 +1,1290 @@
+[
+	{
+		"id": "DOC-JCV",
+		"title": "Acerca de Jalisco Cómo Vamos (JCV)",
+		"category": "contexto",
+		"source": "src/data/raw/bienestar_jovenes_2026_resumen.json",
+		"text": "Jalisco Cómo Vamos (JCV) es un observatorio ciudadano dedicado a medir y evaluar la calidad de vida en el Área Metropolitana de Guadalajara (AMG), Jalisco. Los datos incluidos en la aplicación corresponden a la Encuesta Bienestar de Jóvenes Jul–Ago 2026, que abarca seis municipios del AMG: El Salto, Guadalajara, San Pedro Tlaquepaque, Tlajomulco de Zúñiga, Tonalá y Zapopan."
+	},
+	{
+		"id": "DOC-METODOLOGIA",
+		"title": "Metodología de la Encuesta Bienestar de Jóvenes Jul-Ago 2026",
+		"category": "metodologia",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv & evals/seguridad/README.md",
+		"text": "La Encuesta Bienestar de Jóvenes — Jalisco Cómo Vamos (Jul-Ago 2026) se levantó entre el 25 de julio y el 24 de agosto de 2026 con una muestra total de N = 1207 cuestionarios válidos aplicados a jóvenes de 15 a 29 años residentes en seis municipios del Área Metropolitana de Guadalajara: El Salto, Guadalajara, San Pedro Tlaquepaque, Tlajomulco de Zúñiga, Tonalá y Zapopan. En julio de 2026 se levantaron 534 cuestionarios y en agosto de 2026 se levantaron 673 cuestionarios. Los resultados son representativos a nivel del Área Metropolitana de Guadalajara en su conjunto y no se desagregan ni clasifican por municipio debido a que las muestras municipales no son estadísticamente significativas."
+	},
+	{
+		"id": "DOC-ALCANCE",
+		"title": "Alcance y límites del asistente de JCV",
+		"category": "alcance",
+		"source": "evals/seguridad/README.md",
+		"text": "El asistente de Jalisco Cómo Vamos responde únicamente preguntas sobre bienestar juvenil y los indicadores medidos en la Encuesta Bienestar de Jóvenes Jul–Ago 2026 en el Área Metropolitana de Guadalajara. No emite opiniones personales ni preferencias, no hace proyecciones futuras ni responde temas ajenos al observatorio (como definiciones médicas generales, preferencias personales o partidos políticos fuera del cuestionario). Tampoco clasifica ni compara resultados de indicadores por municipio individual, ya que las muestras por municipio no son significativas."
+	},
+	{
+		"id": "DOC-DEFINICIONES",
+		"title": "Definiciones y escalas del cuestionario",
+		"category": "definiciones",
+		"source": "Bienestar_de_Jovenes_Jul-Ago_2026_diccionario.json & bienestar_jovenes_2026_resumen.json",
+		"text": "En los indicadores principales de bienestar (Q_6 a Q_10, Q_14 a Q_16 y Q_20) se utiliza una escala ordinal del 1 al 5, donde 1 representa el nivel más bajo (por ejemplo 'nada satisfecha(o)', 'muy baja' o 'nada feliz') y 5 el nivel más alto ('muy satisfecha(o)', 'muy alta' o 'muy feliz'). El porcentaje positivo (% positivo) agrupa las respuestas 4 y 5. La variable Q_2 identifica el municipio del AMG y las variables T_Q_11_1 a T_Q_11_6 miden la frecuencia de estados emocionales y problemas para dormir en escala de 1 ('nunca') a 5 ('siempre')."
+	},
+	{
+		"id": "CAMPO-JUL-2026",
+		"title": "Levantamiento y resultados en julio de 2026",
+		"category": "tendencia-mensual",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Periodo: 25 al 31 de julio de 2026. Total de cuestionarios: 534 (44.2% de N=1207). Q_6 (Satisfacción con la vida): n=533, promedio 4.41, respuestas 4-5 (positivo) 90.8%. Q_7 (Calidad de vida): n=533, promedio 3.93, respuestas 4-5 (positivo) 67.2%. Q_8 (Felicidad general): n=533, promedio 4.36, respuestas 4-5 (positivo) 88.6%. Q_9 (Satisfacción consigo mismo): n=534, promedio 4.26, respuestas 4-5 (positivo) 85.8%. Q_10 (Vida afectiva y emocional): n=534, promedio 4.13, respuestas 4-5 (positivo) 79.4%. Q_14 (Actividades diarias): n=534, promedio 4.22, respuestas 4-5 (positivo) 84.1%. Q_15 (Aprendizaje escolar): n=520, promedio 4.14, respuestas 4-5 (positivo) 80.0%. Q_16 (Seguridad en la escuela): n=235, promedio 3.85, respuestas 4-5 (positivo) 65.1%. Q_20 (Uso del tiempo libre): n=534, promedio 4.07, respuestas 4-5 (positivo) 78.7%."
+	},
+	{
+		"id": "CAMPO-AGO-2026",
+		"title": "Levantamiento y resultados en agosto de 2026",
+		"category": "tendencia-mensual",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Periodo: 1 al 24 de agosto de 2026. Total de cuestionarios: 673 (55.8% de N=1207). Q_6 (Satisfacción con la vida): n=672, promedio 4.5, respuestas 4-5 (positivo) 91.8%. Q_7 (Calidad de vida): n=673, promedio 4.04, respuestas 4-5 (positivo) 73.7%. Q_8 (Felicidad general): n=672, promedio 4.44, respuestas 4-5 (positivo) 89.1%. Q_9 (Satisfacción consigo mismo): n=672, promedio 4.32, respuestas 4-5 (positivo) 86.2%. Q_10 (Vida afectiva y emocional): n=673, promedio 4.23, respuestas 4-5 (positivo) 80.1%. Q_14 (Actividades diarias): n=672, promedio 4.35, respuestas 4-5 (positivo) 86.8%. Q_15 (Aprendizaje escolar): n=670, promedio 4.19, respuestas 4-5 (positivo) 79.4%. Q_16 (Seguridad en la escuela): n=314, promedio 4.2, respuestas 4-5 (positivo) 79.0%. Q_20 (Uso del tiempo libre): n=672, promedio 4.1, respuestas 4-5 (positivo) 79.6%."
+	},
+	{
+		"id": "Q_2",
+		"title": "Municipio",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_2: Municipio Total de respuestas válidas: n=1207 (de N=1207). Distribución: El Salto (código 1): 23 respuestas (1.9%); Guadalajara (código 2): 413 respuestas (34.2%); San Pedro Tlaquepaque (código 3): 156 respuestas (12.9%); Tlajomulco de Zúñiga (código 4): 78 respuestas (6.5%); Tonalá (código 5): 96 respuestas (8.0%); Zapopan (código 6): 441 respuestas (36.5%)."
+	},
+	{
+		"id": "Q_6",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan",
+		"category": "Bienestar",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_6: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con tu vida? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 8 respuestas (0.7%); Poco satisfecha(o) (código 2): 8 respuestas (0.7%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 88 respuestas (7.3%); Algo satisfecha(o) (código 4): 419 respuestas (34.7%); Muy satisfecha(o) (código 5): 682 respuestas (56.5%); No sabe/No contestó [NO LEER] (código 6): 2 respuestas (0.2%). Resumen oficial (Satisfacción con la vida): n=1205, promedio=4.46, % positivo (4-5)=91.4%."
+	},
+	{
+		"id": "Q_7",
+		"title": "En una escala del 1 al 5, donde 1 significa \"muy baja\" y 5 significa \"muy alta\", ¿cómo calificarías tu calidad de vida?",
+		"category": "Bienestar",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_7: En una escala del 1 al 5, donde 1 significa \"muy baja\" y 5 significa \"muy alta\", ¿cómo calificarías tu calidad de vida? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy baja (código 1): 8 respuestas (0.7%); Algo baja (código 2): 26 respuestas (2.2%); Ni alta, ni baja (código 3): 318 respuestas (26.3%); Algo alta (código 4): 472 respuestas (39.1%); Muy alta (código 5): 382 respuestas (31.6%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%). Resumen oficial (Calidad de vida): n=1206, promedio=3.99, % positivo (4-5)=70.8%."
+	},
+	{
+		"id": "Q_8",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada feliz\" y 5 significa \"muy feliz\", en general, ¿qué tan feliz eres?",
+		"category": "Bienestar",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_8: En una escala del 1 al 5, donde 1 significa \"nada feliz\" y 5 significa \"muy feliz\", en general, ¿qué tan feliz eres? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada feliz (código 1): 6 respuestas (0.5%); Poco feliz (código 2): 24 respuestas (2.0%); Ni feliz, ni infeliz (código 3): 104 respuestas (8.6%); Algo feliz (código 4): 415 respuestas (34.4%); Muy feliz (código 5): 656 respuestas (54.3%); No sabe/No contestó [NO LEER] (código 6): 2 respuestas (0.2%). Resumen oficial (Felicidad general): n=1205, promedio=4.4, % positivo (4-5)=88.9%."
+	},
+	{
+		"id": "Q_9",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(",
+		"category": "Bienestar",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_9: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) te encuentras contigo misma(o)? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 11 respuestas (0.9%); Poco satisfecha(o) (código 2): 34 respuestas (2.8%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 124 respuestas (10.3%); Algo satisfecha(o) (código 4): 456 respuestas (37.8%); Muy satisfecha(o) (código 5): 581 respuestas (48.1%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%). Resumen oficial (Satisfacción consigo mismo): n=1206, promedio=4.3, % positivo (4-5)=86.0%."
+	},
+	{
+		"id": "Q_10",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(",
+		"category": "Bienestar",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_10: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con tu vida afectiva o emocional? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 12 respuestas (1.0%); Poco satisfecha(o) (código 2): 62 respuestas (5.1%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 170 respuestas (14.1%); Algo satisfecha(o) (código 4): 414 respuestas (34.3%); Muy satisfecha(o) (código 5): 549 respuestas (45.5%). Resumen oficial (Vida afectiva y emocional): n=1207, promedio=4.18, % positivo (4-5)=79.8%."
+	},
+	{
+		"id": "T_Q_11_1",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_1: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes contenta(o) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 4 respuestas (0.3%); Pocas veces (código 2): 50 respuestas (4.1%); Algunas veces (código 3): 284 respuestas (23.5%); Muchas veces (código 4): 529 respuestas (43.8%); Siempre (código 5): 340 respuestas (28.2%)."
+	},
+	{
+		"id": "T_Q_11_2",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_2: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes tranquila(o) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 9 respuestas (0.7%); Pocas veces (código 2): 61 respuestas (5.1%); Algunas veces (código 3): 337 respuestas (27.9%); Muchas veces (código 4): 436 respuestas (36.1%); Siempre (código 5): 364 respuestas (30.2%)."
+	},
+	{
+		"id": "T_Q_11_3",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_3: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes angustiada(o)/asustada(o) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 280 respuestas (23.2%); Pocas veces (código 2): 452 respuestas (37.4%); Algunas veces (código 3): 352 respuestas (29.2%); Muchas veces (código 4): 93 respuestas (7.7%); Siempre (código 5): 30 respuestas (2.5%)."
+	},
+	{
+		"id": "T_Q_11_4",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_4: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes triste Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 282 respuestas (23.4%); Pocas veces (código 2): 503 respuestas (41.7%); Algunas veces (código 3): 339 respuestas (28.1%); Muchas veces (código 4): 69 respuestas (5.7%); Siempre (código 5): 14 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_11_5",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_5: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Te sientes enojada(o) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 239 respuestas (19.8%); Pocas veces (código 2): 379 respuestas (31.4%); Algunas veces (código 3): 397 respuestas (32.9%); Muchas veces (código 4): 140 respuestas (11.6%); Siempre (código 5): 52 respuestas (4.3%)."
+	},
+	{
+		"id": "T_Q_11_6",
+		"title": "En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguiente",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_11_6: En una escala del 1 al 5, donde 1 es \"nunca\" y 5 es \"siempre\", responde la frecuencia con que experimentas los siguientes estados de ánimo: Enfrentas problemas para dormir Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 556 respuestas (46.1%); Pocas veces (código 2): 243 respuestas (20.1%); Algunas veces (código 3): 222 respuestas (18.4%); Muchas veces (código 4): 108 respuestas (8.9%); Siempre (código 5): 78 respuestas (6.5%)."
+	},
+	{
+		"id": "T_Q_12_1",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situacion",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_12_1: En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Están juntos en algún momento del día (para desayunar, comer, cenar, conversar o ver televisión) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 56 respuestas (4.6%); Pocas veces (código 2): 141 respuestas (11.7%); Algunas veces (código 3): 264 respuestas (21.9%); Muchas veces (código 4): 329 respuestas (27.3%); Siempre (código 5): 417 respuestas (34.5%)."
+	},
+	{
+		"id": "T_Q_12_2",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situacion",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_12_2: En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Felicitan a quien hace bien las cosas Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 79 respuestas (6.5%); Pocas veces (código 2): 116 respuestas (9.6%); Algunas veces (código 3): 285 respuestas (23.6%); Muchas veces (código 4): 283 respuestas (23.4%); Siempre (código 5): 444 respuestas (36.8%)."
+	},
+	{
+		"id": "T_Q_12_3",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situacion",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_12_3: En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Discuten, gritan o insultan Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 418 respuestas (34.6%); Pocas veces (código 2): 434 respuestas (36.0%); Algunas veces (código 3): 261 respuestas (21.6%); Muchas veces (código 4): 66 respuestas (5.5%); Siempre (código 5): 28 respuestas (2.3%)."
+	},
+	{
+		"id": "T_Q_12_4",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situacion",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_12_4: En una escala del 1 al 5, donde 1 significa \"nunca\" y 5 significa \"siempre\", ¿con qué frecuencia ocurren estas situaciones en tu hogar? Han llegado a los golpes Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 1076 respuestas (89.1%); Pocas veces (código 2): 68 respuestas (5.6%); Algunas veces (código 3): 41 respuestas (3.4%); Muchas veces (código 4): 12 respuestas (1.0%); Siempre (código 5): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_13_1",
+		"title": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Estudias (den",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_13_1: De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Estudias (dentro del sistema escolar) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 471 respuestas (39.0%); No (código 2): 736 respuestas (61.0%)."
+	},
+	{
+		"id": "T_Q_13_2",
+		"title": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de t",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_13_2: De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de tiempo completo Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 595 respuestas (49.3%); No (código 2): 612 respuestas (50.7%)."
+	},
+	{
+		"id": "T_Q_13_3",
+		"title": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de m",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_13_3: De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas de medio tiempo o jornada parcial Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 399 respuestas (33.1%); No (código 2): 808 respuestas (66.9%)."
+	},
+	{
+		"id": "T_Q_13_4",
+		"title": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas en t",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_13_4: De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Trabajas en tu hogar (sin remuneración económica) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 486 respuestas (40.3%); No (código 2): 721 respuestas (59.7%)."
+	},
+	{
+		"id": "T_Q_13_5",
+		"title": "De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Cuidas en tu ",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_13_5: De las siguientes actividades, ¿me podrías decir cuáles de ellas realizas diariamente o de manera regular? Cuidas en tu hogar niñas, niños, personas adultas mayores o personas con enfermedad o discapacidad (sin remuneración económica) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 373 respuestas (30.9%); No (código 2): 834 respuestas (69.1%)."
+	},
+	{
+		"id": "Q_14",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(",
+		"category": "Tiempo y Rutina",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_14: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás actualmente con tus actividades diarias? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 5 respuestas (0.4%); Poco satisfecha(o) (código 2): 45 respuestas (3.7%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 124 respuestas (10.3%); Algo satisfecha(o) (código 4): 447 respuestas (37.0%); Muy satisfecha(o) (código 5): 585 respuestas (48.5%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%). Resumen oficial (Actividades diarias): n=1206, promedio=4.3, % positivo (4-5)=85.6%."
+	},
+	{
+		"id": "Q_15",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(",
+		"category": "Educación",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_15: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿qué tan satisfecha(o) estás con lo que has aprendido en la escuela? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 20 respuestas (1.7%); Poco satisfecha(o) (código 2): 69 respuestas (5.7%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 153 respuestas (12.7%); Algo satisfecha(o) (código 4): 399 respuestas (33.1%); Muy satisfecha(o) (código 5): 549 respuestas (45.5%); No sabe/No contestó [NO LEER] (código 6): 17 respuestas (1.4%). Resumen oficial (Aprendizaje escolar): n=1190, promedio=4.17, % positivo (4-5)=79.7%."
+	},
+	{
+		"id": "Q_16",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada segura(o)\" y 5 significa \"muy segura(o)\", ¿qué tan segura(o) te siente",
+		"category": "Educación",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_16: En una escala del 1 al 5, donde 1 significa \"nada segura(o)\" y 5 significa \"muy segura(o)\", ¿qué tan segura(o) te sientes en la escuela? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada segura(o) (código 1): 3 respuestas (0.2%); Poco segura(o) (código 2): 22 respuestas (1.8%); Algo segura(o) (código 3): 123 respuestas (10.2%); Muy segura(o) (código 4): 196 respuestas (16.2%); Totalmente segura(o) (código 5): 205 respuestas (17.0%); No aplica (No es estudiante) (código 6): 647 respuestas (53.6%); No sabe/No contestó [NO LEER] (código 7): 11 respuestas (0.9%). Resumen oficial (Seguridad en la escuela): n=549, promedio=4.05, % positivo (4-5)=73.0%."
+	},
+	{
+		"id": "Q_17",
+		"title": "Para ti, ¿qué importancia tiene hoy la educación superior?",
+		"category": "Educación",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_17: Para ti, ¿qué importancia tiene hoy la educación superior? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Ninguna importancia (código 1): 13 respuestas (1.1%); Poca importancia (código 2): 40 respuestas (3.3%); Algo de importancia (código 3): 165 respuestas (13.7%); Mucha importancia (código 4): 498 respuestas (41.3%); Total importancia (código 5): 487 respuestas (40.3%); No sabría opinar [NO LEER] (código 6): 4 respuestas (0.3%). Resumen oficial (Importancia de educación superior): n=1203, promedio=4.17, % positivo (4-5)=81.9%."
+	},
+	{
+		"id": "T_Q_18_1",
+		"title": "¿Qué tan importante crees que son las universidades para ...? El desarrollo individual o personal",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_18_1: ¿Qué tan importante crees que son las universidades para ...? El desarrollo individual o personal Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada importante (código 1): 12 respuestas (1.0%); Poco importante (código 2): 24 respuestas (2.0%); Algo importante (código 3): 196 respuestas (16.2%); Muy importante (código 4): 530 respuestas (43.9%); Totalmente importante (código 5): 438 respuestas (36.3%); No sabría opinar [NO LEER] (código 6): 7 respuestas (0.6%)."
+	},
+	{
+		"id": "T_Q_18_2",
+		"title": "¿Qué tan importante crees que son las universidades para ...? Para conseguir empleo",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_18_2: ¿Qué tan importante crees que son las universidades para ...? Para conseguir empleo Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada importante (código 1): 23 respuestas (1.9%); Poco importante (código 2): 64 respuestas (5.3%); Algo importante (código 3): 265 respuestas (22.0%); Muy importante (código 4): 505 respuestas (41.8%); Totalmente importante (código 5): 345 respuestas (28.6%); No sabría opinar [NO LEER] (código 6): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "T_Q_19_1",
+		"title": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: En la actualidad, obtener una licenciatura ",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_19_1: Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: En la actualidad, obtener una licenciatura es un gran logro Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 24 respuestas (2.0%); En desacuerdo (código 2): 66 respuestas (5.5%); Ni de acuerdo, ni en desacuerdo (código 3): 150 respuestas (12.4%); De acuerdo (código 4): 543 respuestas (45.0%); Muy de acuerdo (código 5): 421 respuestas (34.9%); No sabe/No contestó [NO LEER] (código 6): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_19_2",
+		"title": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: La sociedad valora demasiado la educación u",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_19_2: Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: La sociedad valora demasiado la educación universitaria en la actualidad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 38 respuestas (3.1%); En desacuerdo (código 2): 197 respuestas (16.3%); Ni de acuerdo, ni en desacuerdo (código 3): 292 respuestas (24.2%); De acuerdo (código 4): 425 respuestas (35.2%); Muy de acuerdo (código 5): 242 respuestas (20.0%); No sabe/No contestó [NO LEER] (código 6): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_19_3",
+		"title": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Las universidades no preparan a los estudia",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_19_3: Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Las universidades no preparan a los estudiantes para el “mundo real” Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 62 respuestas (5.1%); En desacuerdo (código 2): 236 respuestas (19.6%); Ni de acuerdo, ni en desacuerdo (código 3): 343 respuestas (28.4%); De acuerdo (código 4): 390 respuestas (32.3%); Muy de acuerdo (código 5): 153 respuestas (12.7%); No sabe/No contestó [NO LEER] (código 6): 23 respuestas (1.9%)."
+	},
+	{
+		"id": "T_Q_19_4",
+		"title": "Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Estudiar temas que no conducen claramente a",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_19_4: Indica qué tan de acuerdo estás con cada una de las afirmaciones siguientes: Estudiar temas que no conducen claramente a una profesión es una pérdida de tiempo Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 126 respuestas (10.4%); En desacuerdo (código 2): 472 respuestas (39.1%); Ni de acuerdo, ni en desacuerdo (código 3): 273 respuestas (22.6%); De acuerdo (código 4): 242 respuestas (20.0%); Muy de acuerdo (código 5): 83 respuestas (6.9%); No sabe/No contestó [NO LEER] (código 6): 11 respuestas (0.9%)."
+	},
+	{
+		"id": "Q_20",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan",
+		"category": "Tiempo y Rutina",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_20: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con el uso del tiempo libre que tienes? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 34 respuestas (2.8%); Poco satisfecha(o) (código 2): 104 respuestas (8.6%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 113 respuestas (9.4%); Algo satisfecha(o) (código 4): 431 respuestas (35.7%); Muy satisfecha(o) (código 5): 524 respuestas (43.4%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%). Resumen oficial (Uso del tiempo libre): n=1206, promedio=4.08, % positivo (4-5)=79.2%."
+	},
+	{
+		"id": "Q_21",
+		"title": "En general, ¿cómo te sientes acerca de tu tiempo? ¿Dirías que nunca, casi nunca, a veces, con cierta frecuencia o con mu",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_21: En general, ¿cómo te sientes acerca de tu tiempo? ¿Dirías que nunca, casi nunca, a veces, con cierta frecuencia o con mucha frecuencia te sientes apresurado incluso para hacer las cosas que tienes que hacer? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 128 respuestas (10.6%); Casi nunca (código 2): 200 respuestas (16.6%); A veces (código 3): 447 respuestas (37.0%); Con cierta frecuencia (código 4): 247 respuestas (20.5%); Con mucha frecuencia (código 5): 185 respuestas (15.3%)."
+	},
+	{
+		"id": "Q_22",
+		"title": "¿Con qué frecuencia dirías que tienes tiempo libre y no sabes qué hacer con él?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_22: ¿Con qué frecuencia dirías que tienes tiempo libre y no sabes qué hacer con él? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 206 respuestas (17.1%); Casi nunca (código 2): 384 respuestas (31.8%); A veces (código 3): 368 respuestas (30.5%); Con cierta frecuencia (código 4): 175 respuestas (14.5%); Con mucha frecuencia (código 5): 74 respuestas (6.1%)."
+	},
+	{
+		"id": "T_Q_23_1",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_1: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Ir al cine Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 342 respuestas (28.3%); Casi nunca (código 2): 288 respuestas (23.9%); A veces (código 3): 348 respuestas (28.8%); Con cierta frecuencia (código 4): 168 respuestas (13.9%); Con mucha frecuencia (código 5): 61 respuestas (5.1%)."
+	},
+	{
+		"id": "T_Q_23_2",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_2: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Leer libros o revistas Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 330 respuestas (27.3%); Casi nunca (código 2): 229 respuestas (19.0%); A veces (código 3): 333 respuestas (27.6%); Con cierta frecuencia (código 4): 178 respuestas (14.7%); Con mucha frecuencia (código 5): 137 respuestas (11.4%)."
+	},
+	{
+		"id": "T_Q_23_3",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_3: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Practicar una actividad física o deporte Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 209 respuestas (17.3%); Casi nunca (código 2): 154 respuestas (12.8%); A veces (código 3): 289 respuestas (23.9%); Con cierta frecuencia (código 4): 257 respuestas (21.3%); Con mucha frecuencia (código 5): 298 respuestas (24.7%)."
+	},
+	{
+		"id": "T_Q_23_4",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_4: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Practicar una actividad artística Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 576 respuestas (47.7%); Casi nunca (código 2): 238 respuestas (19.7%); A veces (código 3): 198 respuestas (16.4%); Con cierta frecuencia (código 4): 98 respuestas (8.1%); Con mucha frecuencia (código 5): 97 respuestas (8.0%)."
+	},
+	{
+		"id": "T_Q_23_5",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_5: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Reunirte con amigos o familiares Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 68 respuestas (5.6%); Casi nunca (código 2): 79 respuestas (6.5%); A veces (código 3): 313 respuestas (25.9%); Con cierta frecuencia (código 4): 373 respuestas (30.9%); Con mucha frecuencia (código 5): 374 respuestas (31.0%)."
+	},
+	{
+		"id": "T_Q_23_6",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_6: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Jugar videojuegos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 507 respuestas (42.0%); Casi nunca (código 2): 191 respuestas (15.8%); A veces (código 3): 208 respuestas (17.2%); Con cierta frecuencia (código 4): 143 respuestas (11.8%); Con mucha frecuencia (código 5): 158 respuestas (13.1%)."
+	},
+	{
+		"id": "T_Q_23_7",
+		"title": "Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_23_7: Ahora te voy a leer una lista de actividades. Por favor dime con qué frecuencia las realizaste en los últimos tres meses Ver plataformas de streaming, como Netflix, Amazon Prime, Disney+, etc Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 134 respuestas (11.1%); Casi nunca (código 2): 145 respuestas (12.0%); A veces (código 3): 307 respuestas (25.4%); Con cierta frecuencia (código 4): 268 respuestas (22.2%); Con mucha frecuencia (código 5): 353 respuestas (29.2%)."
+	},
+	{
+		"id": "T_Q_24_1",
+		"title": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? mensajería instantánea como WhatsApp, Mess",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_24_1: En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? mensajería instantánea como WhatsApp, Messenger, Telegram, etc. Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 11 respuestas (0.9%); Casi nunca (código 2): 26 respuestas (2.2%); A veces (código 3): 84 respuestas (7.0%); Con cierta frecuencia (código 4): 233 respuestas (19.3%); Con mucha frecuencia (código 5): 853 respuestas (70.7%)."
+	},
+	{
+		"id": "T_Q_24_2",
+		"title": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a contenidos de audio y video",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_24_2: En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a contenidos de audio y video como YouTube, Spotify, Deezer, etc. Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 44 respuestas (3.6%); Casi nunca (código 2): 56 respuestas (4.6%); A veces (código 3): 158 respuestas (13.1%); Con cierta frecuencia (código 4): 237 respuestas (19.6%); Con mucha frecuencia (código 5): 712 respuestas (59.0%)."
+	},
+	{
+		"id": "T_Q_24_3",
+		"title": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? adquirir bienes o servicios como Mercado L",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_24_3: En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? adquirir bienes o servicios como Mercado Libre, Amazon, Rappi, Uber, etc. Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 201 respuestas (16.7%); Casi nunca (código 2): 223 respuestas (18.5%); A veces (código 3): 329 respuestas (27.3%); Con cierta frecuencia (código 4): 209 respuestas (17.3%); Con mucha frecuencia (código 5): 245 respuestas (20.3%)."
+	},
+	{
+		"id": "T_Q_24_4",
+		"title": "En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a banca móvil como Banorte, B",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_24_4: En los últimos tres meses, ¿con qué frecuencia has usado aplicaciones para …? tener acceso a banca móvil como Banorte, BBVA, Santander, NU, etc. Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 326 respuestas (27.0%); Casi nunca (código 2): 138 respuestas (11.4%); A veces (código 3): 193 respuestas (16.0%); Con cierta frecuencia (código 4): 195 respuestas (16.2%); Con mucha frecuencia (código 5): 355 respuestas (29.4%)."
+	},
+	{
+		"id": "Q_25",
+		"title": "¿Con qué frecuencia utilizas un chatbot de inteligencia artificial (IA) como ChatGPT, Copilot, Gemini, etc?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_25: ¿Con qué frecuencia utilizas un chatbot de inteligencia artificial (IA) como ChatGPT, Copilot, Gemini, etc? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nunca (código 1): 438 respuestas (36.3%); Una vez por semana o con menos frecuencia (código 2): 270 respuestas (22.4%); Varias veces por semana (código 3): 259 respuestas (21.5%); Aproximadamente una vez al día (código 4): 82 respuestas (6.8%); Varias veces al día (código 5): 154 respuestas (12.8%); No sabe/No contestó [NO LEER] (código 6): 4 respuestas (0.3%)."
+	},
+	{
+		"id": "Q_26",
+		"title": "¿Alguna vez has asistido a algún evento, feria, exposición, congreso o concierto en las instalaciones de Expo Guadalajar",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_26: ¿Alguna vez has asistido a algún evento, feria, exposición, congreso o concierto en las instalaciones de Expo Guadalajara? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 574 respuestas (47.6%); No (código 2): 628 respuestas (52.0%); No sabe/No contestó (código 3): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "Q_28",
+		"title": "¿Eres aficionado al futbol soccer?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_28: ¿Eres aficionado al futbol soccer? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 534 respuestas (44.2%); No (código 2): 673 respuestas (55.8%)."
+	},
+	{
+		"id": "Q_29_1",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al estadio",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_1: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al estadio Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 35 respuestas (2.9%); No (código 2): 1172 respuestas (97.1%)."
+	},
+	{
+		"id": "Q_29_2",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest del Centro de Guadalajara",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_2: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest del Centro de Guadalajara Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 288 respuestas (23.9%); No (código 2): 919 respuestas (76.1%)."
+	},
+	{
+		"id": "Q_29_3",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest (public viewing) del Centro",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_3: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe al Fan Fest (public viewing) del Centro de Zapopan Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 144 respuestas (11.9%); No (código 2): 1063 respuestas (88.1%)."
+	},
+	{
+		"id": "Q_29_4",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a un restaurante para ver un partido",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_4: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a un restaurante para ver un partido Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 187 respuestas (15.5%); No (código 2): 1020 respuestas (84.5%)."
+	},
+	{
+		"id": "Q_29_5",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Te reuniste con la familia o amigos para ver un p",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_5: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Te reuniste con la familia o amigos para ver un partido Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 629 respuestas (52.1%); No (código 2): 578 respuestas (47.9%)."
+	},
+	{
+		"id": "Q_29_6",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a la Minerva",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_6: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Asististe a la Minerva Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 259 respuestas (21.5%); No (código 2): 948 respuestas (78.5%)."
+	},
+	{
+		"id": "Q_29_7",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Viste o escuchaste los partidos en televisión o r",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_7: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Viste o escuchaste los partidos en televisión o radio (en tu casa) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 653 respuestas (54.1%); No (código 2): 554 respuestas (45.9%)."
+	},
+	{
+		"id": "Q_29_8",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Otra respuesta",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_8: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Otra respuesta Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 13 respuestas (1.1%); No (código 2): 1194 respuestas (98.9%)."
+	},
+	{
+		"id": "Q_29_9",
+		"title": "Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Ninguna, no asististe ni seguiste el Mundial",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_29_9: Durante el Mundial de fútbol, ¿participaste en la siguiente actividad? Ninguna, no asististe ni seguiste el Mundial Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 261 respuestas (21.6%); No (código 2): 946 respuestas (78.4%)."
+	},
+	{
+		"id": "Q_30",
+		"title": "En tu opinión, actualmente, ¿cuál consideras que es el problema más importante en tu familia?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_30: En tu opinión, actualmente, ¿cuál consideras que es el problema más importante en tu familia? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Los ingresos familiares son insuficientes para cubrir los ga (código 1): 204 respuestas (16.9%); Desempleo de algún miembro de la familia (código 2): 56 respuestas (4.6%); Falta de comunicación o dificultades para convivir (código 3): 279 respuestas (23.1%); Enfermedades o adicciones de miembros del hogar (código 4): 59 respuestas (4.9%); Inestabilidad emocional de algún miembro de la familia (código 5): 70 respuestas (5.8%); Violencia familiar (código 6): 6 respuestas (0.5%); Otra respuesta, ¿cuál? (código 7): 15 respuestas (1.2%); No hay ningún problema, todo está bien (código 8): 518 respuestas (42.9%)."
+	},
+	{
+		"id": "Q_31",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cómo te sientes con",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_31: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cómo te sientes con tu vida familiar? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 7 respuestas (0.6%); Poco satisfecha(o) (código 2): 43 respuestas (3.6%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 105 respuestas (8.7%); Algo satisfecha(o) (código 4): 390 respuestas (32.3%); Muy satisfecha(o) (código 5): 660 respuestas (54.7%); No sabe/No contestó [NO LEER] (código 6): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_32",
+		"title": "Con el total del ingreso familiar, dirías que en tu hogar...",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_32: Con el total del ingreso familiar, dirías que en tu hogar... Total de respuestas válidas: n=1207 (de N=1207). Distribución: Les alcanza bien y pueden ahorrar (código 1): 577 respuestas (47.8%); Les alcanza justo, sin grandes dificultades (código 2): 525 respuestas (43.5%); No les alcanza y tienen dificultades (código 3): 85 respuestas (7.0%); No les alcanza y tienen grandes dificultades (código 4): 12 respuestas (1.0%); No sabe/No contestó [NO LEER] (código 5): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "Q_33",
+		"title": "Ahora te voy a preguntar sobre tu vivienda. En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 signifi",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_33: Ahora te voy a preguntar sobre tu vivienda. En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) estás con la casa en la que vives? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 12 respuestas (1.0%); Poco satisfecha(o) (código 2): 53 respuestas (4.4%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 109 respuestas (9.0%); Algo satisfecha(o) (código 4): 336 respuestas (27.8%); Muy satisfecha(o) (código 5): 695 respuestas (57.6%); No sabe/No contestó [NO LEER] (código 6): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_34",
+		"title": "¿Con quién vives?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_34: ¿Con quién vives? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sola(o) (código 1): 59 respuestas (4.9%); Familiares (código 2): 1005 respuestas (83.3%); Pareja (código 3): 116 respuestas (9.6%); Amigos o conocidos (código 4): 24 respuestas (2.0%); Otra persona, ¿quién? (código 5): 2 respuestas (0.2%); No contestó [NO LEER] (código 6): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "Q_35",
+		"title": "En el futuro, ¿te ves adquiriendo una vivienda propia?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_35: En el futuro, ¿te ves adquiriendo una vivienda propia? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 1044 respuestas (86.5%); No (código 2): 151 respuestas (12.5%); No sabe/No contestó (código 3): 12 respuestas (1.0%)."
+	},
+	{
+		"id": "Q_36",
+		"title": "Ahora te voy a preguntar sobre tu salud. Por favor dime, en una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_36: Ahora te voy a preguntar sobre tu salud. Por favor dime, en una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", en general, ¿qué tan satisfecha(o) te sientes con tu salud? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 6 respuestas (0.5%); Poco satisfecha(o) (código 2): 38 respuestas (3.1%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 114 respuestas (9.4%); Algo satisfecha(o) (código 4): 399 respuestas (33.1%); Muy satisfecha(o) (código 5): 649 respuestas (53.8%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "Q_37",
+		"title": "¿Qué tan fácil crees que es conseguir drogas en la ciudad? (Como marihuana, cocaína, inhalables)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_37: ¿Qué tan fácil crees que es conseguir drogas en la ciudad? (Como marihuana, cocaína, inhalables) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada fácil (código 1): 25 respuestas (2.1%); Poco fácil (código 2): 29 respuestas (2.4%); Ni fácil, ni difícil (código 3): 121 respuestas (10.0%); Algo fácil (código 4): 272 respuestas (22.5%); Muy fácil (código 5): 634 respuestas (52.5%); No sabe/No contestó [NO LEER] (código 6): 126 respuestas (10.4%)."
+	},
+	{
+		"id": "Q_38",
+		"title": "En caso de que tomes bebidas alcohólicas, ¿cuántos días a la semana, en promedio las consumes?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_38: En caso de que tomes bebidas alcohólicas, ¿cuántos días a la semana, en promedio las consumes? Total de respuestas válidas: n=1207 (de N=1207). Distribución: 1 día a la semana (código 1): 216 respuestas (17.9%); 2 días a la semana (código 2): 65 respuestas (5.4%); 3 días a la semana (código 3): 20 respuestas (1.7%); 4 días a la semana (código 4): 5 respuestas (0.4%); 5 días a la semana (código 5): 6 respuestas (0.5%); 6 días a la semana (código 6): 2 respuestas (0.2%); 7 días a la semana (toda la semana) (código 7): 15 respuestas (1.2%); Con menos frecuencia (código 8): 331 respuestas (27.4%); No consumo bebidas alcohólicas (código 9): 546 respuestas (45.2%); No sabe/No contestó [NO LEER] (código 10): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "Q_39",
+		"title": "¿Cuántos días a la semana haces ejercicio o practicas un deporte?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_39: ¿Cuántos días a la semana haces ejercicio o practicas un deporte? Total de respuestas válidas: n=1207 (de N=1207). Distribución: 1 día a la semana (código 1): 100 respuestas (8.3%); 2 días a la semana (código 2): 118 respuestas (9.8%); 3 días a la semana (código 3): 171 respuestas (14.2%); 4 días a la semana (código 4): 112 respuestas (9.3%); 5 días a la semana (código 5): 158 respuestas (13.1%); 6 días a la semana (código 6): 55 respuestas (4.6%); 7 días a la semana (toda la semana) (código 7): 139 respuestas (11.5%); Con menos frecuencia (código 8): 95 respuestas (7.9%); No hago ejercicio (código 9): 258 respuestas (21.4%); No sabe/No contestó [NO LEER] (código 10): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "Q_40",
+		"title": "¿Cuántos días a la semana comes sanamente (frutas y verduras) o de forma sana y balanceada?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_40: ¿Cuántos días a la semana comes sanamente (frutas y verduras) o de forma sana y balanceada? Total de respuestas válidas: n=1207 (de N=1207). Distribución: 1 día a la semana (código 1): 36 respuestas (3.0%); 2 días a la semana (código 2): 90 respuestas (7.5%); 3 días a la semana (código 3): 212 respuestas (17.6%); 4 días a la semana (código 4): 132 respuestas (10.9%); 5 días a la semana (código 5): 189 respuestas (15.7%); 6 días a la semana (código 6): 66 respuestas (5.5%); 7 días a la semana (toda la semana) (código 7): 375 respuestas (31.1%); Con menos frecuencia (código 8): 59 respuestas (4.9%); No acostumbro comer sanamente (código 9): 44 respuestas (3.6%); No sabe/No contestó [NO LEER] (código 10): 4 respuestas (0.3%)."
+	},
+	{
+		"id": "Q_41",
+		"title": "La salud mental se refiere a tu bienestar emocional. Por ejemplo, incluye tu estado de ánimo en el día a día, si te sien",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_41: La salud mental se refiere a tu bienestar emocional. Por ejemplo, incluye tu estado de ánimo en el día a día, si te sientes tranquila(o) y contenta(o), o si por el contrario experimentas constantemente ansiedad, tristeza, angustia, estrés.  Considerando es Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy mala (código 1): 11 respuestas (0.9%); Mala (código 2): 40 respuestas (3.3%); Ni buena, ni mala (código 3): 319 respuestas (26.4%); Buena (código 4): 551 respuestas (45.7%); Muy buena (código 5): 283 respuestas (23.4%); No sabe/No contestó [NO LEER] (código 6): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_42",
+		"title": "¿Qué tan de acuerdo estás en que las cosas que haces en tu vida valen la pena?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_42: ¿Qué tan de acuerdo estás en que las cosas que haces en tu vida valen la pena? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 5 respuestas (0.4%); En desacuerdo (código 2): 16 respuestas (1.3%); Ni de acuerdo, ni en desacuerdo (código 3): 121 respuestas (10.0%); De acuerdo (código 4): 533 respuestas (44.2%); Muy de acuerdo (código 5): 526 respuestas (43.6%); No sabe/No contestó [NO LEER] (código 6): 6 respuestas (0.5%)."
+	},
+	{
+		"id": "T_Q_43_1",
+		"title": "¿Consideras que vivir en esta ... es ...? Ciudad",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_43_1: ¿Consideras que vivir en esta ... es ...? Ciudad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada seguro (código 1): 79 respuestas (6.5%); Poco seguro (código 2): 311 respuestas (25.8%); Ni seguro, ni inseguro (código 3): 339 respuestas (28.1%); Algo seguro (código 4): 382 respuestas (31.6%); Muy seguro (código 5): 93 respuestas (7.7%); No sabe/No contestó [NO LEER] (código 6): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_43_2",
+		"title": "¿Consideras que vivir en esta ... es ...? Colonia",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_43_2: ¿Consideras que vivir en esta ... es ...? Colonia Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada seguro (código 1): 69 respuestas (5.7%); Poco seguro (código 2): 205 respuestas (17.0%); Ni seguro, ni inseguro (código 3): 283 respuestas (23.4%); Algo seguro (código 4): 446 respuestas (37.0%); Muy seguro (código 5): 199 respuestas (16.5%); No sabe/No contestó [NO LEER] (código 6): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "T_Q_44_1",
+		"title": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los asaltos en la calle y robo (de coches, autopartes",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_44_1: ¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los asaltos en la calle y robo (de coches, autopartes, casas) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada grave (código 1): 81 respuestas (6.7%); Poco grave (código 2): 237 respuestas (19.6%); Ni poco grave, ni algo grave (código 3): 174 respuestas (14.4%); Algo grave (código 4): 278 respuestas (23.0%); Muy grave (código 5): 274 respuestas (22.7%); No hay en mi colonia (código 6): 135 respuestas (11.2%); No sabe/No contestó [NO LEER] (código 7): 28 respuestas (2.3%)."
+	},
+	{
+		"id": "T_Q_44_2",
+		"title": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? El consumo/venta de drogas",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_44_2: ¿Qué tan grave crees que son los siguientes asuntos en tu colonia? El consumo/venta de drogas Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada grave (código 1): 82 respuestas (6.8%); Poco grave (código 2): 159 respuestas (13.2%); Ni poco grave, ni algo grave (código 3): 144 respuestas (11.9%); Algo grave (código 4): 267 respuestas (22.1%); Muy grave (código 5): 321 respuestas (26.6%); No hay en mi colonia (código 6): 121 respuestas (10.0%); No sabe/No contestó [NO LEER] (código 7): 113 respuestas (9.4%)."
+	},
+	{
+		"id": "T_Q_44_3",
+		"title": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los pleitos y violencia callejera",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_44_3: ¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Los pleitos y violencia callejera Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada grave (código 1): 165 respuestas (13.7%); Poco grave (código 2): 253 respuestas (21.0%); Ni poco grave, ni algo grave (código 3): 146 respuestas (12.1%); Algo grave (código 4): 195 respuestas (16.2%); Muy grave (código 5): 184 respuestas (15.2%); No hay en mi colonia (código 6): 236 respuestas (19.6%); No sabe/No contestó [NO LEER] (código 7): 28 respuestas (2.3%)."
+	},
+	{
+		"id": "T_Q_44_4",
+		"title": "¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Las detenciones arbitrarias por autoridades",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_44_4: ¿Qué tan grave crees que son los siguientes asuntos en tu colonia? Las detenciones arbitrarias por autoridades Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada grave (código 1): 209 respuestas (17.3%); Poco grave (código 2): 259 respuestas (21.5%); Ni poco grave, ni algo grave (código 3): 153 respuestas (12.7%); Algo grave (código 4): 163 respuestas (13.5%); Muy grave (código 5): 155 respuestas (12.8%); No hay en mi colonia (código 6): 225 respuestas (18.6%); No sabe/No contestó [NO LEER] (código 7): 43 respuestas (3.6%)."
+	},
+	{
+		"id": "Q_45",
+		"title": "¿Tú y tu familia se sienten amenazados por los problemas de criminalidad y violencia en tu colonia?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_45: ¿Tú y tu familia se sienten amenazados por los problemas de criminalidad y violencia en tu colonia? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 132 respuestas (10.9%); No (código 2): 1063 respuestas (88.1%); No contestó [NO LEER] (código 3): 12 respuestas (1.0%)."
+	},
+	{
+		"id": "Q_46",
+		"title": "¿Fuiste víctima de algún delito en los últimos doce meses?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_46: ¿Fuiste víctima de algún delito en los últimos doce meses? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí, de un delito (código 1): 117 respuestas (9.7%); Sí, de más de un delito (código 2): 15 respuestas (1.2%); No (código 3): 1070 respuestas (88.6%); No contestó [NO LEER] (código 4): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "Q_47",
+		"title": "¿De qué tipo de delito fuiste víctima?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_47: ¿De qué tipo de delito fuiste víctima? Total de respuestas válidas: n=132 (de N=1207). Distribución: Robo (código 1): 96 respuestas (72.7%); Lesiones (código 2): 5 respuestas (3.8%); Secuestro (código 3): 2 respuestas (1.5%); Intento de homicidio (código 4): 3 respuestas (2.3%); Delito sexual (código 5): 2 respuestas (1.5%); Fraude (código 6): 6 respuestas (4.5%); Extorsión telefónica (código 7): 2 respuestas (1.5%); Otro delito, ¿cuál? (código 8): 16 respuestas (12.1%)."
+	},
+	{
+		"id": "Q_48",
+		"title": "¿Lo denunciaste a las autoridades?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_48: ¿Lo denunciaste a las autoridades? Total de respuestas válidas: n=132 (de N=1207). Distribución: Sí (código 1): 57 respuestas (43.2%); No (código 2): 75 respuestas (56.8%)."
+	},
+	{
+		"id": "Q_49",
+		"title": "Considerando la situación de seguridad en tu entorno, ¿has notado la existencia o el control territorial de grupos del c",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_49: Considerando la situación de seguridad en tu entorno, ¿has notado la existencia o el control territorial de grupos del crimen organizado (por ejemplo, la presencia de \"jefes de plaza\" o autoridades ilegítimas) en la colonia donde vives? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí, es muy evidente que estos grupos tienen el control total (código 1): 69 respuestas (5.7%); Sí, he notado su presencia o actividades (como venta de drog (código 2): 115 respuestas (9.5%); Sí, sé que hay presencia, pero no sé cuánto control tienen s (código 3): 229 respuestas (19.0%); No, no he notado la presencia ni el control de estos grupos (código 4): 757 respuestas (62.7%); No sabe/No contestó [NO LEER] (código 5): 37 respuestas (3.1%)."
+	},
+	{
+		"id": "Q_50",
+		"title": "En caso de ser víctima de algún delito, ¿harías justicia por tu propia mano?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_50: En caso de ser víctima de algún delito, ¿harías justicia por tu propia mano? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 303 respuestas (25.1%); No (código 2): 881 respuestas (73.0%); No sabe/No contestó [NO LEER] (código 3): 23 respuestas (1.9%)."
+	},
+	{
+		"id": "T_Q_51_1",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verb",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_1: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verbalmente en la calle Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 223 respuestas (18.5%); No (código 2): 982 respuestas (81.4%); No sabe/No contestó [NO LEER] (código 3): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_51_2",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verb",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_2: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido agredida(o) física o verbalmente por tu pareja Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 43 respuestas (3.6%); No (código 2): 1096 respuestas (90.8%); No sabe/No contestó [NO LEER] (código 3): 3 respuestas (0.2%); No aplica (por ejemplo no tiene pareja, no estudia ni trabaj (código 4): 65 respuestas (5.4%)."
+	},
+	{
+		"id": "T_Q_51_3",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Ha sido agredida(o) física o verba",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_3: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Ha sido agredida(o) física o verbalmente en tu trabajo o escuela Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 97 respuestas (8.0%); No (código 2): 1093 respuestas (90.6%); No sabe/No contestó [NO LEER] (código 3): 1 respuestas (0.1%); No aplica (por ejemplo no tiene pareja, no estudia ni trabaj (código 4): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_51_4",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_4: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en la calle Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 231 respuestas (19.1%); No (código 2): 970 respuestas (80.4%); No sabe/No contestó [NO LEER] (código 3): 6 respuestas (0.5%)."
+	},
+	{
+		"id": "T_Q_51_5",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_5: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o) sexualmente en tu escuela o trabajo Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 76 respuestas (6.3%); No (código 2): 1114 respuestas (92.3%); No sabe/No contestó [NO LEER] (código 3): 1 respuestas (0.1%); No aplica (por ejemplo no tiene pareja, no estudia ni trabaj (código 4): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_51_6",
+		"title": "En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o)/agredida(o) en",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_51_6: En los últimos 12 meses, dime si te ha ocurrido alguna de las siguientes situaciones: Has sido acosada(o)/agredida(o) en redes sociales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 114 respuestas (9.4%); No (código 2): 1093 respuestas (90.6%)."
+	},
+	{
+		"id": "Q_52",
+		"title": "En los últimos cinco años, ¿ha desaparecido algún integrante de tu hogar?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_52: En los últimos cinco años, ¿ha desaparecido algún integrante de tu hogar? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 77 respuestas (6.4%); No (código 2): 1122 respuestas (93.0%); No contestó [NO LEER] (código 3): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_53_1",
+		"title": "¿Tienes algún ... que se encuentre desaparecido? familiar",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_53_1: ¿Tienes algún ... que se encuentre desaparecido? familiar Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 102 respuestas (8.5%); No (código 2): 1101 respuestas (91.2%); No contestó [NO LEER] (código 3): 4 respuestas (0.3%)."
+	},
+	{
+		"id": "T_Q_53_2",
+		"title": "¿Tienes algún ... que se encuentre desaparecido? amigo/vecino",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_53_2: ¿Tienes algún ... que se encuentre desaparecido? amigo/vecino Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 213 respuestas (17.6%); No (código 2): 989 respuestas (81.9%); No contestó [NO LEER] (código 3): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "Q_54",
+		"title": "En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cuál es tu nivel de",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_54: En una escala del 1 al 5, donde 1 significa \"nada satisfecha(o)\" y 5 significa \"muy satisfecha(o)\", ¿cuál es tu nivel de satisfacción con la igualdad (en general) que existe en la ciudad? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada satisfecha(o) (código 1): 125 respuestas (10.4%); Poco satisfecha(o) (código 2): 209 respuestas (17.3%); Ni satisfecha(o), ni insatisfecha(o) (código 3): 377 respuestas (31.2%); Algo satisfecha(o) (código 4): 346 respuestas (28.7%); Muy satisfecha(o) (código 5): 135 respuestas (11.2%); No sabe/No contestó [NO LEER] (código 6): 15 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_55_1",
+		"title": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: Las personas son pobres porque no tr",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_55_1: Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: Las personas son pobres porque no trabajan lo suficiente Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 211 respuestas (17.5%); En desacuerdo (código 2): 494 respuestas (40.9%); Ni de acuerdo, ni en desacuerdo (código 3): 239 respuestas (19.8%); De acuerdo (código 4): 191 respuestas (15.8%); Muy de acuerdo (código 5): 55 respuestas (4.6%); No sabe/No contestó [NO LEER] (código 6): 17 respuestas (1.4%)."
+	},
+	{
+		"id": "T_Q_55_2",
+		"title": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las personas con",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_55_2: Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las personas con discapacidad tienen los mismos derechos que los demás Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 80 respuestas (6.6%); En desacuerdo (código 2): 266 respuestas (22.0%); Ni de acuerdo, ni en desacuerdo (código 3): 158 respuestas (13.1%); De acuerdo (código 4): 441 respuestas (36.5%); Muy de acuerdo (código 5): 251 respuestas (20.8%); No sabe/No contestó [NO LEER] (código 6): 11 respuestas (0.9%)."
+	},
+	{
+		"id": "T_Q_55_3",
+		"title": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las mujeres tien",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_55_3: Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad las mujeres tienen una situación de desventaja respecto de los hombres Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 86 respuestas (7.1%); En desacuerdo (código 2): 334 respuestas (27.7%); Ni de acuerdo, ni en desacuerdo (código 3): 223 respuestas (18.5%); De acuerdo (código 4): 429 respuestas (35.5%); Muy de acuerdo (código 5): 119 respuestas (9.9%); No sabe/No contestó [NO LEER] (código 6): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_55_4",
+		"title": "Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad los grupos indíg",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_55_4: Para cada una de las siguientes frases, dime qué tan de acuerdo estás con cada una: En nuestra sociedad los grupos indígenas están en desventaja con respecto a los demás Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 52 respuestas (4.3%); En desacuerdo (código 2): 285 respuestas (23.6%); Ni de acuerdo, ni en desacuerdo (código 3): 182 respuestas (15.1%); De acuerdo (código 4): 465 respuestas (38.5%); Muy de acuerdo (código 5): 189 respuestas (15.7%); No sabe/No contestó [NO LEER] (código 6): 34 respuestas (2.8%)."
+	},
+	{
+		"id": "Q_56",
+		"title": "De las siguientes opciones, ¿cuál consideras que es la peor injusticia en nuestra sociedad?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_56: De las siguientes opciones, ¿cuál consideras que es la peor injusticia en nuestra sociedad? Total de respuestas válidas: n=1207 (de N=1207). Distribución: La discriminación (código 1): 90 respuestas (7.5%); La delincuencia e inseguridad (código 2): 156 respuestas (12.9%); La impunidad, la ineficiencia de las autoridades y la violac (código 3): 151 respuestas (12.5%); La falta de oportunidades (laborales, educativas, de desarro (código 4): 87 respuestas (7.2%); La corrupción (código 5): 285 respuestas (23.6%); La violencia (de género, infantil) (código 6): 51 respuestas (4.2%); La falta de valores, empatía y justicia general (código 7): 83 respuestas (6.9%); El abuso de poder de las autoridades (código 8): 80 respuestas (6.6%); La pobreza (código 9): 28 respuestas (2.3%); La falta de apoyo a grupos vulnerables (código 10): 16 respuestas (1.3%); Las desapariciones forzadas (código 11): 92 respuestas (7.6%); Feminicidios (código 12): 88 respuestas (7.3%)."
+	},
+	{
+		"id": "T_Q_57_1",
+		"title": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado ca",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_57_1: Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Parques Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 964 respuestas (79.9%); No (código 2): 242 respuestas (20.0%); No contestó [NO LEER] (código 3): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "T_Q_57_2",
+		"title": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado ca",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_57_2: Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Unidades deportivas Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 747 respuestas (61.9%); No (código 2): 455 respuestas (37.7%); No contestó [NO LEER] (código 3): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "T_Q_57_3",
+		"title": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado ca",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_57_3: Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Ciclovías Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 322 respuestas (26.7%); No (código 2): 877 respuestas (72.7%); No contestó [NO LEER] (código 3): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_57_4",
+		"title": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado ca",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_57_4: Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Centros culturales o artísticos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 353 respuestas (29.2%); No (código 2): 852 respuestas (70.6%); No contestó [NO LEER] (código 3): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_57_5",
+		"title": "Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado ca",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_57_5: Ahora te voy a leer una lista de espacios públicos. Por favor dime si en el último mes has asistido, usado o visitado cada uno de ellos: Vía recreactiva Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 338 respuestas (28.0%); No (código 2): 868 respuestas (71.9%); No contestó [NO LEER] (código 3): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "T_Q_58_1",
+		"title": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Me encuentro satisfecha(o) con el barrio en el que vivo",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_58_1: ¿Qué tan de acuerdo estás con las siguientes afirmaciones? Me encuentro satisfecha(o) con el barrio en el que vivo Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 16 respuestas (1.3%); En desacuerdo (código 2): 66 respuestas (5.5%); Ni de acuerdo, ni en desacuerdo (código 3): 189 respuestas (15.7%); De acuerdo (código 4): 589 respuestas (48.8%); Muy de acuerdo (código 5): 346 respuestas (28.7%); No sabe/No contestó [NO LEER] (código 6): 1 respuestas (0.1%)."
+	},
+	{
+		"id": "T_Q_58_2",
+		"title": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si tengo un problema hay personas en el área donde vivo que m",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_58_2: ¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si tengo un problema hay personas en el área donde vivo que me ayudarán Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 48 respuestas (4.0%); En desacuerdo (código 2): 117 respuestas (9.7%); Ni de acuerdo, ni en desacuerdo (código 3): 179 respuestas (14.8%); De acuerdo (código 4): 598 respuestas (49.5%); Muy de acuerdo (código 5): 253 respuestas (21.0%); No sabe/No contestó [NO LEER] (código 6): 12 respuestas (1.0%)."
+	},
+	{
+		"id": "T_Q_58_3",
+		"title": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si quiero puedo influir en la vida del barrio",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_58_3: ¿Qué tan de acuerdo estás con las siguientes afirmaciones? Si quiero puedo influir en la vida del barrio Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 99 respuestas (8.2%); En desacuerdo (código 2): 333 respuestas (27.6%); Ni de acuerdo, ni en desacuerdo (código 3): 264 respuestas (21.9%); De acuerdo (código 4): 394 respuestas (32.6%); Muy de acuerdo (código 5): 99 respuestas (8.2%); No sabe/No contestó [NO LEER] (código 6): 18 respuestas (1.5%)."
+	},
+	{
+		"id": "T_Q_58_4",
+		"title": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Conozco y trato bastante a mis vecinos",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_58_4: ¿Qué tan de acuerdo estás con las siguientes afirmaciones? Conozco y trato bastante a mis vecinos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 67 respuestas (5.6%); En desacuerdo (código 2): 226 respuestas (18.7%); Ni de acuerdo, ni en desacuerdo (código 3): 260 respuestas (21.5%); De acuerdo (código 4): 484 respuestas (40.1%); Muy de acuerdo (código 5): 166 respuestas (13.8%); No sabe/No contestó [NO LEER] (código 6): 4 respuestas (0.3%)."
+	},
+	{
+		"id": "T_Q_58_5",
+		"title": "¿Qué tan de acuerdo estás con las siguientes afirmaciones? Ayudo a mis vecinos cuando lo necesitan",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_58_5: ¿Qué tan de acuerdo estás con las siguientes afirmaciones? Ayudo a mis vecinos cuando lo necesitan Total de respuestas válidas: n=1207 (de N=1207). Distribución: Muy en desacuerdo (código 1): 45 respuestas (3.7%); En desacuerdo (código 2): 131 respuestas (10.9%); Ni de acuerdo, ni en desacuerdo (código 3): 176 respuestas (14.6%); De acuerdo (código 4): 645 respuestas (53.4%); Muy de acuerdo (código 5): 201 respuestas (16.7%); No sabe/No contestó [NO LEER] (código 6): 9 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_59_1",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Votar",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_1: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Votar Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 959 respuestas (79.5%); No (código 2): 237 respuestas (19.6%); No sabe/No contestó [NO LEER] (código 3): 11 respuestas (0.9%)."
+	},
+	{
+		"id": "T_Q_59_2",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Firmar peticiones",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_2: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Firmar peticiones Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 712 respuestas (59.0%); No (código 2): 470 respuestas (38.9%); No sabe/No contestó [NO LEER] (código 3): 25 respuestas (2.1%)."
+	},
+	{
+		"id": "T_Q_59_3",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Protestar o manifestarse",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_3: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Protestar o manifestarse Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 404 respuestas (33.5%); No (código 2): 778 respuestas (64.5%); No sabe/No contestó [NO LEER] (código 3): 25 respuestas (2.1%)."
+	},
+	{
+		"id": "T_Q_59_4",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Compartir información en re",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_4: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Compartir información en redes sociales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 552 respuestas (45.7%); No (código 2): 642 respuestas (53.2%); No sabe/No contestó [NO LEER] (código 3): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_59_5",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar con un partido p",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_5: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar con un partido político/organización política Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 178 respuestas (14.7%); No (código 2): 1008 respuestas (83.5%); No sabe/No contestó [NO LEER] (código 3): 21 respuestas (1.7%)."
+	},
+	{
+		"id": "T_Q_59_6",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en actividades d",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_6: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en actividades de colectivos ciudadanos en favor de la comunidad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 565 respuestas (46.8%); No (código 2): 619 respuestas (51.3%); No sabe/No contestó [NO LEER] (código 3): 23 respuestas (1.9%)."
+	},
+	{
+		"id": "T_Q_59_7",
+		"title": "¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en acciones sobr",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_59_7: ¿Cuáles son las formas de participación política y social que estás dispuesta(o) a realizar? Participar en acciones sobre causas globales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 515 respuestas (42.7%); No (código 2): 676 respuestas (56.0%); No sabe/No contestó [NO LEER] (código 3): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_60_1",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Votar",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_1: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Votar Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 356 respuestas (29.5%); No (código 2): 842 respuestas (69.8%); No contestó [NO LEER] (código 3): 9 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_60_2",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Firmar peticiones",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_2: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Firmar peticiones Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 278 respuestas (23.0%); No (código 2): 919 respuestas (76.1%); No contestó [NO LEER] (código 3): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_60_3",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Protestar o manife",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_3: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Protestar o manifestarse Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 157 respuestas (13.0%); No (código 2): 1039 respuestas (86.1%); No contestó [NO LEER] (código 3): 11 respuestas (0.9%)."
+	},
+	{
+		"id": "T_Q_60_4",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Compartir informac",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_4: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Compartir información en redes sociales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 333 respuestas (27.6%); No (código 2): 864 respuestas (71.6%); No contestó [NO LEER] (código 3): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_60_5",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar con un ",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_5: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar con un partido político/ organización política Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 66 respuestas (5.5%); No (código 2): 1131 respuestas (93.7%); No contestó [NO LEER] (código 3): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_60_6",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en acti",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_6: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en actividades de colectivos ciudadanos en favor de la comunidad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 171 respuestas (14.2%); No (código 2): 1020 respuestas (84.5%); No contestó [NO LEER] (código 3): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_60_7",
+		"title": "De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en acci",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_60_7: De las siguientes formas de participación ciudadana, ¿en cuáles participaste en los últimos 12 meses? Participar en acciones sobre causas globales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 128 respuestas (10.6%); No (código 2): 1074 respuestas (89.0%); No contestó [NO LEER] (código 3): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "Q_61",
+		"title": "¿Te identificas con alguna comunidad, fandom, subcultura o identidad juvenil, en internet o fuera de internet?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_61: ¿Te identificas con alguna comunidad, fandom, subcultura o identidad juvenil, en internet o fuera de internet? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí, con una, ¿cuál? (código 1): 78 respuestas (6.5%); Sí, con varias, ¿cuáles? (código 2): 23 respuestas (1.9%); No (código 3): 1095 respuestas (90.7%); No estoy segura(o) [NO LEER] (código 4): 3 respuestas (0.2%); No sabe/No contestó [NO LEER] (código 5): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_62_1",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes deportivos",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_1: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes deportivos o de aficionados (barras, etc.) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 181 respuestas (15.0%); No (código 2): 1019 respuestas (84.4%); No contestó [NO LEER] (código 3): 7 respuestas (0.6%)."
+	},
+	{
+		"id": "T_Q_62_2",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Organización educativa com",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_2: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Organización educativa como asociación de alumnos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 109 respuestas (9.0%); No (código 2): 1082 respuestas (89.6%); No contestó [NO LEER] (código 3): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_62_3",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Partido político/Organizac",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_3: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Partido político/Organización política Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 31 respuestas (2.6%); No (código 2): 1173 respuestas (97.2%); No contestó [NO LEER] (código 3): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_62_4",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Iglesia, parroquia o grupo",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_4: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Iglesia, parroquia o grupo religioso Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 158 respuestas (13.1%); No (código 2): 1040 respuestas (86.2%); No contestó [NO LEER] (código 3): 9 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_62_5",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Asociación de asistencia s",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_5: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Asociación de asistencia social u organismos no gubernamentales Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 53 respuestas (4.4%); No (código 2): 1141 respuestas (94.5%); No contestó [NO LEER] (código 3): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_62_6",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes de entrete",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_6: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos o clubes de entretenimiento (videojuegos, películas, libros, etc.) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 129 respuestas (10.7%); No (código 2): 1068 respuestas (88.5%); No contestó [NO LEER] (código 3): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_62_7",
+		"title": "Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos espirituales (terap",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_62_7: Te voy a leer una lista de organizaciones, contesta para cada una si actualmente eres miembro Grupos espirituales (terapias alternativas, esoterismo, rituales prehispánicos, etc.) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 41 respuestas (3.4%); No (código 2): 1162 respuestas (96.3%); No contestó [NO LEER] (código 3): 4 respuestas (0.3%)."
+	},
+	{
+		"id": "T_Q_63_1",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu apariencia física",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_1: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu apariencia física Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 144 respuestas (11.9%); No (código 2): 1056 respuestas (87.5%); No contestó [NO LEER] (código 3): 7 respuestas (0.6%)."
+	},
+	{
+		"id": "T_Q_63_2",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu género",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_2: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu género Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 94 respuestas (7.8%); No (código 2): 1103 respuestas (91.4%); No contestó [NO LEER] (código 3): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_63_3",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu nivel económico o social",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_3: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu nivel económico o social Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 92 respuestas (7.6%); No (código 2): 1109 respuestas (91.9%); No contestó [NO LEER] (código 3): 6 respuestas (0.5%)."
+	},
+	{
+		"id": "T_Q_63_4",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus creencias y valores",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_4: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus creencias y valores Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 120 respuestas (9.9%); No (código 2): 1079 respuestas (89.4%); No contestó [NO LEER] (código 3): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_63_5",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus posiciones políticas",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_5: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tus posiciones políticas Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 51 respuestas (4.2%); No (código 2): 1144 respuestas (94.8%); No contestó [NO LEER] (código 3): 12 respuestas (1.0%)."
+	},
+	{
+		"id": "T_Q_63_6",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu orientación sexual",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_6: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu orientación sexual Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 34 respuestas (2.8%); No (código 2): 1164 respuestas (96.4%); No contestó [NO LEER] (código 3): 9 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_63_7",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu estado civil",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_7: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu estado civil Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 61 respuestas (5.1%); No (código 2): 1140 respuestas (94.4%); No contestó [NO LEER] (código 3): 6 respuestas (0.5%)."
+	},
+	{
+		"id": "T_Q_63_8",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu edad",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_8: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu edad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 87 respuestas (7.2%); No (código 2): 1113 respuestas (92.2%); No contestó [NO LEER] (código 3): 7 respuestas (0.6%)."
+	},
+	{
+		"id": "T_Q_63_9",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por alguna discapacidad",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_9: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por alguna discapacidad Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 16 respuestas (1.3%); No (código 2): 1175 respuestas (97.3%); No contestó [NO LEER] (código 3): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "T_Q_63_10",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu origen étnico",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_10: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu origen étnico Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 10 respuestas (0.8%); No (código 2): 1177 respuestas (97.5%); No contestó [NO LEER] (código 3): 20 respuestas (1.7%)."
+	},
+	{
+		"id": "T_Q_63_11",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu color de piel",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_11: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por tu color de piel Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 78 respuestas (6.5%); No (código 2): 1115 respuestas (92.4%); No contestó [NO LEER] (código 3): 14 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_63_12",
+		"title": "En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por otra razón, ¿cuál?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_63_12: En los últimos 12 meses, ¿por alguno de los siguientes motivos has sido discriminada(o)? Por otra razón, ¿cuál? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 23 respuestas (1.9%); No (código 2): 1184 respuestas (98.1%)."
+	},
+	{
+		"id": "T_Q_64_1",
+		"title": "¿Podrías decirme cuánta confianza tienes en ...? Tus vecinos",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_64_1: ¿Podrías decirme cuánta confianza tienes en ...? Tus vecinos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 143 respuestas (11.8%); Poca (código 2): 194 respuestas (16.1%); Ni algo, ni poca (código 3): 259 respuestas (21.5%); Algo (código 4): 405 respuestas (33.6%); Mucha (código 5): 203 respuestas (16.8%); No sabe/No contestó [NO LEER] (código 6): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_64_2",
+		"title": "¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que trabajas y/o estudias",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_64_2: ¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que trabajas y/o estudias Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 86 respuestas (7.1%); Poca (código 2): 111 respuestas (9.2%); Ni algo, ni poca (código 3): 142 respuestas (11.8%); Algo (código 4): 410 respuestas (34.0%); Mucha (código 5): 420 respuestas (34.8%); No sabe/No contestó [NO LEER] (código 6): 38 respuestas (3.1%)."
+	},
+	{
+		"id": "T_Q_64_3",
+		"title": "¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que te encuentras en la calle",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_64_3: ¿Podrías decirme cuánta confianza tienes en ...? Las personas con las que te encuentras en la calle Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 390 respuestas (32.3%); Poca (código 2): 373 respuestas (30.9%); Ni algo, ni poca (código 3): 252 respuestas (20.9%); Algo (código 4): 139 respuestas (11.5%); Mucha (código 5): 48 respuestas (4.0%); No sabe/No contestó [NO LEER] (código 6): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "T_Q_64_4",
+		"title": "¿Podrías decirme cuánta confianza tienes en ...? Tus familiares",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_64_4: ¿Podrías decirme cuánta confianza tienes en ...? Tus familiares Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 28 respuestas (2.3%); Poca (código 2): 48 respuestas (4.0%); Ni algo, ni poca (código 3): 58 respuestas (4.8%); Algo (código 4): 209 respuestas (17.3%); Mucha (código 5): 861 respuestas (71.3%); No sabe/No contestó [NO LEER] (código 6): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_65_1",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Las iglesias",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_1: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Las iglesias Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 308 respuestas (25.5%); Poca (código 2): 247 respuestas (20.5%); Ni algo, ni poca (código 3): 226 respuestas (18.7%); Algo (código 4): 243 respuestas (20.1%); Mucha (código 5): 173 respuestas (14.3%); No sabe/No contestó [NO LEER] (código 6): 10 respuestas (0.8%)."
+	},
+	{
+		"id": "T_Q_65_2",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Congreso local (Diputados de Jalisco)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_2: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Congreso local (Diputados de Jalisco) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 539 respuestas (44.7%); Poca (código 2): 306 respuestas (25.4%); Ni algo, ni poca (código 3): 209 respuestas (17.3%); Algo (código 4): 118 respuestas (9.8%); Mucha (código 5): 13 respuestas (1.1%); No sabe/No contestó [NO LEER] (código 6): 22 respuestas (1.8%)."
+	},
+	{
+		"id": "T_Q_65_3",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Electoral y de Participación",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_3: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Electoral y de Participación Ciudadana del Estado de Jalisco Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 429 respuestas (35.5%); Poca (código 2): 317 respuestas (26.3%); Ni algo, ni poca (código 3): 221 respuestas (18.3%); Algo (código 4): 174 respuestas (14.4%); Mucha (código 5): 32 respuestas (2.7%); No sabe/No contestó [NO LEER] (código 6): 34 respuestas (2.8%)."
+	},
+	{
+		"id": "T_Q_65_4",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Nacional Electoral (INE)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_4: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Instituto Nacional Electoral (INE) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 389 respuestas (32.2%); Poca (código 2): 284 respuestas (23.5%); Ni algo, ni poca (código 3): 221 respuestas (18.3%); Algo (código 4): 225 respuestas (18.6%); Mucha (código 5): 69 respuestas (5.7%); No sabe/No contestó [NO LEER] (código 6): 19 respuestas (1.6%)."
+	},
+	{
+		"id": "T_Q_65_5",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los partidos políticos",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_5: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los partidos políticos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 633 respuestas (52.4%); Poca (código 2): 297 respuestas (24.6%); Ni algo, ni poca (código 3): 173 respuestas (14.3%); Algo (código 4): 85 respuestas (7.0%); Mucha (código 5): 5 respuestas (0.4%); No sabe/No contestó [NO LEER] (código 6): 14 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_65_6",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno municipal",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_6: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno municipal Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 567 respuestas (47.0%); Poca (código 2): 310 respuestas (25.7%); Ni algo, ni poca (código 3): 169 respuestas (14.0%); Algo (código 4): 133 respuestas (11.0%); Mucha (código 5): 15 respuestas (1.2%); No sabe/No contestó [NO LEER] (código 6): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_65_7",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno estatal",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_7: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno estatal Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 563 respuestas (46.6%); Poca (código 2): 301 respuestas (24.9%); Ni algo, ni poca (código 3): 180 respuestas (14.9%); Algo (código 4): 136 respuestas (11.3%); Mucha (código 5): 12 respuestas (1.0%); No sabe/No contestó [NO LEER] (código 6): 15 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_65_8",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno federal",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_8: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El gobierno federal Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 584 respuestas (48.4%); Poca (código 2): 282 respuestas (23.4%); Ni algo, ni poca (código 3): 175 respuestas (14.5%); Algo (código 4): 133 respuestas (11.0%); Mucha (código 5): 19 respuestas (1.6%); No sabe/No contestó [NO LEER] (código 6): 14 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_65_9",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los medios de comunicación",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_9: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los medios de comunicación Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 431 respuestas (35.7%); Poca (código 2): 299 respuestas (24.8%); Ni algo, ni poca (código 3): 251 respuestas (20.8%); Algo (código 4): 189 respuestas (15.7%); Mucha (código 5): 24 respuestas (2.0%); No sabe/No contestó [NO LEER] (código 6): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_65_10",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El ejército",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_10: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El ejército Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 381 respuestas (31.6%); Poca (código 2): 224 respuestas (18.6%); Ni algo, ni poca (código 3): 200 respuestas (16.6%); Algo (código 4): 286 respuestas (23.7%); Mucha (código 5): 102 respuestas (8.5%); No sabe/No contestó [NO LEER] (código 6): 14 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_65_11",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los ministerios públicos",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_11: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los ministerios públicos Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 477 respuestas (39.5%); Poca (código 2): 316 respuestas (26.2%); Ni algo, ni poca (código 3): 211 respuestas (17.5%); Algo (código 4): 165 respuestas (13.7%); Mucha (código 5): 25 respuestas (2.1%); No sabe/No contestó [NO LEER] (código 6): 13 respuestas (1.1%)."
+	},
+	{
+		"id": "T_Q_65_12",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La policía",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_12: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La policía Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 508 respuestas (42.1%); Poca (código 2): 319 respuestas (26.4%); Ni algo, ni poca (código 3): 194 respuestas (16.1%); Algo (código 4): 157 respuestas (13.0%); Mucha (código 5): 21 respuestas (1.7%); No sabe/No contestó [NO LEER] (código 6): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "T_Q_65_13",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La marina",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_13: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? La marina Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 365 respuestas (30.2%); Poca (código 2): 201 respuestas (16.7%); Ni algo, ni poca (código 3): 197 respuestas (16.3%); Algo (código 4): 281 respuestas (23.3%); Mucha (código 5): 144 respuestas (11.9%); No sabe/No contestó [NO LEER] (código 6): 19 respuestas (1.6%)."
+	},
+	{
+		"id": "T_Q_65_14",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Poder Judicial (Jueces)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_14: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? El Poder Judicial (Jueces) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 448 respuestas (37.1%); Poca (código 2): 283 respuestas (23.4%); Ni algo, ni poca (código 3): 228 respuestas (18.9%); Algo (código 4): 198 respuestas (16.4%); Mucha (código 5): 35 respuestas (2.9%); No sabe/No contestó [NO LEER] (código 6): 15 respuestas (1.2%)."
+	},
+	{
+		"id": "T_Q_65_15",
+		"title": "¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los empresarios",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_65_15: ¿Cuánta confianza tienes en cada una de las siguientes instituciones o grupos? Los empresarios Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 431 respuestas (35.7%); Poca (código 2): 284 respuestas (23.5%); Ni algo, ni poca (código 3): 266 respuestas (22.0%); Algo (código 4): 183 respuestas (15.2%); Mucha (código 5): 27 respuestas (2.2%); No sabe/No contestó [NO LEER] (código 6): 16 respuestas (1.3%)."
+	},
+	{
+		"id": "Q_66",
+		"title": "En una escala del 1 al 5, donde 1 significa \"Nada\" y 5 significa \"Mucho\", por favor dime, ¿cuánto te interesan los asunt",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_66: En una escala del 1 al 5, donde 1 significa \"Nada\" y 5 significa \"Mucho\", por favor dime, ¿cuánto te interesan los asuntos públicos y la política? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Nada (código 1): 400 respuestas (33.1%); Poco\t (código 2): 264 respuestas (21.9%); Ni algo, ni poco (código 3): 244 respuestas (20.2%); Algo (código 4): 225 respuestas (18.6%); Mucho (código 5): 69 respuestas (5.7%); No sabe/No contestó [NO LEER] (código 6): 5 respuestas (0.4%)."
+	},
+	{
+		"id": "Q_67",
+		"title": "¿Con cuál de las siguientes frases te sientes más de acuerdo?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_67: ¿Con cuál de las siguientes frases te sientes más de acuerdo? Total de respuestas válidas: n=1207 (de N=1207). Distribución: La democracia es preferible a cualquier otra forma de gobier (código 1): 525 respuestas (43.5%); En algunas circunstancias, un gobierno autoritario es prefer (código 2): 212 respuestas (17.6%); A la gente como uno, nos da lo mismo un régimen democrático (código 3): 388 respuestas (32.1%); No sabe/No contestó [NO LEER] (código 4): 82 respuestas (6.8%)."
+	},
+	{
+		"id": "Q_68",
+		"title": "¿Cuál de las siguientes redes sociales utilizas con mayor frecuencia para informarte de política y asuntos públicos?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_68: ¿Cuál de las siguientes redes sociales utilizas con mayor frecuencia para informarte de política y asuntos públicos? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Facebook (código 1): 358 respuestas (29.7%); X (código 2): 78 respuestas (6.5%); Youtube (código 3): 45 respuestas (3.7%); Instagram (código 4): 224 respuestas (18.6%); TikTok (código 5): 198 respuestas (16.4%); Otra que utilices y no haya mencionado, ¿cuál? (código 6): 18 respuestas (1.5%); No utilizo las redes sociales para informarme de política y (código 7): 286 respuestas (23.7%)."
+	},
+	{
+		"id": "Q_69",
+		"title": "¿Qué medio de transporte usas principalmente para desplazarte a tu trabajo, oficina, escuela o actividades diarias?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_69: ¿Qué medio de transporte usas principalmente para desplazarte a tu trabajo, oficina, escuela o actividades diarias? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Camión/Macrobús (código 1): 485 respuestas (40.2%); Taxi/Uber (código 2): 55 respuestas (4.6%); Vehículo particular (código 3): 366 respuestas (30.3%); Motocicleta (código 4): 107 respuestas (8.9%); Bicicleta (código 5): 42 respuestas (3.5%); Tren ligero (código 6): 49 respuestas (4.1%); Caminando (código 7): 84 respuestas (7.0%); Mototaxi (código 8): 3 respuestas (0.2%); Otro medio, ¿cuál? (código 10): 2 respuestas (0.2%); No me desplazo (código 11): 12 respuestas (1.0%); No contestó [NO LEER] (código 12): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_70",
+		"title": "En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_70: En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos) Total de respuestas válidas: n=37 (de N=1207). Distribución: No válido (código 998): 6 respuestas (16.2%); No contestó (código 999): 31 respuestas (83.8%)."
+	},
+	{
+		"id": "Q_70recode",
+		"title": "En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_70recode: En un día normal, ¿cuánto tiempo dedicas a transportarte? (tiempo en minutos) Total de respuestas válidas: n=1195 (de N=1207). Distribución: Hasta 30 minutos (código 1): 358 respuestas (30.0%); De 31 a 60 minutos (código 2): 417 respuestas (34.9%); De 61 a 90 minutos (código 3): 66 respuestas (5.5%); De 91 a 120 minutos (código 4): 210 respuestas (17.6%); De 121 a 180 minutos (código 5): 77 respuestas (6.4%); Más de 180 minutos (código 6): 30 respuestas (2.5%); No válido (código 998): 6 respuestas (0.5%); No contestó (código 999): 31 respuestas (2.6%)."
+	},
+	{
+		"id": "Q_71",
+		"title": "¿Cómo describes tu identidad de género?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_71: ¿Cómo describes tu identidad de género? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Hombre (código 1): 597 respuestas (49.5%); Mujer (código 2): 607 respuestas (50.3%); Otra, ¿cuál? (código 3): 3 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_72recode",
+		"title": "Grupos de edad",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_72recode: Grupos de edad Total de respuestas válidas: n=1207 (de N=1207). Distribución: 15 a 19 años (código 1): 386 respuestas (32.0%); 20 a 24 años (código 2): 403 respuestas (33.4%); 25 a 29 años (código 3): 418 respuestas (34.6%)."
+	},
+	{
+		"id": "Q_74",
+		"title": "¿Cuál es tu nivel de escolaridad?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_74: ¿Cuál es tu nivel de escolaridad? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Primaria incompleta (código 1): 6 respuestas (0.5%); Primaria completa (código 2): 28 respuestas (2.3%); Secundaria incompleta (código 3): 34 respuestas (2.8%); Secundaria completa (código 4): 213 respuestas (17.6%); Carrera comercial completa (código 6): 6 respuestas (0.5%); Carrera técnica incompleta (código 7): 2 respuestas (0.2%); Carrera técnica completa (código 8): 26 respuestas (2.2%); Preparatoria incompleta (código 9): 154 respuestas (12.8%); Preparatoria completa (código 10): 339 respuestas (28.1%); Licenciatura incompleta (código 11): 150 respuestas (12.4%); Licenciatura completa (código 12): 218 respuestas (18.1%); Maestría incompleta (código 13): 5 respuestas (0.4%); Maestría completa (código 14): 16 respuestas (1.3%); Doctorado incompleto (código 15): 3 respuestas (0.2%); Doctorado completo (código 16): 2 respuestas (0.2%); Sin estudios (código 17): 3 respuestas (0.2%); No contestó [NO LEER] (código 18): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_74recode",
+		"title": "¿Cuál es tu nivel de escolaridad?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_74recode: ¿Cuál es tu nivel de escolaridad? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Primaria (código 1): 34 respuestas (2.8%); Secundaria (código 2): 247 respuestas (20.5%); Carrera comercial (código 3): 6 respuestas (0.5%); Carrera técnica (código 4): 28 respuestas (2.3%); Preparatoria (código 5): 493 respuestas (40.8%); Licenciatura (código 6): 368 respuestas (30.5%); Maestría (código 7): 21 respuestas (1.7%); Doctorado (código 8): 5 respuestas (0.4%); Sin estudios (código 9): 3 respuestas (0.2%); No contestó (código 10): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Q_75",
+		"title": "Para ti en lo personal, ¿cuál sería idealmente el nivel de escolaridad máximo terminado al que te gustaría llegar?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_75: Para ti en lo personal, ¿cuál sería idealmente el nivel de escolaridad máximo terminado al que te gustaría llegar? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Primaria (código 1): 4 respuestas (0.3%); Secundaria (código 2): 21 respuestas (1.7%); Carrera comercial (código 3): 3 respuestas (0.2%); Carrera técnica (código 4): 16 respuestas (1.3%); Preparatoria (código 5): 154 respuestas (12.8%); Licenciatura (código 6): 511 respuestas (42.3%); Maestría (código 7): 265 respuestas (22.0%); Doctorado (código 8): 179 respuestas (14.8%); No sabe/No contestó [NO LEER] (código 10): 12 respuestas (1.0%); No me interesa (código 11): 42 respuestas (3.5%)."
+	},
+	{
+		"id": "Q_76",
+		"title": "¿Cuál es tu estado civil o situación conyugal actual?",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_76: ¿Cuál es tu estado civil o situación conyugal actual? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Vive con su pareja en unión libre (código 1): 167 respuestas (13.8%); Separada(o) (código 2): 19 respuestas (1.6%); Divorciada(o) (código 3): 14 respuestas (1.2%); Casada(o) (código 4): 132 respuestas (10.9%); Soltera(o) (código 5): 860 respuestas (71.3%); Viuda(o) (código 6): 7 respuestas (0.6%); No sabe/No contestó [NO LEER] (código 7): 8 respuestas (0.7%)."
+	},
+	{
+		"id": "Q_77",
+		"title": "Pensando en el jefe o jefa del hogar (es decir la persona que aporta el mayor ingreso dentro del hogar), ¿cuál fue el úl",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_77: Pensando en el jefe o jefa del hogar (es decir la persona que aporta el mayor ingreso dentro del hogar), ¿cuál fue el último año de estudios que aprobaste en la escuela? Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sin estudios (código 1): 10 respuestas (0.8%); Primaria incompleta (código 2): 13 respuestas (1.1%); Primaria completa (código 3): 71 respuestas (5.9%); Secundaria incompleta (código 4): 15 respuestas (1.2%); Secundaria completa (código 5): 234 respuestas (19.4%); Carrera comercial incompleta (código 6): 1 respuestas (0.1%); Carrera comercial completa (código 7): 3 respuestas (0.2%); Carrera técnica incompleta (código 8): 6 respuestas (0.5%); Carrera técnica completa (código 9): 19 respuestas (1.6%); Preparatoria incompleta (código 10): 39 respuestas (3.2%); Preparatoria completa (código 11): 310 respuestas (25.7%); Licenciatura incompleta (código 12): 43 respuestas (3.6%); Licenciatura completa (código 13): 326 respuestas (27.0%); Maestría incompleta (código 14): 8 respuestas (0.7%); Maestría completa (código 15): 56 respuestas (4.6%); Doctorado incompleto (código 16): 1 respuestas (0.1%); Doctorado completo (código 17): 14 respuestas (1.2%); No sabe/No contestó [NO LEER] (código 18): 38 respuestas (3.1%)."
+	},
+	{
+		"id": "Q_79",
+		"title": "¿Cuántos focos hay en tu vivienda? (Incluyendo los de techo, paredes y lámparas de buró o piso)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Q_79: ¿Cuántos focos hay en tu vivienda? (Incluyendo los de techo, paredes y lámparas de buró o piso) Total de respuestas válidas: n=1207 (de N=1207). Distribución: De 0 a 5 focos (código 1): 138 respuestas (11.4%); De 6 a 10 focos (código 2): 579 respuestas (48.0%); De 11 a 15 focos (código 3): 281 respuestas (23.3%); De 16 a 20 focos (código 4): 120 respuestas (9.9%); 21 o más focos (código 5): 64 respuestas (5.3%); No sabe/No contestó [NO LEER] (código 6): 25 respuestas (2.1%)."
+	},
+	{
+		"id": "T_Q_80_1",
+		"title": "En tu vivienda, ¿cuentan con ...? Internet (excluyendo conexión móvil)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_80_1: En tu vivienda, ¿cuentan con ...? Internet (excluyendo conexión móvil) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 1165 respuestas (96.5%); No (código 2): 40 respuestas (3.3%); No sabe/No contestó [NO LEER] (código 3): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_80_3",
+		"title": "En tu vivienda, ¿cuentan con ...? Estufa (eléctrica o de gas)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_80_3: En tu vivienda, ¿cuentan con ...? Estufa (eléctrica o de gas) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 1196 respuestas (99.1%); No (código 2): 9 respuestas (0.7%); No sabe/No contestó [NO LEER] (código 3): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "T_Q_80_4",
+		"title": "En tu vivienda, ¿cuentan con ...? Piso con recubrimiento (que no sea de tierra o cemento)",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable T_Q_80_4: En tu vivienda, ¿cuentan con ...? Piso con recubrimiento (que no sea de tierra o cemento) Total de respuestas válidas: n=1207 (de N=1207). Distribución: Sí (código 1): 1146 respuestas (94.9%); No (código 2): 59 respuestas (4.9%); No sabe/No contestó [NO LEER] (código 3): 2 respuestas (0.2%)."
+	},
+	{
+		"id": "Estrato",
+		"title": "Estrato socioeconómico",
+		"category": "encuesta-2026",
+		"source": "Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv",
+		"text": "Variable Estrato: Estrato socioeconómico Total de respuestas válidas: n=1207 (de N=1207). Distribución: Alto (código 1): 401 respuestas (33.2%); Medio (código 2): 400 respuestas (33.1%); Bajo (código 3): 406 respuestas (33.6%)."
+	}
+]
