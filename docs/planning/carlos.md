@@ -10,6 +10,7 @@
 **Ramas (PR hacia `dev`):** `carlos/supabase-schema-rls`, `carlos/etl-amg-2026`, `carlos/rpc-filtros-comparativa`
 
 ### 1. Crear esquema SQL completo en Supabase (`carlos/supabase-schema-rls`)
+
 - [ ] Ejecutar este esquema en el SQL Editor de Supabase (incluye las tablas de Fase 1 y deja listas `donations` y `assistant_logs` para Fase 2):
 
 ```sql
@@ -165,6 +166,7 @@ CREATE TABLE assistant_logs (
 - [ ] Publicar `src/types/database.ts` en `dev` con los tipos TypeScript de tablas y respuestas de consultas (esto desbloquea a Aaron, Genaro y Nico desde el Día 1).
 
 ### 2. Reglas de acceso por fila (`RLS`) y auditoría (`carlos/supabase-schema-rls`)
+
 - [ ] Activar **Row Level Security (RLS)** en todas las tablas (`MASVS-AUTH-1/2`, `T5`).
 - [ ] Reglas:
   - Indicadores, opciones, resúmenes, noticias y encuestas: lectura pública solo si `is_published = true` / `is_active = true`; edición exclusiva para `role = 'admin'`.
@@ -173,11 +175,13 @@ CREATE TABLE assistant_logs (
   - `donations.status` y `assistant_logs`: solo modificables/insertables desde el servidor (`service_role`).
 
 ### 3. Carga de datos AMG 2026 (`carlos/etl-amg-2026`)
+
 - [ ] Escribir script (`scripts/etl_amg_2026.py`) que lea `Base de Datos_Bienestar de Jovenes - Jul-Ago 2026.csv` y el diccionario JSON.
 - [ ] Insertar `dimensions`, `indicators`, `indicator_options` y los resúmenes `amg_2026` en `indicator_summaries` por `general`, `gender`, `age_group` y `estrato` (sin cortes por mes y sin desglose por municipio no significativo).
-- [ ] Exportar `src/data/raw/amg_2026_summaries.json` para que la app siga funcionando *offline*.
+- [ ] Exportar `src/data/raw/amg_2026_summaries.json` para que la app siga funcionando _offline_.
 
 ### 4. Consultas parametrizadas y agregación Tec (`carlos/rpc-filtros-comparativa`)
+
 - [ ] Crear función guardada `get_filtered_indicator(p_indicator_id, p_dataset_source, p_filter_type, p_filter_value)` (`MASVS-CODE-4`).
 - [ ] Crear función `compare_datasets(p_indicator_id, p_filter_type, p_filter_value)` (`amg_2026` vs. `tec_2026`).
 - [ ] Crear trigger o función que actualice los resúmenes de `tec_2026` cuando entre una respuesta nueva en `survey_submissions`.
@@ -186,5 +190,6 @@ CREATE TABLE assistant_logs (
 ---
 
 ## Fase 2 — Soporte a `/ask`, Stripe y Auditoría Stage 4
+
 - [ ] Verificar que `/ask` pueda consultar `indicators`, `indicator_options` e `indicator_summaries` mediante función parametrizada de solo lectura.
 - [ ] Validar en pruebas que ningún usuario desde la app pueda alterar `donations.status` ni leer `assistant_logs`, y entregar evidencia de RLS para el reporte de **Stage 4**.
