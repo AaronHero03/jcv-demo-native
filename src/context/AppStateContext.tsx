@@ -181,12 +181,12 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     }
     if (data.user) {
       const isTec = cleanEmail.endsWith('@tec.mx');
-      await supabase.from('profiles').upsert({
-        id: data.user.id,
-        email: cleanEmail,
-        role: isTec ? 'tec_verified' : 'user',
-        is_tec_verified: isTec,
-      });
+      if (isTec) {
+        await supabase
+          .from('profiles')
+          .update({ is_tec_verified: true })
+          .eq('id', data.user.id);
+      }
     }
     return { ok: true };
   };
@@ -204,7 +204,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     if (supabase && userId) {
       void supabase
         .from('profiles')
-        .update({ is_tec_verified: true, role: 'tec_verified' })
+        .update({ is_tec_verified: true })
         .eq('id', userId);
     }
     return true;
@@ -233,7 +233,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       if (exists) {
         void supabase.from('favorites').delete().eq('user_id', userId).eq('item_id', id);
       } else {
-        void supabase.from('favorites').upsert({
+        void supabase.from('favorites').insert({
           user_id: userId,
           item_id: id,
           item_type: itemType,
