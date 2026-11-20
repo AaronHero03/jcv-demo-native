@@ -1,0 +1,48 @@
+import { Platform } from 'react-native';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import * as SecureStore from 'expo-secure-store';
+
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL ?? '';
+const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? '';
+
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
+
+const memoryStorage = new Map<string, string>();
+
+/**
+ * Adapter de almacenamiento seguro para JWT/sesión (MASVS-STORAGE-1/2).
+ * En iOS/Android usa expo-secure-store (Keychain/Keystore); en web usa memoria.
+ */
+const secureStorageAdapter = {
+  getItem: async (key: string): Promise<string | null> => {
+    if (Platform.OS === 'web') {
+      return memoryStorage.get(key) ?? null;
+    }
+    return SecureStore.getItemAsync(key);
+  },
+  setItem: async (key: string, value: string): Promise<void> => {
+    if (Platform.OS === 'web') {
+      memoryStorage.set(key, value);
+      return;
+    }
+    await SecureStore.setItemAsync(key, value);
+  },
+  removeItem: async (key: string): Promise<void> => {
+    if (Platform.OS === 'web') {
+      memoryStorage.delete(key);
+      return;
+    }
+    await SecureStore.deleteItemAsync(key);
+  },
+};
+
+export const supabase: SupabaseClient | null = isSupabaseConfigured
+  ? createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        storage: secureStorageAdapter,
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: false,
+      },
+    })
+  : null;
