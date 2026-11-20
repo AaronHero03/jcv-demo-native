@@ -16,7 +16,7 @@ export default function NewsScreen() {
               <Text style={styles.meta}>
                 {item.source} · {item.date}
               </Text>
-              <Pressable onPress={() => toggleFavorite(item.id)} hitSlop={10}>
+              <Pressable onPress={() => toggleFavorite(item.id, 'news')} hitSlop={10}>
                 <Text style={styles.star}>{fav ? '⭐' : '☆'}</Text>
               </Pressable>
             </View>

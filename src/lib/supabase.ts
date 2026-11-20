@@ -16,12 +16,19 @@ const memoryStorage = new Map<string, string>();
 const secureStorageAdapter = {
   getItem: async (key: string): Promise<string | null> => {
     if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined' && window.sessionStorage) {
+        return window.sessionStorage.getItem(key);
+      }
       return memoryStorage.get(key) ?? null;
     }
     return SecureStore.getItemAsync(key);
   },
   setItem: async (key: string, value: string): Promise<void> => {
     if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined' && window.sessionStorage) {
+        window.sessionStorage.setItem(key, value);
+        return;
+      }
       memoryStorage.set(key, value);
       return;
     }
@@ -29,6 +36,10 @@ const secureStorageAdapter = {
   },
   removeItem: async (key: string): Promise<void> => {
     if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined' && window.sessionStorage) {
+        window.sessionStorage.removeItem(key);
+        return;
+      }
       memoryStorage.delete(key);
       return;
     }

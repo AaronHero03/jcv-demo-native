@@ -160,6 +160,10 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     if (error || !data.user) {
       return { ok: false, error: error?.message ?? 'No se pudo iniciar sesión.' };
     }
+    setUserMode('user');
+    setUserId(data.user.id);
+    setUserEmail(data.user.email ?? cleanEmail);
+    await loadUserRemoteData(data.user.id, data.user.email ?? cleanEmail);
     return { ok: true };
   };
 
@@ -231,13 +235,31 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
     if (supabase && userId) {
       if (exists) {
-        void supabase.from('favorites').delete().eq('user_id', userId).eq('item_id', id);
+        void supabase
+          .from('favorites')
+          .delete()
+          .eq('user_id', userId)
+          .eq('item_id', id)
+          .then(({ error }) => {
+            if (error) {
+              console.warn('[favorites] Error al eliminar:', error.message);
+              setFavoriteIds((prev) => (prev.includes(id) ? prev : [...prev, id]));
+            }
+          });
       } else {
-        void supabase.from('favorites').insert({
-          user_id: userId,
-          item_id: id,
-          item_type: itemType,
-        });
+        void supabase
+          .from('favorites')
+          .insert({
+            user_id: userId,
+            item_id: id,
+            item_type: itemType,
+          })
+          .then(({ error }) => {
+            if (error && error.code !== '23505') {
+              console.warn('[favorites] Error al guardar:', error.message);
+              setFavoriteIds((prev) => prev.filter((item) => item !== id));
+            }
+          });
       }
     }
   };
