@@ -1,0 +1,4507 @@
+{
+ "dataset": "Bienestar de Jóvenes Jul-Ago 2026",
+ "generatedBy": "scripts/genaro_offline_breakdowns.py",
+ "weighted": false,
+ "rows": [
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 8,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 8,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 88,
+   "pct": 7.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 419,
+   "pct": 34.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 682,
+   "pct": 56.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 5,
+   "pct": 0.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 5,
+   "pct": 0.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 38,
+   "pct": 6.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 203,
+   "pct": 34.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 344,
+   "pct": 57.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 50,
+   "pct": 8.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 214,
+   "pct": 35.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 337,
+   "pct": 55.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 1,
+   "pct": 0.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 26,
+   "pct": 6.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 129,
+   "pct": 33.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 227,
+   "pct": 59.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 28,
+   "pct": 7.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 153,
+   "pct": 38.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 216,
+   "pct": 53.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 34,
+   "pct": 8.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 137,
+   "pct": 32.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 239,
+   "pct": 57.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 33,
+   "pct": 8.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 105,
+   "pct": 26.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 259,
+   "pct": 64.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 27,
+   "pct": 6.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 167,
+   "pct": 41.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 201,
+   "pct": 50.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 28,
+   "pct": 6.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 147,
+   "pct": 36.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_6",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 222,
+   "pct": 54.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 8,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 26,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 318,
+   "pct": 26.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 472,
+   "pct": 39.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 382,
+   "pct": 31.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 4,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 12,
+   "pct": 2.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 156,
+   "pct": 26.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 228,
+   "pct": 38.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 197,
+   "pct": 33.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 4,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 14,
+   "pct": 2.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 160,
+   "pct": 26.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 244,
+   "pct": 40.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 184,
+   "pct": 30.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 6,
+   "pct": 1.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 102,
+   "pct": 26.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 140,
+   "pct": 36.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 135,
+   "pct": 35.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 11,
+   "pct": 2.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 104,
+   "pct": 25.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 173,
+   "pct": 42.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 113,
+   "pct": 28.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 9,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 112,
+   "pct": 26.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 159,
+   "pct": 38.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 134,
+   "pct": 32.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 97,
+   "pct": 24.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 147,
+   "pct": 36.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 145,
+   "pct": 36.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 9,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 88,
+   "pct": 22.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 178,
+   "pct": 44.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 123,
+   "pct": 30.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Muy baja",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Algo baja",
+   "count": 7,
+   "pct": 1.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni alta, ni baja",
+   "count": 133,
+   "pct": 32.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo alta",
+   "count": 147,
+   "pct": 36.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_7",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy alta",
+   "count": 114,
+   "pct": 28.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 6,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 24,
+   "pct": 2.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 104,
+   "pct": 8.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 415,
+   "pct": 34.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 656,
+   "pct": 54.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 16,
+   "pct": 2.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 50,
+   "pct": 8.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 200,
+   "pct": 33.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 326,
+   "pct": 54.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 8,
+   "pct": 1.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 54,
+   "pct": 8.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 213,
+   "pct": 35.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 329,
+   "pct": 54.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 1,
+   "pct": 0.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 37,
+   "pct": 9.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 123,
+   "pct": 31.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 221,
+   "pct": 57.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 42,
+   "pct": 10.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 141,
+   "pct": 35.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 207,
+   "pct": 51.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 10,
+   "pct": 2.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 25,
+   "pct": 6.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 151,
+   "pct": 36.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 228,
+   "pct": 54.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 1,
+   "pct": 0.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 7,
+   "pct": 1.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 34,
+   "pct": 8.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 96,
+   "pct": 23.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 263,
+   "pct": 65.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 7,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 32,
+   "pct": 8.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 168,
+   "pct": 42.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 188,
+   "pct": 47.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada feliz",
+   "count": 1,
+   "pct": 0.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco feliz",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni feliz, ni infeliz",
+   "count": 38,
+   "pct": 9.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo feliz",
+   "count": 151,
+   "pct": 37.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_8",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy feliz",
+   "count": 205,
+   "pct": 50.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 11,
+   "pct": 0.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 34,
+   "pct": 2.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 124,
+   "pct": 10.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 456,
+   "pct": 37.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 581,
+   "pct": 48.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 18,
+   "pct": 3.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 60,
+   "pct": 10.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 224,
+   "pct": 37.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 290,
+   "pct": 48.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 16,
+   "pct": 2.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 63,
+   "pct": 10.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 231,
+   "pct": 38.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 290,
+   "pct": 47.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 9,
+   "pct": 2.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 45,
+   "pct": 11.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 131,
+   "pct": 33.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 197,
+   "pct": 51.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 16,
+   "pct": 4.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 39,
+   "pct": 9.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 169,
+   "pct": 42.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 176,
+   "pct": 43.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 9,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 40,
+   "pct": 9.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 156,
+   "pct": 37.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 208,
+   "pct": 49.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 8,
+   "pct": 2.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 42,
+   "pct": 10.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 135,
+   "pct": 33.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 213,
+   "pct": 53.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 44,
+   "pct": 11.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 166,
+   "pct": 41.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 175,
+   "pct": 43.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 16,
+   "pct": 3.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 38,
+   "pct": 9.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 155,
+   "pct": 38.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_9",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 193,
+   "pct": 47.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 12,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 62,
+   "pct": 5.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 170,
+   "pct": 14.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 414,
+   "pct": 34.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 549,
+   "pct": 45.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 5,
+   "pct": 0.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 22,
+   "pct": 3.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 86,
+   "pct": 14.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 188,
+   "pct": 31.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 296,
+   "pct": 49.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 40,
+   "pct": 6.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 83,
+   "pct": 13.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 224,
+   "pct": 36.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 253,
+   "pct": 41.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 1,
+   "pct": 0.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 23,
+   "pct": 6.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 58,
+   "pct": 15.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 139,
+   "pct": 36.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 165,
+   "pct": 42.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 1,
+   "pct": 0.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 29,
+   "pct": 7.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 49,
+   "pct": 12.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 140,
+   "pct": 34.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 184,
+   "pct": 45.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 10,
+   "pct": 2.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 10,
+   "pct": 2.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 63,
+   "pct": 15.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 135,
+   "pct": 32.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 200,
+   "pct": 47.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 14,
+   "pct": 3.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 48,
+   "pct": 12.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 114,
+   "pct": 28.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 223,
+   "pct": 55.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 22,
+   "pct": 5.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 69,
+   "pct": 17.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 136,
+   "pct": 34.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 166,
+   "pct": 41.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 26,
+   "pct": 6.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 53,
+   "pct": 13.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 164,
+   "pct": 40.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_10",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 160,
+   "pct": 39.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 5,
+   "pct": 0.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 45,
+   "pct": 3.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 124,
+   "pct": 10.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 447,
+   "pct": 37.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 585,
+   "pct": 48.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 16,
+   "pct": 2.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 56,
+   "pct": 9.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 224,
+   "pct": 37.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 296,
+   "pct": 49.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 1,
+   "pct": 0.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 29,
+   "pct": 4.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 67,
+   "pct": 11.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 222,
+   "pct": 36.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 288,
+   "pct": 47.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 15,
+   "pct": 3.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 35,
+   "pct": 9.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 143,
+   "pct": 37.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 191,
+   "pct": 49.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 15,
+   "pct": 3.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 49,
+   "pct": 12.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 152,
+   "pct": 37.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 184,
+   "pct": 45.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 0,
+   "pct": 0.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 15,
+   "pct": 3.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 40,
+   "pct": 9.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 152,
+   "pct": 36.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 210,
+   "pct": 50.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 2,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 12,
+   "pct": 3.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 40,
+   "pct": 10.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 123,
+   "pct": 30.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 224,
+   "pct": 55.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 0,
+   "pct": 0.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 16,
+   "pct": 4.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 43,
+   "pct": 10.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 158,
+   "pct": 39.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 182,
+   "pct": 45.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 17,
+   "pct": 4.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 41,
+   "pct": 10.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 166,
+   "pct": 40.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_14",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 179,
+   "pct": 44.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 20,
+   "pct": 1.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 69,
+   "pct": 5.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 153,
+   "pct": 12.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 399,
+   "pct": 33.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 549,
+   "pct": 46.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 14,
+   "pct": 2.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 44,
+   "pct": 7.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 83,
+   "pct": 14.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 198,
+   "pct": 33.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 249,
+   "pct": 42.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 6,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 25,
+   "pct": 4.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 70,
+   "pct": 11.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 199,
+   "pct": 33.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 299,
+   "pct": 49.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 22,
+   "pct": 5.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 51,
+   "pct": 13.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 131,
+   "pct": 34.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 173,
+   "pct": 45.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 21,
+   "pct": 5.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 52,
+   "pct": 13.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 138,
+   "pct": 34.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 182,
+   "pct": 45.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 6,
+   "pct": 1.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 26,
+   "pct": 6.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 50,
+   "pct": 12.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 130,
+   "pct": 32.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 194,
+   "pct": 47.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 4,
+   "pct": 1.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 23,
+   "pct": 5.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 56,
+   "pct": 14.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 119,
+   "pct": 29.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 199,
+   "pct": 49.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 7,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 25,
+   "pct": 6.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 55,
+   "pct": 13.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 131,
+   "pct": 33.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 178,
+   "pct": 44.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 9,
+   "pct": 2.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 21,
+   "pct": 5.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 42,
+   "pct": 10.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 149,
+   "pct": 37.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_15",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 172,
+   "pct": 43.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 22,
+   "pct": 4.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 123,
+   "pct": 22.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 196,
+   "pct": 35.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 205,
+   "pct": 37.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 2,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 11,
+   "pct": 4.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 49,
+   "pct": 18.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 92,
+   "pct": 34.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 116,
+   "pct": 43.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 1,
+   "pct": 0.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 11,
+   "pct": 4.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 73,
+   "pct": 26.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 103,
+   "pct": 37.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 89,
+   "pct": 32.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 2,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 10,
+   "pct": 3.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 61,
+   "pct": 21.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 104,
+   "pct": 35.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 114,
+   "pct": 39.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 1,
+   "pct": 0.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 7,
+   "pct": 4.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 39,
+   "pct": 25.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 57,
+   "pct": 36.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 52,
+   "pct": 33.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 0,
+   "pct": 0.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 5,
+   "pct": 4.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 23,
+   "pct": 22.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 35,
+   "pct": 34.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 39,
+   "pct": 38.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 0,
+   "pct": 0.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 5,
+   "pct": 2.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 27,
+   "pct": 15.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 70,
+   "pct": 40.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 73,
+   "pct": 41.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 1,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 7,
+   "pct": 3.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 47,
+   "pct": 24.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 60,
+   "pct": 30.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 80,
+   "pct": 41.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada segura(o)",
+   "count": 2,
+   "pct": 1.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco segura(o)",
+   "count": 10,
+   "pct": 5.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Algo segura(o)",
+   "count": 49,
+   "pct": 27.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Muy segura(o)",
+   "count": 66,
+   "pct": 36.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_16",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Totalmente segura(o)",
+   "count": 52,
+   "pct": 29.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 13,
+   "pct": 1.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 40,
+   "pct": 3.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 165,
+   "pct": 13.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 498,
+   "pct": 41.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 487,
+   "pct": 40.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 10,
+   "pct": 1.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 29,
+   "pct": 4.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 109,
+   "pct": 18.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 214,
+   "pct": 36.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 233,
+   "pct": 39.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 3,
+   "pct": 0.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 11,
+   "pct": 1.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 56,
+   "pct": 9.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 282,
+   "pct": 46.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 253,
+   "pct": 41.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 3,
+   "pct": 0.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 13,
+   "pct": 3.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 60,
+   "pct": 15.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 167,
+   "pct": 43.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 142,
+   "pct": 36.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 13,
+   "pct": 3.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 54,
+   "pct": 13.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 172,
+   "pct": 42.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 159,
+   "pct": 39.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 14,
+   "pct": 3.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 51,
+   "pct": 12.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 159,
+   "pct": 38.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 186,
+   "pct": 44.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 3,
+   "pct": 0.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 15,
+   "pct": 3.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 44,
+   "pct": 11.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 163,
+   "pct": 40.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 176,
+   "pct": 43.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 16,
+   "pct": 4.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 61,
+   "pct": 15.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 144,
+   "pct": 36.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 174,
+   "pct": 43.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Ninguna importancia",
+   "count": 5,
+   "pct": 1.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poca importancia",
+   "count": 9,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Algo de importancia",
+   "count": 60,
+   "pct": 14.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Mucha importancia",
+   "count": 191,
+   "pct": 47.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_17",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Total importancia",
+   "count": 137,
+   "pct": 34.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 34,
+   "pct": 2.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 104,
+   "pct": 8.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 113,
+   "pct": 9.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 431,
+   "pct": 35.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "general",
+   "filter_value": "all",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 524,
+   "pct": 43.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 13,
+   "pct": 2.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 33,
+   "pct": 5.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 52,
+   "pct": 8.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 224,
+   "pct": 37.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Hombre",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 274,
+   "pct": 46.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 21,
+   "pct": 3.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 71,
+   "pct": 11.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 60,
+   "pct": 9.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 206,
+   "pct": 33.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "gender",
+   "filter_value": "Mujer",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 249,
+   "pct": 41.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 8,
+   "pct": 2.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 28,
+   "pct": 7.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 33,
+   "pct": 8.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 132,
+   "pct": 34.3
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "15-19",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 184,
+   "pct": 47.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 15,
+   "pct": 3.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 38,
+   "pct": 9.4
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 43,
+   "pct": 10.7
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 142,
+   "pct": 35.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "20-24",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 165,
+   "pct": 40.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 11,
+   "pct": 2.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 38,
+   "pct": 9.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 37,
+   "pct": 8.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 157,
+   "pct": 37.6
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "age_group",
+   "filter_value": "25-29",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 175,
+   "pct": 41.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 30,
+   "pct": 7.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 40,
+   "pct": 10.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 141,
+   "pct": 35.2
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Alto",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 179,
+   "pct": 44.8
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 14,
+   "pct": 3.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 34,
+   "pct": 8.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 36,
+   "pct": 9.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 148,
+   "pct": 37.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Medio",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 168,
+   "pct": 42.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 1,
+   "label": "Nada satisfecha(o)",
+   "count": 10,
+   "pct": 2.5
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 2,
+   "label": "Poco satisfecha(o)",
+   "count": 40,
+   "pct": 9.9
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 3,
+   "label": "Ni satisfecha(o), ni insatisfecha(o)",
+   "count": 37,
+   "pct": 9.1
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 4,
+   "label": "Algo satisfecha(o)",
+   "count": 142,
+   "pct": 35.0
+  },
+  {
+   "dataset_source": "amg_2026",
+   "indicator_id": "Q_20",
+   "filter_type": "estrato",
+   "filter_value": "Bajo",
+   "code": 5,
+   "label": "Muy satisfecha(o)",
+   "count": 177,
+   "pct": 43.6
+  }
+ ]
+}

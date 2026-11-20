@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MenuButton from '../components/MenuButton';
+import AsistenteScreen from '../screens/AsistenteScreen';
 import CommunityScreen from '../screens/CommunityScreen';
 import CompareScreen from '../screens/CompareScreen';
 import ExploreScreen from '../screens/ExploreScreen';
@@ -27,6 +28,7 @@ const screenByPageId: Partial<Record<PageId, ComponentType>> = {
   indicador: IndicatorDetailScreen,
   comparar: CompareScreen,
   mapa: MapMockScreen,
+  asistente: AsistenteScreen,
   participar: ParticipateScreen,
   encuesta: SurveyScreen,
   comunidad: CommunityScreen,
