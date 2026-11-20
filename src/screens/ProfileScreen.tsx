@@ -8,12 +8,13 @@ import { colors, tabTheme } from '../theme/colors';
 
 export default function ProfileScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
-  const { userMode, userEmail, isTecVerified, favoriteIds, completedSurveyIds } = useAppState();
+  const { userMode, userEmail, userRole, isTecVerified, favoriteIds, completedSurveyIds } = useAppState();
   const theme = tabTheme.perfil;
 
+  const roleBadge = userRole === 'admin' ? ' · 🛡️ Admin' : isTecVerified ? ' · 🎓 Verificado TEC' : '';
   const statusText =
     userMode === 'user' && userEmail
-      ? `${userEmail}${isTecVerified ? ' · 🎓 Verificado TEC' : ''}`
+      ? `${userEmail}${roleBadge}`
       : 'Modo invitado (sin cuenta)';
 
   return (

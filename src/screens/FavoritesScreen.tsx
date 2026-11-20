@@ -57,7 +57,7 @@ export default function FavoritesScreen() {
                       </Text>
                       <Text style={styles.title}>{n.title}</Text>
                     </View>
-                    <Pressable onPress={() => toggleFavorite(n.id)} hitSlop={10}>
+                    <Pressable onPress={() => toggleFavorite(n.id, 'news')} hitSlop={10}>
                       <Text style={styles.star}>⭐</Text>
                     </Pressable>
                   </View>
