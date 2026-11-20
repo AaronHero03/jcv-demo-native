@@ -10,24 +10,38 @@ interface DataStatusBannerProps {
   sampleSize?: number | null;
 }
 
-/** Explica de dónde vienen los datos (en vivo, respaldo sin conexión o no disponibles). */
+/** Explica cuando hay respaldo sin conexión, datos no disponibles o muestras pequeñas. */
 export default function DataStatusBanner({ result, loading, sampleSize }: DataStatusBannerProps) {
-  const { tone, text } = describe(result);
+  const status = loading
+    ? ({ tone: 'live', text: 'Consultando datos actualizados…' } as const)
+    : describe(result);
   const n = result.stats && typeof sampleSize === 'number' ? sampleSize : null;
+  const showEmptySample = n === 0;
+  const showLowSample = n !== null && n > 0 && n < LOW_SAMPLE_THRESHOLD;
+
+  if (!status && !showEmptySample && !showLowSample) {
+    return null;
+  }
 
   return (
     <View style={styles.wrap}>
-      <View style={[styles.banner, toneStyles[tone]]}>
-        {loading ? <ActivityIndicator size="small" color={colors.navy} /> : <Text style={styles.dot}>{icons[tone]}</Text>}
-        <Text style={styles.text}>{loading ? 'Consultando datos actualizados…' : text}</Text>
-      </View>
-      {n === 0 && (
+      {status && (
+        <View style={[styles.banner, toneStyles[status.tone]]}>
+          {loading ? (
+            <ActivityIndicator size="small" color={colors.navy} />
+          ) : (
+            <Text style={styles.dot}>{icons[status.tone]}</Text>
+          )}
+          <Text style={styles.text}>{status.text}</Text>
+        </View>
+      )}
+      {showEmptySample && (
         <View style={[styles.banner, toneStyles.warn]}>
           <Text style={styles.dot}>ℹ️</Text>
           <Text style={styles.text}>Aún no hay respuestas para este grupo.</Text>
         </View>
       )}
-      {n !== null && n > 0 && n < LOW_SAMPLE_THRESHOLD && (
+      {showLowSample && (
         <View style={[styles.banner, toneStyles.warn]}>
           <Text style={styles.dot}>⚠️</Text>
           <Text style={styles.text}>
@@ -41,8 +55,8 @@ export default function DataStatusBanner({ result, loading, sampleSize }: DataSt
 
 type Tone = 'live' | 'offline' | 'warn';
 
-function describe(result: StatsResult): { tone: Tone; text: string } {
-  if (result.origin === 'remote') return { tone: 'live', text: 'Datos en vivo desde la base de datos.' };
+function describe(result: StatsResult): { tone: Tone; text: string } | null {
+  if (result.origin === 'remote') return null;
   if (result.origin === 'offline') {
     return result.reason === 'not-configured'
       ? { tone: 'offline', text: 'Datos locales de la encuesta AMG 2026 (base de datos no configurada).' }

@@ -1,3 +1,4 @@
+import { supabase } from '../lib/supabase';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useAppState } from '../context/AppStateContext';
@@ -31,6 +32,8 @@ export default function VerificationScreen() {
           <View style={styles.verifiedBox}>
             <Text style={styles.verifiedText}>✅ Cuenta verificada: {userEmail}</Text>
           </View>
+        ) : supabase ? (
+          <Text style={styles.desc}>Para participar, inicia sesión con una cuenta @tec.mx cuyo correo esté confirmado en Supabase.</Text>
         ) : (
           <>
             <TextInput

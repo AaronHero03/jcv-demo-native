@@ -1,4 +1,5 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { supabase } from '../lib/supabase';
 import Hero from '../components/Hero';
 import { colors, tabTheme } from '../theme/colors';
 
@@ -20,8 +21,8 @@ export default function PrivacyScreen() {
       <View style={styles.card}>
         <Text style={styles.cardTitle}>1. Datos en tu dispositivo</Text>
         <Text style={styles.body}>
-          En esta versión, tus favoritos, respuestas de encuestas y comentarios del foro se almacenan
-          únicamente en memoria durante la sesión activa y se reinician al cerrar sesión.
+          El borrador de tu encuesta se guarda cifrado en este dispositivo para que puedas retomarlo. Al completar el envío, la app elimina el borrador.
+          {supabase ? ' Las respuestas enviadas se guardan en Supabase, vinculadas a tu cuenta para registrar tu participación. Las publicaciones visibles del foro se comparten con la comunidad.' : ' En esta vista previa, las respuestas enviadas y los comentarios del foro permanecen en la sesión de demostración.'}
         </Text>
       </View>
 
@@ -36,8 +37,7 @@ export default function PrivacyScreen() {
       <View style={styles.card}>
         <Text style={styles.cardTitle}>3. Verificación institucional</Text>
         <Text style={styles.body}>
-          El correo @tec.mx ingresado en Perfil se utiliza únicamente para activar tu insignia de
-          comunidad universitaria dentro de la app.
+          {supabase ? 'La cuenta institucional con correo confirmado habilita la encuesta Tec. Los donativos se procesan en Stripe Checkout. Puedes consultar su monto y estado desde tu cuenta.' : 'La cuenta y la insignia de esta vista previa son de demostración.'}
         </Text>
       </View>
     </ScrollView>

@@ -66,8 +66,8 @@ export function getIndicatorsByCategory(category: 'Todas' | IndicatorCategory): 
   return indicators.filter((item) => item.category === category);
 }
 
-export function searchIndicators(query: string, category: 'Todas' | IndicatorCategory = 'Todas'): Indicator[] {
-  const base = getIndicatorsByCategory(category);
+export function searchIndicators(query: string, category: 'Todas' | IndicatorCategory = 'Todas', source: Indicator[] = indicators): Indicator[] {
+  const base = category === 'Todas' ? source : source.filter(item => item.category === category);
   const q = query.trim().toLowerCase();
   if (!q) return base;
   return base.filter(

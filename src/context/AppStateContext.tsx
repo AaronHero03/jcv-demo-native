@@ -20,6 +20,7 @@ export interface AppStateContextValue {
   userId: string | null;
   userEmail: string | null;
   userRole: UserRole;
+  isAdmin: boolean;
   isTecVerified: boolean;
   authLoading: boolean;
   loginAsGuest: () => void;
@@ -293,6 +294,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
         userId,
         userEmail,
         userRole,
+        isAdmin: userRole === 'admin',
         isTecVerified,
         authLoading,
         loginAsGuest,

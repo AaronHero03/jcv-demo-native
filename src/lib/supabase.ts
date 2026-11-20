@@ -57,3 +57,15 @@ export const supabase: SupabaseClient | null = isSupabaseConfigured
       },
     })
   : null;
+
+export function database(): SupabaseClient {
+  if (!supabase) throw new Error('Conecta Supabase para usar esta función.');
+  return supabase;
+}
+
+export function messageOf(error: unknown): string {
+  if (error && typeof error === 'object' && 'message' in error && typeof error.message === 'string') {
+    return error.message;
+  }
+  return 'No se pudo completar la operación. Vuelve a intentarlo.';
+}

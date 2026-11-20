@@ -1,14 +1,19 @@
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useAppState } from '../context/AppStateContext';
-import { newsItems } from '../data/community';
-import { indicators } from '../data/indicators';
+import { loadNews } from '../lib/community';
 import { colors } from '../theme/colors';
 
 export default function FavoritesScreen() {
   const { favoriteIds, toggleFavorite } = useAppState();
 
-  const favIndicators = indicators.filter((ind) => favoriteIds.includes(ind.id));
-  const favNews = newsItems.filter((n) => favoriteIds.includes(n.id));
+  const published = useFocusedData(loadPublishedIndicators);
+  const news = useFocusedData(loadNews);
+  if (!news.data || !published.data) return <LoadNotice error={news.error || published.error} retry={() => { news.refresh(); published.refresh(); }} />;
+  const favIndicators = published.data.filter((ind) => favoriteIds.includes(ind.id));
+  const favNews = news.data.filter((n) => favoriteIds.includes(n.id));
   const isEmpty = favIndicators.length === 0 && favNews.length === 0;
 
   return (

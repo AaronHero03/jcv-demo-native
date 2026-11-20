@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react';
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
+import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRoute, type ParamListBase, type RouteProp } from '@react-navigation/native';
-import { getIndicatorById, indicators } from '../data/indicators';
 import { colors, tabTheme, type TabId } from '../theme/colors';
 
 function getStatusColor(pct: number | null): string {
@@ -16,14 +18,13 @@ export default function MapMockScreen() {
   const params = route.params as { tab?: TabId; indicatorId?: string } | undefined;
   const theme = tabTheme[params?.tab ?? 'explorar'];
 
-  const [selectedId, setSelectedId] = useState(() => getIndicatorById(params?.indicatorId).id);
-  const indicator = getIndicatorById(selectedId);
-
-  const sortedMunicipalities = useMemo(
-    () =>
-      [...indicator.byMunicipality].sort((a, b) => (b.positivePct ?? -1) - (a.positivePct ?? -1)),
-    [indicator]
-  );
+  const [selectedId, setSelectedId] = useState(params?.indicatorId);
+  const published = useFocusedData(loadPublishedIndicators);
+  if (!published.data) return <LoadNotice error={published.error} retry={published.refresh} />;
+  const indicators = published.data;
+  const indicator = indicators.find(i => i.id === selectedId) || indicators[0];
+  if (!indicator) return <LoadNotice text="No hay indicadores publicados." />;
+  const sortedMunicipalities = [...indicator.byMunicipality].sort((a, b) => (b.positivePct ?? -1) - (a.positivePct ?? -1));
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
