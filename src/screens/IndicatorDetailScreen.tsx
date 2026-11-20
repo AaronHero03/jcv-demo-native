@@ -1,10 +1,12 @@
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useNavigation, useRoute, type ParamListBase, type RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import BarChart from '../components/BarChart';
 import NavRow from '../components/NavRow';
 import { useAppState } from '../context/AppStateContext';
-import { getIndicatorById } from '../data/indicators';
 import { colors, tabTheme, type TabId } from '../theme/colors';
 
 export default function IndicatorDetailScreen() {
@@ -13,8 +15,11 @@ export default function IndicatorDetailScreen() {
   const params = route.params as { tab?: TabId; indicatorId?: string } | undefined;
   const tab = params?.tab ?? 'explorar';
   const theme = tabTheme[tab];
-  const indicator = getIndicatorById(params?.indicatorId);
   const { isFavorite, toggleFavorite } = useAppState();
+  const published = useFocusedData(loadPublishedIndicators);
+  if (!published.data) return <LoadNotice error={published.error} retry={published.refresh} />;
+  const indicator = params?.indicatorId ? published.data.find(item => item.id === params.indicatorId) : published.data[0];
+  if (!indicator) return <LoadNotice text="Este indicador no está publicado." />;
   const fav = isFavorite(indicator.id);
 
   return (

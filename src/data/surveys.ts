@@ -14,7 +14,7 @@ interface BaseQuestion {
   /** Sección (paso) del cuestionario. Si la encuesta no usa secciones, se muestra todo en una página. */
   section?: string;
   /** Pregunta condicional: solo se muestra (y se envía) si regresa true. */
-  showIf?: (answers: SurveyAnswers) => boolean;
+  visibleWhen?: { key: string; op: 'eq' | 'ne'; value: string };
 }
 
 /** Opción única. `compact` muestra las opciones como fichas en renglón (para listas cortas o numéricas). */
@@ -55,11 +55,15 @@ export function answerKeys(q: SurveyQuestion): string[] {
 }
 
 export function isQuestionVisible(q: SurveyQuestion, answers: SurveyAnswers): boolean {
-  return q.showIf ? q.showIf(answers) : true;
+  const rule = q.visibleWhen;
+  if (!rule) return true;
+  const value = answers[rule.key];
+  return value !== undefined && (rule.op === 'eq' ? value === rule.value : value !== rule.value);
 }
 
 export function isQuestionAnswered(q: SurveyQuestion, answers: SurveyAnswers): boolean {
-  return answerKeys(q).every((key) => Boolean(answers[key]));
+  const choices = q.type === 'single' ? q.options : q.type === 'grid' ? q.scale : ['Sí', 'No'];
+  return answerKeys(q).every((key) => choices.includes(answers[key]));
 }
 
 const SATISFACCION = ['Nada satisfecha(o)', 'Poco satisfecha(o)', 'Ni satisfecha(o), ni insatisfecha(o)', 'Algo satisfecha(o)', 'Muy satisfecha(o)'];
@@ -211,7 +215,7 @@ const bienestarQuestions: SurveyQuestion[] = [
     type: 'single',
     prompt: '¿Qué tan segura(o) te sientes en la escuela?',
     options: ['Nada segura(o)', 'Poco segura(o)', 'Algo segura(o)', 'Muy segura(o)', 'Totalmente segura(o)'],
-    showIf: (answers) => answers.T_Q_13_1 === 'Sí',
+    visibleWhen: { key: 'T_Q_13_1', op: 'eq', value: 'Sí' },
   },
   {
     id: 'Q_30',
@@ -342,7 +346,7 @@ const bienestarQuestions: SurveyQuestion[] = [
     type: 'single',
     prompt: 'En un día normal, ¿cuánto tiempo dedicas a transportarte?',
     options: ['Hasta 30 minutos', 'De 31 a 60 minutos', 'De 61 a 90 minutos', 'De 91 a 120 minutos', 'De 121 a 180 minutos', 'Más de 180 minutos'],
-    showIf: (answers) => answers.Q_69 !== 'No me desplazo',
+    visibleWhen: { key: 'Q_69', op: 'ne', value: 'No me desplazo' },
   },
 
   // 5 · Participación y confianza

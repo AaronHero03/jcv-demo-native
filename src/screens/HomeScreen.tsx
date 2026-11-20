@@ -1,3 +1,6 @@
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useNavigation, type ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -5,14 +8,16 @@ import Hero from '../components/Hero';
 import IndicatorCard from '../components/IndicatorCard';
 import NavRow from '../components/NavRow';
 import { useAppState } from '../context/AppStateContext';
-import { datasetMeta, indicators } from '../data/indicators';
+import { datasetMeta } from '../data/indicators';
 import { colors, tabTheme } from '../theme/colors';
 
 export default function HomeScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const { userMode, userEmail, isFavorite, toggleFavorite } = useAppState();
   const theme = tabTheme.inicio;
-  const featured = indicators.slice(0, 3);
+  const published = useFocusedData(loadPublishedIndicators);
+  if (!published.data) return <LoadNotice error={published.error} retry={published.refresh} />;
+  const featured = published.data.slice(0, 3);
 
   const greeting =
     userMode === 'user' && userEmail

@@ -1,14 +1,19 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useAppState } from '../context/AppStateContext';
-import { newsItems } from '../data/community';
+import { loadNews } from '../lib/community';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { colors } from '../theme/colors';
 
 export default function NewsScreen() {
   const { isFavorite, toggleFavorite } = useAppState();
 
+  const news = useFocusedData(loadNews);
+  if (!news.data) return <LoadNotice error={news.error} retry={news.refresh} />;
+  if (!news.data.length) return <LoadNotice text="Aún no hay noticias publicadas." />;
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-      {newsItems.map((item) => {
+      {news.data.map((item) => {
         const fav = isFavorite(item.id);
         return (
           <View key={item.id} style={styles.card}>

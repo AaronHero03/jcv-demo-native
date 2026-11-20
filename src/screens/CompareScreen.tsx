@@ -1,8 +1,11 @@
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRoute, type ParamListBase, type RouteProp } from '@react-navigation/native';
 import BarChart from '../components/BarChart';
-import { getIndicatorById, indicators, municipalities } from '../data/indicators';
+import { municipalities } from '../data/indicators';
 import { colors, tabTheme, type TabId } from '../theme/colors';
 
 export default function CompareScreen() {
@@ -10,13 +13,15 @@ export default function CompareScreen() {
   const params = route.params as { tab?: TabId; indicatorId?: string } | undefined;
   const theme = tabTheme[params?.tab ?? 'explorar'];
 
-  const [selectedIndicatorId, setSelectedIndicatorId] = useState(
-    () => getIndicatorById(params?.indicatorId).id
-  );
+  const [selectedIndicatorId, setSelectedIndicatorId] = useState(params?.indicatorId);
   const [muniA, setMuniA] = useState(municipalities[1] ?? municipalities[0] ?? 'Guadalajara');
   const [muniB, setMuniB] = useState(municipalities[5] ?? municipalities[1] ?? 'Zapopan');
 
-  const indicator = getIndicatorById(selectedIndicatorId);
+  const published = useFocusedData(loadPublishedIndicators);
+  if (!published.data) return <LoadNotice error={published.error} retry={published.refresh} />;
+  const indicators = published.data;
+  const indicator = indicators.find(i => i.id === selectedIndicatorId) || indicators[0];
+  if (!indicator) return <LoadNotice text="No hay indicadores publicados." />;
   const resA = indicator.byMunicipality.find((m) => m.municipality === muniA);
   const resB = indicator.byMunicipality.find((m) => m.municipality === muniB);
 

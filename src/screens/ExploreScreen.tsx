@@ -1,4 +1,7 @@
-import { useMemo, useState } from 'react';
+import { loadPublishedIndicators } from '../lib/publication';
+import { useFocusedData } from '../hooks/useFocusedData';
+import LoadNotice from '../components/LoadNotice';
+import { useState } from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useNavigation, type ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -14,7 +17,9 @@ export default function ExploreScreen() {
   const [category, setCategory] = useState<'Todas' | IndicatorCategory>('Todas');
   const theme = tabTheme.explorar;
 
-  const results = useMemo(() => searchIndicators(query, category), [query, category]);
+  const published = useFocusedData(loadPublishedIndicators);
+  if (!published.data) return <LoadNotice error={published.error} retry={published.refresh} />;
+  const results = searchIndicators(query, category, published.data);
 
   return (
     <View style={styles.screen}>

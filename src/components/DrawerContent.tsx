@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, Text, View } from "react-native";
 import { StackActions } from "@react-navigation/native";
 import {
 	DrawerContentScrollView,
@@ -34,8 +34,8 @@ export default function DrawerContent(props: DrawerContentComponentProps) {
 			<DrawerItemList {...props} />
 			<DrawerItem
 				label="🚪  Cerrar sesión"
-				onPress={() => {
-					logout();
+				onPress={async () => {
+					try { await logout(); } catch { Alert.alert("No se pudo cerrar la sesión", "Inténtalo de nuevo."); return; }
 					props.navigation
 						.getParent()
 						?.dispatch(StackActions.replace("Welcome"));

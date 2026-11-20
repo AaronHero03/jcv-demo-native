@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: '¿Para qué sirve la Verificación TEC?',
-    a: 'Permite validar tu correo institucional @tec.mx en Perfil para mostrar tu insignia de comunidad universitaria.',
+    a: 'Con Supabase conectado, una cuenta con correo @tec.mx confirmado habilita la participación en la encuesta Tec. En Perfil puedes consultar tu estado.',
   },
 ];
 

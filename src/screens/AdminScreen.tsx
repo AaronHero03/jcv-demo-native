@@ -1,96 +1,60 @@
+import { useCallback, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Hero from '../components/Hero';
+import LoadNotice from '../components/LoadNotice';
 import { useAppState } from '../context/AppStateContext';
-import { forumTopics, newsItems } from '../data/community';
-import { datasetMeta, indicators } from '../data/indicators';
-import { surveys } from '../data/surveys';
-import { colors, tabTheme } from '../theme/colors';
+import { useFocusedData } from '../hooks/useFocusedData';
+import { confirmOnDevice } from '../lib/deviceConfirmation';
+import { changePublication, loadPublications, publicationTypes, type PublicationType } from '../lib/publication';
+import { messageOf } from '../lib/supabase';
+import { colors } from '../theme/colors';
 
 export default function AdminScreen() {
-  const { userMode, userEmail, favoriteIds, completedSurveyIds, forumRepliesByTopic, logout } =
-    useAppState();
-  const theme = tabTheme.drawer;
-
-  const extraReplies = Object.values(forumRepliesByTopic).reduce((acc, list) => acc + list.length, 0);
-
-  return (
-    <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-      <Hero
-        page={{
-          emoji: '🛠️',
-          title: 'Administración',
-          text: 'Resumen operativo del catálogo y estado de la sesión actual.',
-        }}
-        color={theme.color}
-        ink={theme.ink}
-      />
-
-      {userMode === 'guest' ? (
-        <View style={styles.warnCard}>
-          <Text style={styles.warnTitle}>Acceso limitado (Modo Invitado)</Text>
-          <Text style={styles.warnText}>
-            Inicia sesión desde la pantalla de bienvenida para habilitar las herramientas de
-            administración.
-          </Text>
-        </View>
-      ) : (
-        <>
-          <View style={styles.card}>
-            <Text style={styles.cardTitle}>Catálogo cargado</Text>
-            <Text style={styles.row}>• Dataset: {datasetMeta.name}</Text>
-            <Text style={styles.row}>• Encuestados: {datasetMeta.totalRespondents}</Text>
-            <Text style={styles.row}>• Indicadores activos: {indicators.length}</Text>
-            <Text style={styles.row}>• Encuestas configuradas: {surveys.length}</Text>
-            <Text style={styles.row}>
-              • Noticias / Temas de foro: {newsItems.length} / {forumTopics.length}
-            </Text>
-          </View>
-
-          <View style={styles.card}>
-            <Text style={styles.cardTitle}>Actividad de sesión ({userEmail})</Text>
-            <Text style={styles.row}>• Favoritos guardados: {favoriteIds.length}</Text>
-            <Text style={styles.row}>• Encuestas completadas: {completedSurveyIds.length}</Text>
-            <Text style={styles.row}>• Comentarios nuevos en foro: {extraReplies}</Text>
-
-            <Pressable onPress={logout} style={styles.resetBtn}>
-              <Text style={styles.resetText}>Reiniciar estado de sesión</Text>
-            </Pressable>
-          </View>
-        </>
-      )}
-    </ScrollView>
-  );
+  const { isAdmin, userId } = useAppState();
+  return isAdmin && userId ? <PublicationPanel key={userId} /> : <LoadNotice text="Se requiere una cuenta administradora." />;
 }
 
+function PublicationPanel() {
+  const [kind, setKind] = useState<PublicationType>('surveys');
+  const rows = useFocusedData(useCallback(() => loadPublications(kind), [kind]));
+  const [message, setMessage] = useState('');
+  const [busy, setBusy] = useState(false);
+  const working = useRef(false);
+
+  async function toggle(id: string, title: string, visible: boolean) {
+    if (working.current) return;
+    working.current = true; setBusy(true); setMessage('');
+    try {
+      await confirmOnDevice((visible ? 'Publicar ' : 'Ocultar ') + title);
+      await changePublication(kind, id, visible);
+      rows.refresh();
+      setMessage(visible ? 'Contenido publicado.' : 'Contenido oculto.');
+    } catch (e) { setMessage(messageOf(e)); }
+    finally { setBusy(false); working.current = false; }
+  }
+
+  return <ScrollView contentContainerStyle={styles.content}>
+    <Text style={styles.heading}>Publicación de contenido</Text>
+    <View style={styles.tabs}>{(Object.keys(publicationTypes) as PublicationType[]).map(type =>
+      <Pressable key={type} accessibilityRole="button" accessibilityState={{ selected: kind === type }}
+        disabled={busy} onPress={() => { setKind(type); setMessage(''); }} style={[styles.tab, kind === type && styles.active]}>
+        <Text style={{ color: kind === type ? colors.white : colors.navy }}>{publicationTypes[type]}</Text>
+      </Pressable>)}</View>
+    {message ? <Text accessibilityLiveRegion="polite">{message}</Text> : null}
+    {!rows.data ? <LoadNotice error={rows.error} retry={rows.refresh} /> : rows.data.length === 0 ?
+      <LoadNotice text="Todavía no hay elementos en esta sección." /> : rows.data.map(row =>
+        <View key={row.id} style={styles.card}>
+          <Text style={styles.title}>{row.title}</Text>
+          <Text>{row.visible ? 'Publicado' : 'Oculto'}</Text>
+          <Pressable accessibilityRole="button" disabled={busy} onPress={() => toggle(row.id, row.title, !row.visible)}>
+            <Text style={styles.link}>{row.visible ? 'Ocultar' : 'Publicar'}</Text>
+          </Pressable>
+        </View>)}
+  </ScrollView>;
+}
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 16, gap: 12, paddingBottom: 32 },
-  warnCard: {
-    padding: 16,
-    borderRadius: 18,
-    backgroundColor: '#FFF4D6',
-    borderWidth: 1,
-    borderColor: colors.yellow,
-    gap: 6,
-  },
-  warnTitle: { fontSize: 16, fontWeight: '800', color: colors.navy },
-  warnText: { fontSize: 14, color: colors.navy, lineHeight: 20 },
-  card: {
-    padding: 16,
-    borderRadius: 18,
-    backgroundColor: colors.white,
-    borderWidth: 1,
-    borderColor: '#E1E5E8',
-    gap: 8,
-  },
-  cardTitle: { fontSize: 16, fontWeight: '800', color: colors.navy },
-  row: { fontSize: 14, color: colors.navy },
-  resetBtn: {
-    marginTop: 8,
-    paddingVertical: 12,
-    borderRadius: 12,
-    backgroundColor: colors.pink,
-    alignItems: 'center',
-  },
-  resetText: { fontSize: 14, fontWeight: '800', color: colors.white },
+  content: { padding: 16, gap: 12 }, heading: { fontWeight: '800', fontSize: 21, color: colors.navy },
+  tabs: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  tab: { padding: 12, borderRadius: 12, backgroundColor: colors.white }, active: { backgroundColor: colors.navy },
+  card: { gap: 8, padding: 16, borderRadius: 16, backgroundColor: colors.white, borderWidth: 1, borderColor: colors.border },
+  title: { fontWeight: '700', color: colors.navy, fontSize: 16 }, link: { paddingVertical: 6, fontWeight: '700', color: colors.navy },
 });
