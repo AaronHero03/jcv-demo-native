@@ -7,9 +7,9 @@ Este proyecto se divide en **dos fases ágiles** para reducir dependencias entre
 
 ## Guías Individuales (divididas en Fase 1 y Fase 2)
 - [carlos.md](carlos.md) — Base de datos, carga de datos AMG 2026, agregación Tec, seguridad y consultas
-- [aaron.md](aaron.md) — Cuentas (`Auth`), almacenamiento seguro, Perfil/Favoritos (Fase 1) y `/ask` con Gemini (Fase 2)
-- [genaro.md](genaro.md) — Sistema de filtrado, Comparativa AMG vs. Tec (Fase 1) y pantalla de Chat IA (Fase 2)
-- [nico.md](nico.md) — Captura de encuesta Tec, Comunidad, Admin (Fase 1), Stripe Checkout y CI/SBOM (Fase 2)
+- [aaron.md](aaron.md) — Cuentas (`Auth`), almacenamiento seguro, Perfil/Favoritos (Fase 1) y `/ask` con Gemini (Fase 2) — **PRs #6, #7, #8 abiertos**
+- [genaro.md](genaro.md) — Sistema de filtrado, Comparativa AMG vs. Tec (Fase 1) y pantalla de Chat IA (Fase 2) — **PR #5 abierto (`cybersecurity`)**
+- [nico.md](nico.md) — Captura de encuesta Tec, Comunidad, Admin (Fase 1), Stripe Checkout y CI/SBOM (Fase 2) — **PR #4 abierto (`nico/entrega-jcv`)**
 
 ---
 
