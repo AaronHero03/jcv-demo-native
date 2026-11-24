@@ -79,10 +79,11 @@ describe('InactivityLockGate (MASVS-AUTH-2)', () => {
       return { remove: jest.fn() } as unknown as ReturnType<typeof RNAppState.addEventListener>;
     });
     const logout = jest.fn();
+    const onLogoutNavigate = jest.fn();
     jest.spyOn(AppStateCtx, 'useAppState').mockReturnValue({ ...baseState, logout });
 
     await render(
-      <InactivityLockGate>
+      <InactivityLockGate onLogoutNavigate={onLogoutNavigate}>
         <Text>Contenido protegido</Text>
       </InactivityLockGate>
     );
@@ -98,6 +99,9 @@ describe('InactivityLockGate (MASVS-AUTH-2)', () => {
     });
 
     await fireEvent.press(screen.getByText('Cerrar sesión'));
-    expect(logout).toHaveBeenCalled();
+    await waitFor(() => {
+      expect(logout).toHaveBeenCalled();
+      expect(onLogoutNavigate).toHaveBeenCalled();
+    });
   });
 });

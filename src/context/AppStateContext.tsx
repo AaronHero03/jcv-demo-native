@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import { isSupabaseConfigured, supabase } from '../lib/supabase';
+import { clearStoredAuthTokens, isSupabaseConfigured, supabase } from '../lib/supabase';
 import type { FavoriteItemType, UserRole } from '../types/database';
 
 export interface ForumReply {
@@ -35,7 +35,7 @@ export interface AppStateContextValue {
   signInWithPassword: (email: string, password: string) => Promise<AuthResult>;
   signUpWithPassword: (email: string, password: string, details?: SignUpDetails) => Promise<AuthResult>;
   verifyTecEmail: (email: string) => boolean;
-  logout: () => void;
+  logout: () => Promise<void> | void;
 
   // Favoritos (IDs reales de indicadores o noticias)
   favoriteIds: string[];
@@ -275,9 +275,14 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     return true;
   };
 
-  const logout = () => {
+  const logout = async () => {
     if (supabase) {
-      void supabase.auth.signOut();
+      try {
+        await supabase.auth.signOut({ scope: 'local' });
+      } catch {
+        // Ignoramos errores de red; borramos el almacenamiento local abajo.
+      }
+      await clearStoredAuthTokens();
     }
     setUserMode('guest');
     setUserId(null);

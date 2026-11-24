@@ -85,3 +85,15 @@ export function messageOf(error: unknown): string {
   }
   return 'No se pudo completar la operación. Vuelve a intentarlo.';
 }
+
+export async function clearStoredAuthTokens(): Promise<void> {
+  if (!supabaseUrl) return;
+  try {
+    const projectRef = new URL(supabaseUrl).hostname.split('.')[0];
+    const authKey = `sb-${projectRef}-auth-token`;
+    await secureStorageAdapter.removeItem(authKey);
+    await secureStorageAdapter.removeItem(`${authKey}-code-verifier`);
+  } catch {
+    // Ignorar URL inválida o errores de almacenamiento.
+  }
+}
