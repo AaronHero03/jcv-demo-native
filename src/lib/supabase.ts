@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import * as SecureStore from 'expo-secure-store';
+import { registerAccessTokenProvider } from '../services/supabaseRest';
 
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL ?? '';
 const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? '';
@@ -57,6 +58,14 @@ export const supabase: SupabaseClient | null = isSupabaseConfigured
       },
     })
   : null;
+
+if (supabase) {
+  const client = supabase;
+  registerAccessTokenProvider(async () => {
+    const { data } = await client.auth.getSession();
+    return data.session?.access_token ?? null;
+  });
+}
 
 export function database(): SupabaseClient {
   if (!supabase) throw new Error('Conecta Supabase para usar esta función.');
