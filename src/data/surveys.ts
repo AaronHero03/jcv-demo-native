@@ -401,6 +401,44 @@ const bienestarQuestions: SurveyQuestion[] = [
   },
 ];
 
+const rapida5qQuestions: SurveyQuestion[] = [
+  {
+    id: 'rapida_Q_2',
+    section: S1,
+    type: 'single',
+    prompt: '¿En qué municipio vives?',
+    options: ['El Salto', 'Guadalajara', 'San Pedro Tlaquepaque', 'Tlajomulco de Zúñiga', 'Tonalá', 'Zapopan'],
+  },
+  {
+    id: 'rapida_Q_71',
+    section: S1,
+    type: 'single',
+    prompt: '¿Cómo describes tu identidad de género?',
+    options: ['Hombre', 'Mujer', 'Otra', 'Prefiero no responder'],
+  },
+  {
+    id: 'rapida_Q_6',
+    section: S2,
+    type: 'single',
+    prompt: 'En general, ¿qué tan satisfecha(o) estás con tu vida?',
+    options: ['Nada satisfecha(o)', 'Poco satisfecha(o)', 'Ni satisfecha(o), ni insatisfecha(o)', 'Algo satisfecha(o)', 'Muy satisfecha(o)'],
+  },
+  {
+    id: 'rapida_Q_7',
+    section: S2,
+    type: 'single',
+    prompt: '¿Cómo calificarías tu calidad de vida?',
+    options: ['Muy baja', 'Baja', 'Ni baja, ni alta', 'Alta', 'Muy alta'],
+  },
+  {
+    id: 'rapida_Q_8',
+    section: S2,
+    type: 'single',
+    prompt: 'En general, ¿qué tan feliz eres?',
+    options: ['Nada feliz', 'Poco feliz', 'Ni feliz, ni infeliz', 'Algo feliz', 'Muy feliz'],
+  },
+];
+
 export const surveys: Survey[] = [
   {
     id: 'bienestar-juvenil-2026',
@@ -409,6 +447,14 @@ export const surveys: Survey[] = [
     period: 'Jul–Ago 2026',
     estimatedMinutes: 9,
     questions: bienestarQuestions,
+  },
+  {
+    id: 'bienestar-rapida-5q',
+    title: 'Bienestar Juvenil 2026 (Evaluación Rápida)',
+    description: 'Encuesta breve de 5 reactivos de la encuesta real para seguimiento rápido.',
+    period: 'Jul–Ago 2026',
+    estimatedMinutes: 2,
+    questions: rapida5qQuestions,
   },
 ];
 
