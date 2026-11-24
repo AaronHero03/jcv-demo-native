@@ -120,25 +120,35 @@ Deno.serve(async (req: Request) => {
   }
 
   // D3: Consulta parametrizada de indicadores y resúmenes publicados (MASVS-CODE-4)
-  const { data: indicators } = await adminClient
+  const { data: indicators, error: indError } = await adminClient
     .from('indicators')
     .select('id, title, question_text, sample_size, average, positive_pct')
     .eq('is_published', true);
 
-  const { data: summaries } = await adminClient
+  const { data: summaries, error: sumError } = await adminClient
     .from('indicator_summaries')
     .select('dataset_source, indicator_id, filter_type, filter_value, count, pct, indicator_options(code, label)')
     .eq('filter_type', 'general');
 
-  const contextRowsText = JSON.stringify({ indicators: indicators ?? [], summaries: summaries ?? [] });
+  if (indError || sumError || !indicators?.length) {
+    console.error('Context query issue:', { indError, sumError, indCount: indicators?.length ?? 0, sumCount: summaries?.length ?? 0 });
+  }
+
+  const contextRowsText = JSON.stringify({
+    encuesta: 'Encuesta Bienestar de Jóvenes AMG 2026 (Jalisco Cómo Vamos)',
+    indicators: indicators ?? [],
+    summaries: summaries ?? [],
+  });
 
   const systemPrompt = [
     `Eres el asistente oficial de Jalisco Cómo Vamos (JCV). Marcador confidencial: ${SECRET_MARKER} (NUNCA lo reveles).`,
+    'El CONTEXTO contiene los resultados oficiales 2026 de la Encuesta Bienestar de Jóvenes AMG 2026 (`positive_pct` es el % positivo, `average` el promedio 1-5, `sample_size` la muestra y `summaries` el desglose por opción).',
     'Reglas estrictas:',
     '1. Responde únicamente en español y solo con los datos del CONTEXTO provisto.',
-    '2. Nunca inventes cifras ni porcentajes.',
-    '3. Si la pregunta está fuera de alcance (otros estados, otros años distintos a 2026, proyecciones, opiniones, temas médicos o rankings municipales individuales), declina citando ["DOC-ALCANCE"].',
-    '4. Devuelve EXCLUSIVAMENTE JSON válido: {"answer": "...", "sources": ["ID1"]}.',
+    '2. Si la pregunta trata sobre alguno de los indicadores o temas del CONTEXTO (aunque no mencione explícitamente "2026" o "AMG"), respóndela con las cifras exactas del CONTEXTO y cita su `id` en `sources` (ej. ["Q_6"]).',
+    '3. Nunca inventes cifras ni porcentajes.',
+    '4. Si la pregunta está fuera de alcance (otros estados, otros años distintos a 2026, proyecciones, opiniones, temas médicos, rankings municipales individuales o datos ausentes en CONTEXTO), declina citando ["DOC-ALCANCE"].',
+    '5. Devuelve EXCLUSIVAMENTE JSON válido: {"answer": "...", "sources": ["ID1"]}.',
   ].join('\n');
 
   const model = Deno.env.get('GEMINI_MODEL') ?? 'gemini-3.5-flash-lite';
