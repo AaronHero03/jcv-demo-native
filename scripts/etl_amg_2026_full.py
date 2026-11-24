@@ -99,28 +99,69 @@ def is_likert_5(valores: dict[str, str]) -> bool:
     return any(h in sample_labels for h in likert_hints)
 
 
+def capitalize_first(s: str) -> str:
+    s = s.strip()
+    if not s:
+        return s
+    if s[0] == "¿" and len(s) > 1:
+        return "¿" + s[1].upper() + s[2:]
+    return s[0].upper() + s[1:]
+
+
+def clean_question(etiqueta: str) -> str:
+    text = re.sub(r"\s+", " ", etiqueta).strip()
+    text = re.sub(r"\s*\[NO LEER\]\s*", " ", text, flags=re.IGNORECASE).strip()
+    text = re.sub(r"\s+([,?.:;])", r"\1", text)
+    return capitalize_first(text)
+
+
+def clean_option_label(label: str) -> str:
+    text = re.sub(r"\s+", " ", label).strip()
+    text = re.sub(r"\s*\[NO LEER\]\s*", "", text, flags=re.IGNORECASE).strip()
+    return capitalize_first(text)
+
+
 def clean_title(var_id: str, etiqueta: str, existing_title: str | None) -> str:
     if existing_title:
         return existing_title
-    text = re.sub(r"\s+", " ", etiqueta).strip()
-    # Si es reactivo de matriz con "..." o pregunta previa, tomar la parte final descriptiva.
+    text = clean_question(etiqueta)
+
+    # 1. Para matrices con ":" al final de la introducción (p. ej. "...siguientes situaciones: X")
+    if var_id.startswith("T_") and ":" in text:
+        parts = [p.strip() for p in text.split(":") if p.strip()]
+        if len(parts) >= 2 and len(parts[-1]) >= 4:
+            return capitalize_first(parts[-1].rstrip(" ."))
+
+    # 2. Para reactivos con "..."
     if "..." in text:
         tail = text.split("...")[-1].strip(" :.-?¿")
-        if len(tail) >= 6:
-            return tail[0].upper() + tail[1:90]
-    if "?" in text and text.index("?") < len(text) - 8:
-        tail = text.split("?")[-1].strip(" :.-")
-        if len(tail) >= 6:
-            return tail[0].upper() + tail[1:90]
+        if len(tail) >= 4:
+            return capitalize_first(tail.rstrip(" ."))
+
+    # 3. Para reactivos con pregunta introductoria seguida del ítem
+    if "?" in text:
+        q_idx = text.rfind("?")
+        after = text[q_idx + 1 :].strip(" :.-")
+        if len(after) >= 6:
+            return capitalize_first(after.rstrip(" ."))
+        # Si la pregunta principal está al final, extraerla
+        start_q = text.rfind("¿")
+        if start_q > 0:
+            q_part = text[start_q : q_idx + 1].strip()
+            if len(q_part) >= 8:
+                return capitalize_first(q_part)
+
+    # 4. Quitar introducciones largas de entrevistador
     cleaned = re.sub(
-        r'^(En una escala del 1 al 5,?\s*donde.*?,\s*|Indica qué tan.*?:\s*|Ahora te voy a leer.*?\.\s*)',
+        r"^(Ahora te voy a (leer|preguntar)[^.?]*[.?]\s*|Por favor dime,?\s*|En tu opinión,?\s*|Considerando [^,]+,\s*|En una escala del \d+ al \d+,?\s*donde[^,?]+(?:,|y)\s*)",
         "",
         text,
         flags=re.IGNORECASE,
     ).strip()
-    if not cleaned:
-        cleaned = text
-    return (cleaned[0].upper() + cleaned[1:85]).rstrip(" .")
+    if len(cleaned) >= 6:
+        text = cleaned
+
+    return capitalize_first(text.rstrip(" ."))
 
 
 def sql_str(val: str | None) -> str:
@@ -132,7 +173,11 @@ def sql_str(val: str | None) -> str:
 def main():
     with open(RESUMEN_PATH, encoding="utf-8") as fh:
         prev_resumen = json.load(fh)
-    prev_by_id = {ind["id"]: ind for ind in prev_resumen["indicators"]}
+    prev_by_id = {
+        ind["id"]: ind
+        for ind in prev_resumen["indicators"]
+        if ind["id"] in {"Q_6", "Q_7", "Q_8", "Q_9", "Q_10", "Q_14", "Q_15", "Q_16", "Q_17", "Q_20"}
+    }
     municipalities = prev_resumen["municipalities"]
     muni_code_map = {str(i + 1): name for i, name in enumerate(municipalities)}
 
@@ -157,8 +202,9 @@ def main():
 
     for ind_id in ordered_ids:
         entry = dictionary[ind_id]
-        valores: dict[str, str] = entry["valores"]
-        etiqueta: str = re.sub(r"\s+", " ", entry.get("etiqueta", ind_id)).strip()
+        raw_valores: dict[str, str] = entry["valores"]
+        valores: dict[str, str] = {k: clean_option_label(v) for k, v in raw_valores.items()}
+        etiqueta: str = clean_question(entry.get("etiqueta", ind_id))
         prev = prev_by_id.get(ind_id)
 
         valid_codes = sorted([to_int(k) for k in valores.keys() if to_int(k) is not None])
