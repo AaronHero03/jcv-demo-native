@@ -11,8 +11,8 @@ import { useAppState } from "../context/AppStateContext";
 import { confirmOnDevice } from "../lib/deviceConfirmation";
 import { colors } from "../theme/colors";
 
-export const INACTIVITY_TIMEOUT_MS = 1000;
-const CHECK_INTERVAL_MS = 2000;
+export const INACTIVITY_TIMEOUT_MS = 5 * 60 * 1000;
+const CHECK_INTERVAL_MS = 30 * 1000;
 
 /**
  * Bloqueo por inactividad (MASVS-AUTH-2): tras un periodo sin actividad o en segundo plano,
@@ -99,7 +99,11 @@ export default function InactivityLockGate({
 	};
 
 	return (
-		<View style={styles.root} onTouchStartCapture={touchActivity}>
+		<View
+			style={styles.root}
+			onTouchStartCapture={touchActivity}
+			onPointerDownCapture={touchActivity}
+		>
 			{children}
 			{locked && (
 				<View style={styles.overlay} accessibilityViewIsModal>
