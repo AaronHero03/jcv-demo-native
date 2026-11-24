@@ -160,6 +160,7 @@ Deno.serve(async (req: Request) => {
   });
 
   if (!llmRes.ok) {
+    console.error('Gemini API error:', llmRes.status, await llmRes.text());
     await logRequest(503, question.length);
     return jsonResponse({ error: 'LLM service unavailable' }, 503);
   }
