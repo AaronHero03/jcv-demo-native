@@ -1,6 +1,13 @@
 import rawSummary from './raw/bienestar_jovenes_2026_resumen.json';
 
-export type IndicatorCategory = 'Bienestar' | 'Educación' | 'Tiempo y Rutina';
+export type IndicatorCategory =
+  | 'Bienestar'
+  | 'Educación'
+  | 'Tiempo y Rutina'
+  | 'Trabajo y Economía'
+  | 'Salud y Seguridad'
+  | 'Participación y Entorno'
+  | 'Perfil Demográfico';
 
 export interface IndicatorSeriesPoint {
   code: number;
@@ -55,6 +62,10 @@ export const indicatorCategories: ('Todas' | IndicatorCategory)[] = [
   'Bienestar',
   'Educación',
   'Tiempo y Rutina',
+  'Trabajo y Economía',
+  'Salud y Seguridad',
+  'Participación y Entorno',
+  'Perfil Demográfico',
 ];
 
 export function getIndicatorById(id?: string): Indicator {

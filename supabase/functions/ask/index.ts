@@ -122,13 +122,33 @@ Deno.serve(async (req: Request) => {
   // D3: Consulta parametrizada de indicadores y resúmenes publicados (MASVS-CODE-4)
   const { data: indicators, error: indError } = await adminClient
     .from('indicators')
-    .select('id, title, question_text, sample_size, average, positive_pct')
+    .select('id, title, sample_size, average, positive_pct')
     .eq('is_published', true);
 
-  const { data: summaries, error: sumError } = await adminClient
-    .from('indicator_summaries')
-    .select('dataset_source, indicator_id, filter_type, filter_value, count, pct, indicator_options(code, label)')
-    .eq('filter_type', 'general');
+  const tokens = question
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .split(/[^a-z0-9_]+/)
+    .filter((t) => t.length >= 3);
+
+  const coreIds = new Set(['Q_6', 'Q_7', 'Q_8', 'Q_9', 'Q_10', 'Q_14', 'Q_15', 'Q_16', 'Q_17', 'Q_20']);
+  const matchedIds = (indicators ?? [])
+    .filter((ind) => {
+      if (coreIds.has(ind.id)) return true;
+      const hay = `${ind.id} ${ind.title}`.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      return tokens.some((t) => hay.includes(t));
+    })
+    .slice(0, 25)
+    .map((ind) => ind.id);
+
+  const { data: summaries, error: sumError } = matchedIds.length
+    ? await adminClient
+        .from('indicator_summaries')
+        .select('dataset_source, indicator_id, filter_type, filter_value, count, pct, indicator_options(code, label)')
+        .eq('filter_type', 'general')
+        .in('indicator_id', matchedIds)
+    : { data: [], error: null };
 
   if (indError || sumError || !indicators?.length) {
     console.error('Context query issue:', { indError, sumError, indCount: indicators?.length ?? 0, sumCount: summaries?.length ?? 0 });
