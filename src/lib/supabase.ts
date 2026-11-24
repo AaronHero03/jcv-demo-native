@@ -4,7 +4,14 @@ import * as SecureStore from 'expo-secure-store';
 import { registerAccessTokenProvider } from '../services/supabaseRest';
 
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL ?? '';
-const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? '';
+const supabaseAnonKey =
+  process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ??
+  process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY ??
+  '';
+
+if (supabaseUrl && !supabaseUrl.startsWith('https://')) {
+  throw new Error('Security Error: Supabase URL must use HTTPS.');
+}
 
 export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 
