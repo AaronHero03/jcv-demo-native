@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { surveys, type Survey, type SurveyQuestion, type SurveyAnswers } from '../data/surveys';
+import { decryptDraft, encryptDraft } from './draftCipher';
 import { database, supabase } from './supabase';
 
 function strings(value: unknown): value is string[] {
@@ -31,7 +32,7 @@ export async function loadSurveys(): Promise<Survey[]> {
   if (error) {
     if (status === 0) {
       const cached = await AsyncStorage.getItem(cacheKey);
-      if (cached) return JSON.parse(cached) as Survey[];
+      if (cached) return JSON.parse(await decryptDraft(cached, cacheKey)) as Survey[];
     }
     throw error;
   }
@@ -41,8 +42,8 @@ export async function loadSurveys(): Promise<Survey[]> {
       period: original?.period || 'Encuesta Tec', estimatedMinutes: original?.estimatedMinutes || 0,
       questions: row.questions.map(readQuestion) };
   });
-  // Solo guarda el catálogo público. El servidor vuelve a comprobar su vigencia al enviar.
-  await AsyncStorage.setItem(cacheKey, JSON.stringify(catalog)).catch(() => undefined);
+  // Solo guarda el catálogo público cifrado con AES-GCM. El servidor vuelve a comprobar su vigencia al enviar.
+  await AsyncStorage.setItem(cacheKey, await encryptDraft(JSON.stringify(catalog), cacheKey)).catch(() => undefined);
   return catalog;
 }
 

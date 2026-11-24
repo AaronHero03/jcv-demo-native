@@ -143,16 +143,18 @@ describe('publication, community, and surveyCatalog with mocked supabase', () =>
     });
   });
 
-  it('falls back to cached published indicators when offline (status 0)', async () => {
+  it('falls back to encrypted cached published indicators when offline (status 0)', async () => {
     const firstId = indicators[0].id;
     const cacheKey = 'jcv.published.indicators:' + process.env.EXPO_PUBLIC_SUPABASE_URL;
-    await AsyncStorage.setItem(cacheKey, JSON.stringify([firstId]));
+    (SecureStore.getItemAsync as jest.Mock).mockResolvedValueOnce('bW9jay1rZXk=');
+    await AsyncStorage.setItem(cacheKey, await encryptDraft(JSON.stringify([firstId]), cacheKey));
     mockFrom.mockReturnValue({
       select: () => ({
         eq: async () => ({ data: null, error: { message: 'offline' }, status: 0 }),
       }),
     });
 
+    (SecureStore.getItemAsync as jest.Mock).mockResolvedValueOnce('bW9jay1rZXk=');
     const items = await loadPublishedIndicators();
     expect(items.map((i) => i.id)).toEqual([firstId]);
   });

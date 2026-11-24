@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { indicators } from '../data/indicators';
+import { decryptDraft, encryptDraft } from './draftCipher';
 import { database, supabase } from './supabase';
 
 export const publicationTypes = {
@@ -32,10 +33,10 @@ export async function loadPublishedIndicators() {
     if (status !== 0) throw error;
     const cached = await AsyncStorage.getItem(key);
     if (!cached) throw new Error('Conecta la app una vez para descargar el catálogo de indicadores.');
-    ids = JSON.parse(cached);
+    ids = JSON.parse(await decryptDraft(cached, key));
   } else {
     ids = data.map(row => row.id);
-    await AsyncStorage.setItem(key, JSON.stringify(ids)).catch(() => undefined);
+    await AsyncStorage.setItem(key, await encryptDraft(JSON.stringify(ids), key)).catch(() => undefined);
   }
   return indicators.filter(item => ids.includes(item.id));
 }
