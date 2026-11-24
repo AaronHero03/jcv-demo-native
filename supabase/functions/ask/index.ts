@@ -141,7 +141,7 @@ Deno.serve(async (req: Request) => {
     '4. Devuelve EXCLUSIVAMENTE JSON válido: {"answer": "...", "sources": ["ID1"]}.',
   ].join('\n');
 
-  const model = Deno.env.get('GEMINI_MODEL') ?? 'gemini-3.5-flash-lite';
+  const model = Deno.env.get('GEMINI_MODEL') ?? 'gemini-2.5-flash-lite';
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiKey}`;
 
   const llmRes = await fetch(geminiUrl, {
